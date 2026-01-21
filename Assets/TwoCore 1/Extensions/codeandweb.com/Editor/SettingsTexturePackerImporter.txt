@@ -1,0 +1,14 @@
+version: 2
+tpsheetFileNames:
+- Assets/_Game/Sprites/Data.tpsheet
+- Assets/_Game/Sprites/Data2.tpsheet
+- Assets/TwoCore 1/Extensions/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/_Game/Sprites/Data.png
+- Assets/_Game/Sprites/Data2.png
+- Assets/TwoCore 1/Extensions/codeandweb.com/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- Assets/TwoCore 1/Extensions/codeandweb.com/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0

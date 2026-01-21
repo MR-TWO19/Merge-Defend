@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 8510ec9e1d41e1943a59c5a17245504f
+labels:
+- Atlas
+- Mesh
+- Normal
+- Normalmap
+- Packer
+- Packing
+- Polygon
+- Sprite
+- Spritesheet
+- Texture
+- TexturePacker
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData:
+  assetBundleName:
+  assetBundleVariant:

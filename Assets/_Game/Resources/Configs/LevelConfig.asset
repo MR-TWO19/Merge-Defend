@@ -1,0 +1,5520 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f67173a7cc651a489536f9aca0b4256, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  levelDatas:
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 5, y: 8}
+      ItemIds: 
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 00000000000000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 07000000000000000700000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 07000000070000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 7
+    - Targets:
+      - ItemId: 0
+    - Targets:
+      - ItemId: 7
+    - Targets:
+      - ItemId: 0
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 9}
+      ItemIds: 00000000000000000300000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 07000000070000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 00000000000000000700000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 07000000000000000700000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 00000000000000000000000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 07000000070000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 00000000030000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 9}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 9}
+      ItemIds: 03000000030000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 00000000030000000300000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 00000000000000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 3
+    - Targets:
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+    - Targets:
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 03000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 00000000070000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000030000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 07000000030000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 00000000000000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 1, y: 8}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 1, y: 7}
+      ItemIds: 07000000070000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 1, y: 6}
+      ItemIds: 03000000030000000000000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 8}
+      ItemIds: 07000000070000000700000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 7}
+      ItemIds: 07000000070000000700000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 6}
+      ItemIds: 07000000070000000700000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 3
+    - Targets:
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+    - Targets:
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 00000000000000000000000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 07000000070000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 07000000020000000700000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 02000000020000000300000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 03000000020000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 03000000070000000300000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000000000000200000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 07000000070000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 02000000020000000300000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 7
+    - Targets:
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 2
+    - Targets:
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 3
+    - Targets:
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 0
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 05000000050000000300000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 03000000000000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 00000000030000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 07000000000000000700000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 00000000000000000300000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 07000000070000000300000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 00000000020000000000000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 07000000030000000700000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 07000000070000000200000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000020000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 00000000020000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 03000000030000000000000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 7
+      - ItemId: 0
+    - Targets:
+      - ItemId: 2
+      - ItemId: 7
+      - ItemId: 0
+      - ItemId: 2
+    - Targets:
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 3
+    - Targets:
+      - ItemId: 3
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 5
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 9}
+      ItemIds: 03000000050000000300000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 09000000090000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 06000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 03000000030000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 00000000000000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000050000000200000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 09000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 06000000060000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 02000000030000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 00000000090000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000020000000500000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 03000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 0
+    - Targets:
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 0
+    - Targets:
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 3
+    - Targets:
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 5
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 03000000000000000100000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 05000000050000000600000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 03000000030000000200000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 02000000020000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 06000000060000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 01000000010000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 03000000030000000300000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 09000000090000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 01000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 01000000020000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 06000000050000000200000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 05000000050000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 00000000000000000100000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 00000000030000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 3
+    - Targets:
+      - ItemId: 1
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 1
+    - Targets:
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 0
+    - Targets:
+      - ItemId: 1
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 1
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 03000000030000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 06000000060000000900000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 07000000080000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 02000000020000000200000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 02000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 06000000060000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 5}
+      CellSpawn: {x: 3, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 3, y: 5}
+        ItemIds: 07000000030000000200000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 3, y: 5}
+        ItemIds: 03000000050000000300000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 6, y: 5}
+      CellSpawn: {x: 5, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 5, y: 5}
+        ItemIds: 08000000080000000800000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 5, y: 5}
+        ItemIds: 03000000030000000700000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 7
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 3
+    - Targets:
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 7
+    - Targets:
+      - ItemId: 9
+      - ItemId: 7
+      - ItemId: 6
+      - ItemId: 8
+    - Targets:
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 5
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 02000000020000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 07000000050000000700000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 02000000070000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 06000000080000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 07000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000050000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 09000000090000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 3, y: 5}
+      CellSpawn: {x: 3, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 3, y: 6}
+        ItemIds: 09000000080000000800000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 3, y: 6}
+        ItemIds: 03000000050000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 5, y: 5}
+      CellSpawn: {x: 5, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 5, y: 6}
+        ItemIds: 03000000090000000900000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 5, y: 6}
+        ItemIds: 09000000000000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 2
+      - ItemId: 7
+      - ItemId: 9
+      - ItemId: 2
+    - Targets:
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 3
+    - Targets:
+      - ItemId: 7
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 5
+    - Targets:
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 0
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 4, y: 9}
+      ItemIds: 02000000020000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 05000000050000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 06000000060000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 05000000050000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 06000000050000000600000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 01000000050000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 00000000000000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 03000000030000000300000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 09000000060000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 06000000060000000200000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 09000000080000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 6}
+      ItemIds: 09000000000000000900000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 5}
+      ItemIds: 09000000030000000200000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 01000000030000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 02000000080000000200000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 4}
+      CellSpawn: {x: 2, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 2, y: 5}
+        ItemIds: 08000000080000000800000002000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 2, y: 5}
+        ItemIds: 06000000030000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 2, y: 5}
+        ItemIds: 03000000020000000200000002000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 7, y: 4}
+      CellSpawn: {x: 7, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 7, y: 5}
+        ItemIds: 09000000090000000800000008000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 7, y: 5}
+        ItemIds: 00000000000000000200000008000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 8
+    - Targets:
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 8
+    - Targets:
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 6
+    - Targets:
+      - ItemId: 5
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 8
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 4, y: 9}
+      ItemIds: 08000000080000000800000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 00000000000000000300000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 08000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 06000000060000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 06000000090000000600000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 06000000060000000000000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 01000000010000000100000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 09000000090000000600000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 02000000080000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 7}
+      ItemIds: 03000000030000000900000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 03000000030000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 00000000000000000000000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000020000000200000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 6}
+      ItemIds: 05000000090000000200000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 3, y: 6}
+      CellSpawn: {x: 3, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000030000000900000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 05000000050000000900000009000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 03000000030000000300000002000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 6, y: 6}
+      CellSpawn: {x: 6, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000010000000100000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000060000000200000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 8
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 3
+    - Targets:
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 1
+      - ItemId: 6
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 5
+    - Targets:
+      - ItemId: 8
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 1
+    - Targets:
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 9
+      - ItemId: 1
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 9}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 9}
+      ItemIds: 03000000030000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 08000000080000000800000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 07000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 07000000030000000300000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 9}
+      ItemIds: 00000000080000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 8}
+      ItemIds: 06000000060000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 05000000020000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000050000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 02000000020000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 08000000080000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 00000000000000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 07000000090000000500000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 7}
+      ItemIds: 09000000050000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 6}
+      ItemIds: 08000000060000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 8}
+      ItemIds: 06000000060000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 6}
+      CellSpawn: {x: 2, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 07000000070000000000000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 0
+    - Targets:
+      - ItemId: 7
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 0
+      - ItemId: 0
+    - Targets:
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 2
+    - Targets:
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 2
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 5, y: 8}
+      ItemIds: 08000000020000000800000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 06000000050000000600000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 03000000030000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 06000000060000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 00000000000000000100000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 02000000050000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000020000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 08000000080000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 05000000010000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 09000000080000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 3}
+      ItemIds: 03000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 06000000060000000800000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 3}
+      ItemIds: 01000000010000000500000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 6}
+      CellSpawn: {x: 3, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 02000000020000000200000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 2, y: 5}
+      CellSpawn: {x: 3, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 05000000050000000000000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 6, y: 6}
+      CellSpawn: {x: 5, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000000000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 6, y: 5}
+      CellSpawn: {x: 5, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000030000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 03000000030000000100000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 3
+    - Targets:
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 1
+    - Targets:
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 5
+    - Targets:
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 3
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 9}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 01000000030000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 08000000080000000100000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 01000000010000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 09000000090000000900000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 06000000060000000000000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 02000000000000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 05000000030000000500000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 09000000060000000800000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 06000000050000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 05000000020000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 03000000030000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 05000000080000000300000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 01000000000000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 08000000080000000800000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 09000000090000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 5
+    - Targets:
+      - ItemId: 1
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 5
+      - ItemId: 8
+    - Targets:
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 1
+    - Targets:
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 2
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 4, y: 8}
+      ItemIds: 02000000080000000200000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 03000000030000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 06000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000020000000200000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 00000000000000000300000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 01000000010000000300000001000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 02000000010000000100000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 06000000060000000500000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 06000000030000000600000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 2
+    - Targets:
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 3
+    - Targets:
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 1
+    - Targets:
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 6
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 9}
+      ItemIds: 05000000050000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 08000000080000000800000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 02000000050000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 06000000060000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 09000000010000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 03000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 03000000000000000200000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 08000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000020000000200000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 05000000080000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 08000000030000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 01000000010000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 05000000050000000100000001000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 03000000010000000300000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 00000000000000000000000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 08000000080000000600000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 02000000020000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 03000000000000000200000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 8
+    - Targets:
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 2
+    - Targets:
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 2
+    - Targets:
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 1
+      - ItemId: 0
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 06000000060000000600000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 07000000050000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 05000000050000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 00000000000000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 03000000030000000700000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 08000000060000000800000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 08000000080000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 03000000030000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 05000000080000000700000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 02000000020000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 03000000050000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000020000000500000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 06000000060000000900000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 05000000090000000500000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 05000000050000000200000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 02000000070000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 06000000050000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 08000000080000000700000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 02000000020000000500000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 06000000050000000500000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 5
+    - Targets:
+      - ItemId: 7
+      - ItemId: 8
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 7
+      - ItemId: 9
+      - ItemId: 8
+    - Targets:
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 2
+    - Targets:
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 3
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 02000000020000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 09000000090000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 03000000030000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 03000000030000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 02000000020000000500000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 09000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000080000000200000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 05000000080000000500000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 05000000060000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 05000000080000000200000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 09000000030000000800000001000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 08000000090000000900000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 02000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 06000000060000000600000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 3}
+      ItemIds: 09000000090000000100000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 3}
+      ItemIds: 06000000020000000600000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 09000000090000000100000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 3}
+      ItemIds: 06000000050000000100000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 3}
+      ItemIds: 02000000020000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 0
+    - Targets:
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 1
+      - ItemId: 9
+    - Targets:
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 2
+    - Targets:
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 9
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 07000000030000000700000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 06000000090000000600000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 03000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 08000000080000000800000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 05000000050000000500000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 02000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 09000000060000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 07000000070000000200000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 03000000090000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 07000000080000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 09000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 02000000020000000600000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 07000000070000000000000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 06000000060000000900000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 05000000050000000500000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 07000000070000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 00000000050000000000000003000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 03000000030000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 03000000050000000800000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 06000000050000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 07000000070000000700000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 00000000000000000700000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 03000000050000000900000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 3}
+      ItemIds: 08000000080000000200000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 05000000050000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 3}
+      ItemIds: 06000000060000000600000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 3}
+      ItemIds: 09000000090000000900000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 7
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 9
+    - Targets:
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 7
+      - ItemId: 8
+      - ItemId: 7
+      - ItemId: 9
+    - Targets:
+      - ItemId: 8
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 3
+      - ItemId: 7
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 5
+    - Targets:
+      - ItemId: 9
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 8
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 07000000070000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 07000000070000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 06000000060000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 07000000070000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 03000000070000000300000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 06000000090000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 08000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 06000000060000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 08000000080000000800000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 05000000050000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 02000000020000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 02000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 06000000060000000600000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 05000000060000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 07000000050000000700000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 09000000050000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 02000000020000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 08000000080000000700000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 7
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 7
+      - ItemId: 5
+      - ItemId: 7
+    - Targets:
+      - ItemId: 3
+      - ItemId: 7
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 2
+    - Targets:
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 8
+      - ItemId: 5
+    - Targets:
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 7
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 4, y: 9}
+      ItemIds: 08000000080000000000000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 09000000090000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 01000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 06000000050000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 01000000010000000100000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 02000000020000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 01000000010000000900000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 09000000090000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 03000000030000000300000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 05000000090000000700000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 01000000010000000900000001000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 03000000030000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 06000000090000000600000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 02000000020000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 03000000080000000300000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 08000000080000000800000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 01000000010000000000000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 03000000020000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 02000000080000000200000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 05000000050000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 03000000030000000300000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 06000000070000000900000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 06000000050000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 6, y: 7}
+      CellSpawn: {x: 5, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 09000000090000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 05000000050000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 2, y: 7}
+      CellSpawn: {x: 3, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 08000000070000000200000002000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 02000000020000000200000002000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 0
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 7
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 8
+    - Targets:
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 8
+    - Targets:
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 3
+    - Targets:
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 1
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 3
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 03000000000000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 06000000080000000200000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 02000000020000000500000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 03000000030000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 09000000050000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 05000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 05000000060000000600000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 02000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 01000000010000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 01000000010000000500000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 01000000080000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 5, y: 4}
+      CellSpawn: {x: 5, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000000000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 05000000050000000000000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 3, y: 4}
+      CellSpawn: {x: 3, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 03000000000000000500000009000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 1
+      - ItemId: 3
+    - Targets:
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 8
+    - Targets:
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 5
+    - Targets:
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 1
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 08000000080000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 03000000000000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 03000000030000000200000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 01000000010000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 01000000010000000100000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 09000000080000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 08000000080000000800000001000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 05000000050000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 05000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 7}
+      CellSpawn: {x: 3, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 00000000000000000000000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 6, y: 7}
+      CellSpawn: {x: 5, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000030000000200000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 3, y: 4}
+      CellSpawn: {x: 3, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 00000000000000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 5, y: 4}
+      CellSpawn: {x: 5, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000050000000100000001000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 08000000090000000600000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 0
+    - Targets:
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 0
+    - Targets:
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 9
+      - ItemId: 5
+    - Targets:
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 0
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 06000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 01000000010000000100000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 06000000010000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 08000000080000000100000001000000
+      EventType: 1
+      LockId: 2
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 08000000030000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 03000000000000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 01000000020000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 02000000020000000100000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 01000000010000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 08000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 05000000050000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 05000000050000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 03000000020000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 08000000080000000000000000000000
+      EventType: 0
+      LockId: 2
+      KeepTheKey: 1
+    - Cell: {x: 4, y: 5}
+      ItemIds: 08000000010000000800000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 02000000020000000200000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 1
+      - ItemId: 6
+      - ItemId: 1
+      - ItemId: 8
+      - ItemId: 5
+      - ItemId: 0
+    - Targets:
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 1
+    - Targets:
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 1
+    - Targets:
+      - ItemId: 1
+      - ItemId: 2
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 3
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 08000000090000000800000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000020000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 06000000060000000900000000000000
+      EventType: 3
+      LockId: 0
+      KeepTheKey: 1
+    - Cell: {x: 5, y: 7}
+      ItemIds: 03000000030000000100000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 1
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 01000000060000000100000001000000
+      EventType: 1
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 00000000000000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000020000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 05000000050000000500000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 03000000030000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 02000000010000000200000002000000
+      EventType: 3
+      LockId: 1
+      KeepTheKey: 1
+    - Cell: {x: 5, y: 5}
+      ItemIds: 09000000090000000800000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 1
+      LockId: 1
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 1
+      - ItemId: 8
+      - ItemId: 0
+    - Targets:
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 9
+      - ItemId: 1
+    - Targets:
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 0
+    - Targets:
+      - ItemId: 9
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 1
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 05000000050000000100000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 03000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 06000000060000000500000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 03000000030000000200000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 06000000060000000900000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 09000000080000000900000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 01000000030000000100000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 06000000060000000600000006000000
+      EventType: 1
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 05000000090000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 06000000010000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 09000000000000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 05000000050000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 00000000090000000900000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000010000000200000002000000
+      EventType: 1
+      LockId: 1
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 06000000020000000200000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 09000000030000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 01000000020000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 03000000080000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 05000000020000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 1
+    - Cell: {x: 5, y: 4}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 0
+      LockId: 1
+      KeepTheKey: 1
+    - Cell: {x: 6, y: 4}
+      ItemIds: 05000000050000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 02000000060000000200000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 6}
+      ItemIds: 06000000060000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 5}
+      ItemIds: 02000000030000000800000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 1, y: 6}
+      ItemIds: 08000000080000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 1, y: 5}
+      ItemIds: 01000000080000000100000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 05000000020000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 1
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 5
+      - ItemId: 3
+    - Targets:
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 2
+    - Targets:
+      - ItemId: 0
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 8
+    - Targets:
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 2
+      - ItemId: 0
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000050000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 06000000060000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 06000000060000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 05000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 06000000060000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 00000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 05000000050000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 07000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 07000000050000000700000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 09000000050000000500000005000000
+      EventType: 0
+      LockId: 1
+      KeepTheKey: 1
+    - Cell: {x: 2, y: 6}
+      ItemIds: 06000000090000000200000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 07000000070000000600000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 07000000020000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 00000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 09000000030000000300000002000000
+      EventType: 3
+      LockId: 1
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 00000000000000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 02000000060000000600000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 00000000030000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 07000000070000000900000003000000
+      EventType: 1
+      LockId: 2
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 09000000000000000900000009000000
+      EventType: 1
+      LockId: 1
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 09000000000000000600000006000000
+      EventType: 1
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 2
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 3}
+      ItemIds: 05000000020000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 1
+    - Cell: {x: 2, y: 3}
+      ItemIds: 07000000070000000500000005000000
+      EventType: 0
+      LockId: 2
+      KeepTheKey: 1
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 6
+    - Targets:
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 9
+    - Targets:
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 7
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 7
+      - ItemId: 2
+      - ItemId: 7
+    - Targets:
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 9
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 06000000050000000800000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 08000000080000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 01000000030000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 03000000030000000200000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 02000000060000000200000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 03000000060000000800000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 00000000050000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 03000000030000000300000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 09000000090000000900000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 06000000050000000000000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 01000000010000000200000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 00000000000000000200000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 1
+    - Cell: {x: 4, y: 5}
+      ItemIds: 01000000010000000600000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 03000000060000000300000009000000
+      EventType: 1
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 00000000080000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 08000000060000000800000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 03000000090000000100000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 08000000020000000800000008000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 00000000000000000000000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 4, y: 6}
+      CellSpawn: {x: 4, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 00000000000000000300000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 5, y: 5}
+      CellSpawn: {x: 5, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 09000000050000000900000009000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 3, y: 5}
+      CellSpawn: {x: 3, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 02000000020000000800000008000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 0
+    - Targets:
+      - ItemId: 1
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 0
+    - Targets:
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 1
+    - Targets:
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 8
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 4, y: 9}
+      ItemIds: 03000000090000000300000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 09000000090000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 08000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 9}
+      ItemIds: 05000000020000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 8}
+      ItemIds: 08000000060000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 03000000020000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 7}
+      ItemIds: 06000000020000000600000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 08000000080000000800000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 06000000030000000300000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 05000000010000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 09000000090000000900000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000060000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 3
+      LockId: 1
+      KeepTheKey: 1
+    - Cell: {x: 4, y: 5}
+      ItemIds: 09000000020000000500000005000000
+      EventType: 1
+      LockId: 1
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 02000000020000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 01000000080000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 5}
+      ItemIds: 05000000050000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 7}
+      CellSpawn: {x: 3, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 02000000020000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 2, y: 6}
+      CellSpawn: {x: 3, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000050000000100000001000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 9
+    - Targets:
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 5
+      - ItemId: 2
+    - Targets:
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 8
+    - Targets:
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 5
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 03000000030000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 09000000080000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 02000000010000000100000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 00000000050000000000000008000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 09000000090000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 02000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 08000000090000000800000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 03000000030000000500000003000000
+      EventType: 1
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000030000000900000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000010000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 05000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 09000000000000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 1
+    - Cell: {x: 6, y: 5}
+      ItemIds: 05000000020000000500000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 02000000020000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 00000000090000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 09000000050000000800000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 08000000000000000900000009000000
+      EventType: 1
+      LockId: 1
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 00000000080000000100000001000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 3}
+      ItemIds: 01000000050000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 3}
+      ItemIds: 02000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 06000000010000000600000006000000
+      EventType: 2
+      LockId: 1
+      KeepTheKey: 1
+    - Cell: {x: 5, y: 3}
+      ItemIds: 01000000010000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 3}
+      ItemIds: 08000000090000000800000008000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 00000000010000000100000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 8
+    - Targets:
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 9
+    - Targets:
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 8
+    - Targets:
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 1
+      - ItemId: 1
+      - ItemId: 5
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 7, y: 9}
+      ItemIds: 00000000080000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 03000000070000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 03000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 02000000020000000200000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 9}
+      ItemIds: 08000000080000000800000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 9}
+      ItemIds: 05000000050000000500000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 8}
+      ItemIds: 03000000030000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 03000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 00000000000000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 8}
+      ItemIds: 07000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 00000000080000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 06000000060000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 07000000070000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 7}
+      ItemIds: 02000000020000000200000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000030000000300000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000030000000200000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 00000000060000000000000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 00000000000000000600000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 00000000000000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 05000000050000000800000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 09000000070000000000000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 07000000070000000000000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 06000000060000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 02000000030000000300000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 09000000090000000900000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 4}
+      ItemIds: 07000000020000000300000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 6}
+      CellSpawn: {x: 2, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 00000000000000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 05000000050000000600000009000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 7, y: 6}
+      CellSpawn: {x: 7, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 07000000070000000700000007000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 07000000070000000700000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 5
+      - ItemId: 7
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 7
+      - ItemId: 0
+      - ItemId: 7
+      - ItemId: 2
+      - ItemId: 9
+    - Targets:
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 7
+      - ItemId: 9
+      - ItemId: 7
+    - Targets:
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 3
+    - Targets:
+      - ItemId: 9
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 6
+      - ItemId: 7
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 9}
+      ItemIds: 01000000010000000100000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 02000000020000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 08000000080000000800000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 09000000090000000100000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 00000000000000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 08000000080000000800000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 08000000080000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 01000000020000000800000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 09000000090000000900000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 09000000090000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 03000000030000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 02000000030000000300000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 09000000060000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 5}
+      ItemIds: 09000000090000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 00000000000000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 01000000050000000300000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 4}
+      ItemIds: 06000000060000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 6, y: 8}
+      CellSpawn: {x: 5, y: 8}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 00000000000000000000000001000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 00000000000000000100000001000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 02000000050000000200000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000090000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 02000000020000000300000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 3, y: 8}
+      CellSpawn: {x: 4, y: 8}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 03000000030000000300000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000010000000000000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000060000000600000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000060000000600000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 1
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 8
+    - Targets:
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 0
+      - ItemId: 6
+    - Targets:
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 9
+      - ItemId: 1
+      - ItemId: 8
+    - Targets:
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 6
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 02000000020000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 06000000060000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 09000000090000000900000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 9}
+      ItemIds: 01000000010000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 05000000050000000500000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 06000000060000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 08000000080000000800000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 01000000010000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 00000000000000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 01000000010000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 01000000010000000200000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 02000000020000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000060000000100000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 05000000050000000500000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 2, y: 7}
+      CellSpawn: {x: 3, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 00000000000000000200000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 2, y: 6}
+      CellSpawn: {x: 3, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 02000000060000000900000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 7, y: 7}
+      CellSpawn: {x: 6, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 03000000030000000300000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000080000000800000008000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000060000000600000008000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 7, y: 6}
+      CellSpawn: {x: 6, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000060000000600000008000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 08000000060000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 08000000050000000800000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 8
+    - Targets:
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 2
+    - Targets:
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 8
+    - Targets:
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 6
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 6, y: 8}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000050000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 8}
+      ItemIds: 01000000010000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 01000000010000000900000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 08000000060000000800000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 03000000030000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 09000000010000000900000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 05000000050000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 03000000030000000300000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 08000000080000000200000003000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 06000000050000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 08000000080000000200000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 01000000010000000800000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 02000000060000000200000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 05000000080000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 01000000010000000100000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 03000000030000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 09000000050000000900000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 08000000090000000300000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 03000000030000000200000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 05000000050000000500000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 02000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 5, y: 6}
+      CellSpawn: {x: 5, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000010000000100000009000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 1
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 1
+      - ItemId: 2
+    - Targets:
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 6
+      - ItemId: 6
+    - Targets:
+      - ItemId: 1
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 9
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 9
+      - ItemId: 3
+    - Targets:
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 8
+      - ItemId: 8
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 3
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+      ItemIds: 00000000000000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 07000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 08000000080000000800000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 03000000030000000300000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 07000000070000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 05000000050000000200000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 06000000060000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 02000000020000000900000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 03000000030000000300000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 02000000020000000200000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 02000000020000000500000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 09000000090000000500000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 05000000020000000600000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 06000000060000000500000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 06000000070000000700000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 09000000090000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 02000000080000000300000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 03000000030000000200000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 03000000030000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 06000000060000000500000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 4, y: 3}
+      CellSpawn: {x: 4, y: 4}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 08000000080000000800000007000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 7
+      - ItemId: 2
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 8
+    - Targets:
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 7
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 3
+    - Targets:
+      - ItemId: 8
+      - ItemId: 7
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 9
+      - ItemId: 7
+      - ItemId: 3
+    - Targets:
+      - ItemId: 0
+      - ItemId: 9
+      - ItemId: 2
+      - ItemId: 2
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 8
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 9}
+      ItemIds: 03000000030000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 9}
+      ItemIds: 06000000060000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 03000000030000000300000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 08000000060000000800000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 03000000030000000200000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 9}
+      ItemIds: 01000000060000000600000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 8}
+      ItemIds: 05000000050000000500000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 08000000080000000200000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 01000000010000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 8}
+      ItemIds: 09000000060000000000000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 7}
+      ItemIds: 08000000020000000800000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 08000000060000000000000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 03000000010000000300000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 09000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 09000000090000000300000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 6}
+      ItemIds: 01000000000000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 06000000060000000600000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 06000000080000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 01000000020000000300000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 09000000090000000200000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 5}
+      ItemIds: 01000000010000000300000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 00000000060000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 00000000030000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 08000000030000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 00000000000000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 6, y: 8}
+      CellSpawn: {x: 6, y: 9}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 05000000050000000500000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 08000000030000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 4, y: 8}
+      CellSpawn: {x: 4, y: 9}
+      ItemControlLevelDatas:
+      - Cell: {x: 4, y: 9}
+        ItemIds: 03000000000000000300000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 4, y: 9}
+        ItemIds: 06000000060000000000000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 6, y: 6}
+      CellSpawn: {x: 6, y: 7}
+      ItemControlLevelDatas:
+      - Cell: {x: 6, y: 7}
+        ItemIds: 01000000010000000000000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 6, y: 7}
+        ItemIds: 00000000000000000000000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 3, y: 7}
+      CellSpawn: {x: 3, y: 8}
+      ItemControlLevelDatas:
+      - Cell: {x: 3, y: 8}
+        ItemIds: 08000000030000000800000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 3, y: 8}
+        ItemIds: 03000000000000000300000000000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    - CellLineSpawn: {x: 3, y: 5}
+      CellSpawn: {x: 3, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000010000000100000001000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 06000000060000000900000009000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 0, y: 0}
+        ItemIds: 01000000010000000300000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 1
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 1
+    - Targets:
+      - ItemId: 3
+      - ItemId: 1
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 6
+    - Targets:
+      - ItemId: 3
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 0
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 9
+    - Targets:
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 1
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 9}
+      ItemIds: 02000000020000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 00000000000000000600000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 09000000090000000900000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 08000000080000000000000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 08000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 07000000080000000600000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 03000000030000000700000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 00000000000000000000000000000000
+      EventType: 1
+      LockId: 2
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 07000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 05000000050000000900000008000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000030000000200000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 06000000060000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 09000000080000000700000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 00000000020000000000000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 03000000050000000000000005000000
+      EventType: 0
+      LockId: 2
+      KeepTheKey: 1
+    - Cell: {x: 5, y: 5}
+      ItemIds: 06000000060000000600000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 07000000090000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 00000000090000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 00000000080000000800000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 02000000020000000200000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 05000000050000000700000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas: []
+    Lines:
+    - Targets:
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 7
+      - ItemId: 2
+    - Targets:
+      - ItemId: 0
+      - ItemId: 7
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 9
+    - Targets:
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 0
+      - ItemId: 5
+    - Targets:
+      - ItemId: 7
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 7
+      - ItemId: 6
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 9}
+      ItemIds: 00000000030000000900000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 9}
+      ItemIds: 00000000000000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 02000000020000000000000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 02000000060000000800000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 09000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 9}
+      ItemIds: 08000000030000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 8}
+      ItemIds: 07000000060000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 05000000050000000500000007000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 8}
+      ItemIds: 06000000060000000600000006000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 00000000000000000700000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 09000000020000000900000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 7}
+      ItemIds: 08000000080000000900000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 02000000020000000000000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 08000000020000000800000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 7}
+      ItemIds: 00000000070000000900000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 00000000030000000500000005000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 07000000060000000700000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 6}
+      ItemIds: 03000000030000000200000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 6}
+      ItemIds: 02000000030000000300000007000000
+      EventType: 1
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 00000000060000000900000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 1
+    - Cell: {x: 3, y: 5}
+      ItemIds: 03000000050000000600000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 05000000080000000300000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 05000000050000000600000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 07000000070000000300000002000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 7, y: 5}
+      ItemIds: 07000000070000000300000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 6, y: 8}
+      CellSpawn: {x: 5, y: 8}
+      ItemControlLevelDatas:
+      - Cell: {x: 5, y: 8}
+        ItemIds: 06000000060000000900000009000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 5, y: 8}
+        ItemIds: 07000000070000000300000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 0
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 7
+    - Targets:
+      - ItemId: 3
+      - ItemId: 0
+      - ItemId: 5
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 7
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 7
+    - Targets:
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 8
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 7
+      - ItemId: 3
+    - Targets:
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 9
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 5
+      - ItemId: 5
+      - ItemId: 6
+      - ItemId: 0
+  - SizeGrid: 10
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 9}
+      ItemIds: 01000000010000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 9}
+      ItemIds: 00000000000000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 9}
+      ItemIds: 09000000090000000900000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 9}
+      ItemIds: 01000000010000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 8}
+      ItemIds: 09000000000000000800000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 05000000030000000500000000000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 09000000050000000600000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 02000000020000000200000003000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 03000000030000000300000008000000
+      EventType: 1
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000030000000200000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 1
+    - Cell: {x: 4, y: 6}
+      ItemIds: 01000000010000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 09000000090000000900000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 6}
+      ItemIds: 08000000080000000200000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 08000000010000000500000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 02000000020000000000000000000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 05000000050000000100000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 4}
+      ItemIds: 06000000060000000600000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 4}
+      ItemIds: 05000000050000000500000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 4}
+      ItemIds: 01000000010000000100000001000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 3, y: 5}
+      CellSpawn: {x: 3, y: 6}
+      ItemControlLevelDatas:
+      - Cell: {x: 3, y: 6}
+        ItemIds: 01000000090000000800000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 3, y: 6}
+        ItemIds: 00000000080000000600000006000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 1
+      - ItemId: 3
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 1
+      - ItemId: 9
+    - Targets:
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 0
+      - ItemId: 1
+      - ItemId: 6
+    - Targets:
+      - ItemId: 8
+      - ItemId: 2
+      - ItemId: 1
+      - ItemId: 9
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 5
+    - Targets:
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 5
+  - SizeGrid: 9
+    ItemControlLevelDatas:
+    - Cell: {x: 3, y: 8}
+      ItemIds: 02000000000000000700000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 8}
+      ItemIds: 05000000000000000500000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 8}
+      ItemIds: 06000000050000000700000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 7}
+      ItemIds: 08000000050000000500000009000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 7}
+      ItemIds: 00000000000000000800000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 7}
+      ItemIds: 08000000080000000300000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 6}
+      ItemIds: 08000000080000000300000003000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 6}
+      ItemIds: 03000000030000000300000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 5}
+      ItemIds: 05000000080000000800000006000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 5}
+      ItemIds: 07000000070000000200000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 5}
+      ItemIds: 06000000000000000800000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 5}
+      ItemIds: 03000000030000000200000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 5}
+      ItemIds: 08000000080000000000000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 4}
+      ItemIds: 08000000080000000500000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 4}
+      ItemIds: 05000000070000000900000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 3, y: 3}
+      ItemIds: 03000000030000000600000005000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 4, y: 3}
+      ItemIds: 07000000000000000900000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 3}
+      ItemIds: 06000000060000000600000007000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 8}
+      ItemIds: 00000000070000000000000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 7}
+      ItemIds: 08000000080000000200000003000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 5, y: 6}
+      ItemIds: 08000000080000000000000002000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 2, y: 3}
+      ItemIds: 02000000020000000600000008000000
+      EventType: 0
+      LockId: 0
+      KeepTheKey: 0
+    - Cell: {x: 6, y: 3}
+      ItemIds: 07000000030000000800000009000000
+      EventType: 2
+      LockId: 0
+      KeepTheKey: 0
+    LineSpawnDatas:
+    - CellLineSpawn: {x: 4, y: 4}
+      CellSpawn: {x: 4, y: 5}
+      ItemControlLevelDatas:
+      - Cell: {x: 4, y: 5}
+        ItemIds: 03000000030000000300000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 4, y: 5}
+        ItemIds: 06000000060000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 4, y: 5}
+        ItemIds: 06000000060000000500000005000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+      - Cell: {x: 4, y: 5}
+        ItemIds: 00000000000000000700000003000000
+        EventType: 0
+        LockId: 0
+        KeepTheKey: 0
+    Lines:
+    - Targets:
+      - ItemId: 5
+      - ItemId: 3
+      - ItemId: 2
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 6
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 9
+    - Targets:
+      - ItemId: 7
+      - ItemId: 8
+      - ItemId: 7
+      - ItemId: 3
+      - ItemId: 6
+      - ItemId: 5
+      - ItemId: 2
+      - ItemId: 7
+      - ItemId: 7
+    - Targets:
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 9
+      - ItemId: 5
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 6
+      - ItemId: 5
+    - Targets:
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 3
+      - ItemId: 8
+      - ItemId: 8
+      - ItemId: 0
+      - ItemId: 8
+      - ItemId: 6
+      - ItemId: 3

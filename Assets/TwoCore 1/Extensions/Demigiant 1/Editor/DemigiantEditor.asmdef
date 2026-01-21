@@ -1,0 +1,19 @@
+{
+    "name": "DimigiantEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d2237dc782125e44fa70846ff07fcee8",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
