@@ -65,11 +65,7 @@ public class InputHandler : MonoBehaviour
 
         Ray ray = mainCam.ScreenPointToRay(screenPos);
 
-        int mask = TutorialManager.Ins.CurrTutorial == Tutorial.GamePlayIntroduction ?
-            LayerMask.GetMask("ItemControl", "Tutorial") :
-            LayerMask.GetMask("ItemControl");
-
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, mask))
+        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, LayerMask.GetMask("ItemControl")))
         {
             ItemControl itemControl = hit.collider.GetComponentInParent<ItemControl>();
             if (itemControl != null)

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Hawky.Inventory;
 using TwoCore;
 using UnityEditor;
 using UnityEngine;

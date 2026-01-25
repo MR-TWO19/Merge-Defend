@@ -10,9 +10,8 @@ public class UserSaveData : BaseUserData
     public static UserSaveData Ins => LocalData.Get<UserSaveData>();
 
     public int Level;
-    public bool OnSound;
-    public bool OnMusic;
-    public bool OnHaptic;
+    public bool MusicOn;
+    public bool SfxOn;
 
     public Tutorial Tutorial;
 
@@ -26,9 +25,8 @@ public class UserSaveData : BaseUserData
     {
         base.OnInit();
         Level = 1;
-        OnSound = true;
-        OnMusic = true;
-        OnHaptic = true;
+        SfxOn = true;
+        MusicOn = true;
     }
 
     public void NextLevel()
@@ -40,24 +38,6 @@ public class UserSaveData : BaseUserData
     public void SetLevel(int level)
     {
         Level = level;
-        Save();
-    }
-
-    public void SetOnSound(bool isOn)
-    {
-        OnSound = isOn;
-        Save();
-    }
-
-    public void SetOnMusic(bool isOn)
-    {
-        OnMusic = isOn;
-        Save();
-    }
-
-    public void SetOnHaptic(bool isOn)
-    {
-        OnHaptic = isOn;
         Save();
     }
 }

@@ -475,9 +475,6 @@ public class GameManager : SingletonMono<GameManager>
         TargetManager.SetUp(levelData.Lines);
 
         UIInGame.UpdateTextLevel();
-
-        ShowTutorial();
-
     }
 
     public void ReletAll()
@@ -494,12 +491,6 @@ public class GameManager : SingletonMono<GameManager>
         SlotManager.ResetAllSlot();
         GridManager.ClearGrid();
         LineSpawnManager.ResetData();
-
-        if (UserSaveData.Ins.OnMusic)
-        {
-            //SoundManager.Instance.music = SoundManager.Instance.musicVolumeDefault;
-            //SoundManager.Instance.PlayBackground(SoundId.BG, SoundManager.Instance.musicVolumeDefault);
-        }
     }
 
     public void StartGame()
@@ -565,11 +556,5 @@ public class GameManager : SingletonMono<GameManager>
             });
 
         }
-    }
-
-    private void ShowTutorial()
-    {
-        if (UserSaveData.Ins.Level == 1)
-            TutorialManager.Ins.StartTutorial(Tutorial.GamePlayIntroduction);
     }
 }

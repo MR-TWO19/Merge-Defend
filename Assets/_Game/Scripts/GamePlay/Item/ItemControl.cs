@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using ColorFight;
 using DG.Tweening;
-using Hawky.Sound;
 using TwoCore;
 using UnityEngine;
-using UnityEngine.UI;
-using global::System;
+
 
 public class ItemControl : MonoBehaviour
 {
@@ -170,20 +168,7 @@ public class ItemControl : MonoBehaviour
 
     public void OnClick()
     {
-        if (TutorialManager.Ins.CurrTutorial == Tutorial.GamePlayIntroduction)
-        {
-            if (TutorialManager.Ins.ItemControlRequiresClick == null
-               || TutorialManager.Ins.ItemControlRequiresClick != this)
-            {
-                return;
-            }
-            else
-            {
-                TutorialManager.Ins.NextStep(this);
-            }
-        }
-
-        SoundManager.Instance.PlaySound(SoundId.SWOOSH);
+        SoundManager.Ins.PlayOneShot(SoundId.SWOOSH);
 
         if (!IsObstacleAhead() || isClick == true || isLock)
             return;
@@ -202,7 +187,7 @@ public class ItemControl : MonoBehaviour
 
             Sequence seq = DOTween.Sequence();
 
-            SoundManager.Instance.PlaySound(SoundId.KEY);
+            SoundManager.Ins.PlayOneShot(SoundId.KEY);
 
             seq.Append(meshRenkey.transform.DOLocalMoveZ(-3f, 0.2f));
 
@@ -254,7 +239,7 @@ public class ItemControl : MonoBehaviour
                     {
                         if (HapticManager.Ins != null)
                             HapticManager.Ins.PlaySuccess();
-                        SoundManager.Instance.PlaySound(SoundId.POP);
+                        SoundManager.Ins.PlayOneShot(SoundId.POP);
                     }
                 });
             }

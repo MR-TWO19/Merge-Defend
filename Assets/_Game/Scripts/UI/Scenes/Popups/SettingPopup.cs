@@ -1,66 +1,87 @@
-using System.Collections;
-using System.Collections.Generic;
-using Game;
-using Hawky.Scene;
-using Hawky.Sound;
-using Newtonsoft.Json.Linq;
+using Doozy.Engine;
+using Doozy.Engine.UI;
+using TwoCore;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SettingPopup : PopupController
+public class SettingPopup : BasePopup
 {
-    [SerializeField] Button btnHide;
-    [SerializeField] UIToggle toggleSound;
-    [SerializeField] UIToggle toggleMusic;
-    [SerializeField] UIToggle toggleHaptics;
+    [SerializeField] private UIButton soundBtn, musicBtn, homeBtn;
+    [SerializeField] private Image imgSound, imgMusic;
+    [SerializeField] private Sprite SoundLight, SoundDark;
 
-    public override string SceneName()
+    private static SettingPopup _instance;
+
+    public static SettingPopup Show(bool isHome)
     {
-        return SceneId.SETTINGS_POPUP;
+        if (_instance == null)
+        {
+            _instance = ShowWithParamsAndMethod<SettingPopup>("SettingPopup", PopupShowMethod.QUEUE, isHome);
+        }
+        else
+        {
+            UIPopupManager.ShowPopup(_instance.UIPopup, true, false);
+            _instance.SetParams(isHome);
+        }
+
+        return _instance;
+    }
+
+    protected override void SetParams(params object[] @params)
+    {
+        base.SetParams(@params);
+
+        bool isHome = (bool)@params[0];
+
+        homeBtn.gameObject.SetActive(!isHome);
+    }
+
+    public static void HidePopup()
+    {
+        _instance.Hide();
     }
 
     private void Start()
     {
-        btnHide.onClick.AddListener(Hide);
-        toggleSound.AddListener(ToggleSoundChange);
-        toggleMusic.AddListener(ToggleSoundMusic);
-        toggleHaptics.AddListener(ToggleSoundHaptic);
-
-        Init();
+        soundBtn.OnClick.OnTrigger.Event.AddListener(BtnSoundOnClick);
+        musicBtn.OnClick.OnTrigger.Event.AddListener(BtnMusicOnClick);
+        homeBtn.OnClick.OnTrigger.Event.AddListener(OnClickHome);
     }
 
-    private void Init()
+    private void BtnSoundOnClick()
     {
-        toggleSound.SetValue(UserSaveData.Ins.OnSound);
-        toggleMusic.SetValue(UserSaveData.Ins.OnMusic);
-        toggleHaptics.SetValue(UserSaveData.Ins.OnHaptic);
+        UserSaveData.Ins.SfxOn = !UserSaveData.Ins.SfxOn;
+        UserSaveData.Ins.Save();
+        imgSound.color = UserSaveData.Ins.SfxOn ? Color.white : Color.gray;
+
+        if (UserSaveData.Ins.SfxOn) Soundy.ToUnmute(Soundy.SfxParam);
+        else Soundy.ToMute(Soundy.SfxParam);
     }
 
-    private void ToggleSoundChange(bool isOn)
+    private void BtnMusicOnClick()
     {
-        UserSaveData.Ins.SetOnSound(isOn);
-        SoundManager.Instance.sound = isOn ? SoundManager.Instance.soundVolumeDefault : 0;
+        UserSaveData.Ins.MusicOn = !UserSaveData.Ins.MusicOn;
+        UserSaveData.Ins.Save();
+        imgMusic.color = UserSaveData.Ins.MusicOn ? Color.white : Color.gray;
+
+        if (UserSaveData.Ins.MusicOn) Soundy.ToUnmute(Soundy.MusicParam);
+        else Soundy.ToMute(Soundy.MusicParam);
     }
 
-    private void ToggleSoundMusic(bool isOn)
+    protected override void OnShow()
     {
-        UserSaveData.Ins.SetOnMusic(isOn);
-        SoundManager.Instance.music = isOn ? SoundManager.Instance.musicVolumeDefault : 0;
+        base.OnShow();
 
-        if (isOn)
-        {
-            SoundManager.Instance.PlayBackground(SoundId.BG, SoundManager.Instance.musicVolumeDefault);
-        }
+        imgSound.color = UserSaveData.Ins.SfxOn ? Color.white : Color.gray;
+        imgMusic.color = UserSaveData.Ins.MusicOn ? Color.white : Color.gray;
     }
 
-    private void ToggleSoundHaptic(bool isOn)
+    private void OnClickHome()
     {
-        UserSaveData.Ins.SetOnHaptic(isOn);
+        GameEventMessage.SendEvent("GoToMain", null);
+        GameManager.Ins.ReletAll();
+        Hide();
     }
 
-    protected override void OnHidden()
-    {
-        base.OnHidden();
-        GameManager.Instance.InputHandler.UnlockInput();
-    }
+
 }

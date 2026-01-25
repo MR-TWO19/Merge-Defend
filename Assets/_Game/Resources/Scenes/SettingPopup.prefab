@@ -485,8 +485,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2454601095287465168}
-  - component: {fileID: 3151952771999128248}
-  - component: {fileID: 1101390801815986213}
   m_Layer: 0
   m_Name: SettingPopup
   m_TagString: Untagged
@@ -510,41 +508,6 @@ Transform:
   - {fileID: 2788047331863462433}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3151952771999128248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2499154097835568082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3a569b09c875944aa08d5c3c14c6e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modifiedRectTransform:
-  - {fileID: 5364427539505107600}
---- !u!114 &1101390801815986213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2499154097835568082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf1fe3ba224cc4148b5e26f7fd3a751a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: []
-  canvasShield: {fileID: 6535598756880303473}
-  allCanvas: []
-  _rootAnimation: {fileID: 2454601095287465168}
-  _openEase: 30
-  btnHide: {fileID: 2396436937761633419}
-  toggleSound: {fileID: 4925466625188285545}
-  toggleMusic: {fileID: 2511535474526662517}
-  toggleHaptics: {fileID: 5826356548942780544}
 --- !u!1 &2631747951481335521
 GameObject:
   m_ObjectHideFlags: 0

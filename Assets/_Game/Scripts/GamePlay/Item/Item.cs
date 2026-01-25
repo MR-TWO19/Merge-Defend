@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using ColorFight;
 using DG.Tweening;
-using Hawky.Sound;
 using TwoCore;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
 public class Item : MonoBehaviour
 {
@@ -153,7 +150,7 @@ public class Item : MonoBehaviour
         seq.Append(transform.DOMove(target.transform.position, 0.3f)
             .SetEase(Ease.InQuad).OnStart(() =>
             {
-                SoundManager.Instance.PlaySound(SoundId.SWOOSH);
+                SoundManager.Ins.PlayOneShot(SoundId.SWOOSH);
             }));
 
         seq.OnComplete(() =>

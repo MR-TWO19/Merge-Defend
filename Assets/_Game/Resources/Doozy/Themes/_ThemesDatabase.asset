@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4072814a6baa62045b119994d13bcd72, type: 3}
-  m_Name: UICanvasSettings
+  m_Script: {fileID: 11500000, guid: e2fe5daa01734ec7b0f40070937b8b1f, type: 3}
+  m_Name: _ThemesDatabase
   m_EditorClassIdentifier: 
-  database: {fileID: 11400000, guid: 9128537a9e0fb4d4484da9a6f7daf6fa, type: 2}
-  DontDestroyCanvasOnLoad: 1
-  RenamePrefix: 'Canvas - '
-  RenameSuffix: 
+  ThemesNames:
+  - General
+  Themes:
+  - {fileID: 11400000, guid: 4edb3e8ad465ba947ba581dc4e13e71e, type: 2}
