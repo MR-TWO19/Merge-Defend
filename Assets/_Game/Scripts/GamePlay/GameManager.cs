@@ -12,7 +12,6 @@ public class GameManager : SingletonMono<GameManager>
 
     public SlotManager SlotManager;
     public InputHandler InputHandler;
-    public TargetManager TargetManager;
     public ItemManager ItemManager;
     public GridManager GridManager;
     public LineSpawnManager LineSpawnManager;
@@ -27,6 +26,13 @@ public class GameManager : SingletonMono<GameManager>
     public bool isEndGame;
     public bool IsAnimRuning;
     public List<ItemControl> ItemControlsWaiting => itemControlsWaiting;
+
+    override protected void Awake()
+    {
+        base.Awake();
+
+        StartGame();
+    }
 
     public bool IsFullSlot()
     {
@@ -220,7 +226,6 @@ public class GameManager : SingletonMono<GameManager>
                         SortItems();
                         IsAnimRuning = false;
 
-                        CheckAndShoot();
                         HandleItemControlWaiting();
                     }
                 }
@@ -239,73 +244,9 @@ public class GameManager : SingletonMono<GameManager>
         }
     }
 
-    public void CheckAndShoot()
-    {
-        if (itemsClear.Count > 0 || IsAnimRuning) return;
-        IsAnimRuning = true;
-
-        int totalShoot = 0;
-
-        List<Item> items = itemsOnSlot.FindAll(_ => _.IsChangeShapeLevel2 && !_.IsMove);
-
-        if (items.Count > 0)
-        {
-            foreach (var item in items)
-            {
-                Balloon target = TargetManager.GetTarget(item.ID);
-                if (target)
-                {
-                    totalShoot++;
-                    target.IsExplodeWaiting = true;
-                    itemsClear.Add(item);
-                    item.ShootTarget(target, () =>
-                    {
-                        itemsClear.Remove(item);
-                        itemsOnSlot.Remove(item);
-                        if (itemsClear.Count <= 0)
-                        {
-                            IsAnimRuning = false;
-                            UpdateSlotItem();
-                        }
-                    });
-                }
-            }
-        }
-
-        if (totalShoot <= 0)
-        {
-            IsAnimRuning = false;
-
-            if (IsLoseGame())
-            {
-                LoseGame();
-            }
-        }
-    }
 
     private void HandleItemControlWaiting()
     {
-        if (IsWaitingToShoot()
-            || itemControlsWaiting.Count <= 0
-            || isEndGame)
-        {
-            CheckAndShoot();
-            return;
-        }
-
-        if (IsLoseGame())
-        {
-            LoseGame();
-            return;
-        }
-
-        if (itemControlsWaiting.Count <= 0 || isEndGame)
-        {
-            CheckAndShoot();
-            return;
-        }
-        ;
-
         foreach (var item in itemControlsWaiting)
         {
             item.MoveItemsToTarget();
@@ -343,28 +284,15 @@ public class GameManager : SingletonMono<GameManager>
 
         countMeger++;
         Item minItem = itemMegers.OrderBy(i => i.CurrSlot.Index).First();
-        foreach (var i in itemMegers)
-        {
-            if (i != minItem)
-            {
-                //itemsOnSlot.Remove(i);
-
-            }
-            //else
-            //    itemsClear.Add(b);
-        }
 
         DOVirtual.DelayedCall(0.1f, () =>
         {
             Vector3 center = Vector3.zero;
             foreach (var i in itemMegers)
             {
-                if (i != minItem)
-                {
-                    itemsOnSlot.Remove(i);
-                    i.CurrSlot.IsUsed = false;
-                    center += i.transform.position;
-                }
+                itemsOnSlot.Remove(i);
+                i.CurrSlot.IsUsed = false;
+                center += i.transform.position;
             }
             center /= itemMegers.Count;
 
@@ -390,14 +318,14 @@ public class GameManager : SingletonMono<GameManager>
                             if (item == minItem)
                             {
                                 item.ChangeShape();
-                                item.MoveToCurSlot(0.5f, () =>
+                                countMeger--;
+                                if (countMeger <= 0)
                                 {
-                                    countMeger--;
-                                    if (countMeger <= 0)
-                                    {
-                                        UpdateSlotItem();
-                                    }
-                                    //itemMegers.ForEach(_ => itemsClear.Remove(_));
+                                    UpdateSlotItem();
+                                }
+                                DOVirtual.DelayedCall(0.5f, () =>
+                                {
+                                    item.gameObject.SetActive(false);
                                 });
                             }
                             else
@@ -406,57 +334,29 @@ public class GameManager : SingletonMono<GameManager>
                                 //BottleManager.RemoveBottle(item);
                             }
                         }
+
+                        countMeger--;
+                        if (countMeger <= 0)
+                        {
+                            UpdateSlotItem();
+                        }
                     }
                 });
             }
         });
     }
 
-    public bool IsLoseGame()
-    {
-        if (isEndGame)
-            return true;
-
-        bool hasTriple = itemsOnSlot
-             .Where(i => !i.IsChangeShapeLevel2)
-             .GroupBy(b => new { b.ID, b.Level })
-             .Any(g => g.Count() >= 3);
-
-        int totalFreeSlot = 10 + itemsClear.Count;
-
-        if (!hasTriple && itemsOnSlot.Count >= totalFreeSlot && !IsWaitingToShoot() && !IsAnimRuning)
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-    private bool IsWaitingToShoot()
-    {
-        bool isItemWaiting = false;
-
-        var listLevel2 = itemsOnSlot.Where(i => i.IsChangeShapeLevel2).ToList();
-        foreach (var item in listLevel2)
-        {
-            Balloon target = TargetManager.GetFirstTarget(item.ID);
-            if (target != null)
-                isItemWaiting = true;
-        }
-
-        return isItemWaiting;
-    }
 
     public void CheckWinGame()
     {
-        if (TargetManager.IsAllCompete())
-        {
-            WinGame();
-        }
-        else
-        {
-            CheckAndShoot();
-        }
+        //if (TargetManager.IsAllCompete())
+        //{
+        //    WinGame();
+        //}
+        //else
+        //{
+        //    CheckAndShoot();
+        //}
     }
 
     public void LoadLevel(int level)
@@ -472,7 +372,6 @@ public class GameManager : SingletonMono<GameManager>
         GridManager.GenerateGrid(levelData.SizeGrid);
         ItemManager.LoadItem(levelData.ItemControlLevelDatas);
         LineSpawnManager.LoadLineSpawn(levelData.LineSpawnDatas);
-        TargetManager.SetUp(levelData.Lines);
 
         UIInGame.UpdateTextLevel();
     }
@@ -495,7 +394,7 @@ public class GameManager : SingletonMono<GameManager>
 
     public void StartGame()
     {
-        LoadLevel(UserSaveData.Ins.Level);
+        LoadLevel(2);
     }
 
     public void NextLevel()

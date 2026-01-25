@@ -246,21 +246,6 @@ public class ItemControl : MonoBehaviour
 
             GameBroker.Ins.Emit(GameEvents.CheckHint);
             GameBroker.Ins.Emit(GameEvents.CheckLineSpawn);
-
-
-            if(GameManager.Ins.IsLoseGame())
-            {
-                GameManager.Ins.LoseGame();
-            }
-        }
-    }
-
-    IEnumerator RunMoveItemsToTarget()
-    {
-        yield return new WaitForSeconds(0.1f);
-        foreach (var item in items)
-        {
-            item.MoveToTarget();
         }
     }
 
