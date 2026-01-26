@@ -14,7 +14,6 @@ public class GameManager : SingletonMono<GameManager>
     public InputHandler InputHandler;
     public ItemManager ItemManager;
     public GridManager GridManager;
-    public LineSpawnManager LineSpawnManager;
     public UIInGame UIInGame;
 
     private List<ItemControl> itemControlsWatingRemove = new();
@@ -371,7 +370,6 @@ public class GameManager : SingletonMono<GameManager>
 
         GridManager.GenerateGrid(levelData.SizeGrid);
         ItemManager.LoadItem(levelData.ItemControlLevelDatas);
-        LineSpawnManager.LoadLineSpawn(levelData.LineSpawnDatas);
 
         UIInGame.UpdateTextLevel();
     }
@@ -389,7 +387,6 @@ public class GameManager : SingletonMono<GameManager>
         ItemManager.ResetData();
         SlotManager.ResetAllSlot();
         GridManager.ClearGrid();
-        LineSpawnManager.ResetData();
     }
 
     public void StartGame()

@@ -214,9 +214,4 @@ public class GridManager : MonoBehaviour
             for (int y = 0; y < height; y++)
                 gridArray[x, y].ResetCell();
     }
-
-    public void LockCell(LockCellData lockCellData)
-    {
-        gridArray[lockCellData.Cell.x, lockCellData.Cell.y].LockCell();
-    }
 }

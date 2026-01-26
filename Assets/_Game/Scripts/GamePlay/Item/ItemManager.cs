@@ -28,9 +28,6 @@ public class ItemManager : MonoBehaviour
 
             gridCell.UnLockCell();
 
-            if (itemData.ItemIds.Count <= 0)
-                continue;
-
             ItemControl newItem = Instantiate(itemControlPrefab, transform);
             newItem.transform.position = gridCell.gameObject.transform.position;
 
@@ -90,8 +87,15 @@ public class ItemManager : MonoBehaviour
         itemControls.Add(itemControl);
     }
 
-    public ItemControl GetItemByLockID(int lockID)
+    public void CreateItem(GridCell gridCell, ItemControlLevelData itemControlLevelData)
     {
-       return itemControls.Find(_ => _.CurrItemControlLevelData.LockId == lockID && _.CurrItemControlLevelData.EventType == ItemEventType.Lock);
+        ItemControl newItem = Instantiate(itemControlPrefab, transform);
+        newItem.transform.position = gridCell.gameObject.transform.position;
+        int count = itemControls.Count(i => i.name.Contains("ItemControl"));
+        newItem.name = $"ItemControl_{count}";
+        newItem.SetUp(itemControlLevelData, gridCell);
+        itemControls.Add(newItem);
+
+        newItem.CheckOpenLib();
     }
 }

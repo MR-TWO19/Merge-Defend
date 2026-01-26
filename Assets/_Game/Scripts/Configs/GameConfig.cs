@@ -21,4 +21,12 @@ public class GameConfig : ConfigBase<GameConfig>
         return data;
     }
 
+    public ItemData GetRondomItemData()
+    {
+        if (ItemDatas == null || ItemDatas.Count == 0)
+            return null;
+        int index = UnityEngine.Random.Range(0, ItemDatas.Count);
+        return ItemDatas[index];
+    }
+
 }
