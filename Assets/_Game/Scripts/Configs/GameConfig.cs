@@ -8,16 +8,12 @@ public class GameConfig : ConfigBase<GameConfig>
     public bool IsCheatMode = false;
 
     public List<ItemData> ItemDatas;
-    public List<LockData> LockDatas;
+    public List<CharacterData> EnemyDatas;
+    public List<CharacterData> HeroDatas;
+
     public ItemData GetItemData(int id)
     {
         var data = ItemDatas.Find(_ => _.id == id);
-        return data;
-    }
-
-    public LockData GetLockData(int id)
-    {
-        var data = LockDatas.Find(_ => _.id == id);
         return data;
     }
 
@@ -27,6 +23,16 @@ public class GameConfig : ConfigBase<GameConfig>
             return null;
         int index = UnityEngine.Random.Range(0, ItemDatas.Count);
         return ItemDatas[index];
+    }
+
+    public CharacterData GetEnemyData(int id)
+    {
+        return EnemyDatas.Find(_ => _.id == id);
+    }
+
+    public CharacterData GetHeroData(int id)
+    {
+        return HeroDatas.Find(_ => _.id == id);
     }
 
 }

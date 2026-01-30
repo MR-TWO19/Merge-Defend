@@ -5,17 +5,12 @@ using UnityEngine.Timeline;
 public class InputHandler : MonoBehaviour
 {
     [SerializeField] private ParticleSystem paticale;
+    [SerializeField] Camera mainCam;
 
     private ItemControl itemControlSelect;
-    private Camera mainCam;
 
     private bool isLocked = false;
     public bool IsLocked => isLocked;
-
-    private void Awake()
-    {
-        mainCam = Camera.main;
-    }
 
     private void Reset()
     {

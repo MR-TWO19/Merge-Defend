@@ -12,6 +12,9 @@ public class LevelTab : TabContent
 
     private Dictionary<int, Vector2Int> selectedCells = new Dictionary<int, Vector2Int>();
 
+    // foldouts for waves per level
+    private List<bool> wavesFoldouts = new List<bool>();
+
     public LevelTab()
     {
         levelConfig = LevelConfig.Ins;
@@ -36,7 +39,8 @@ public class LevelTab : TabContent
             var newLevel = new LevelData
             {
                 SizeGrid = 6,
-                ItemControlLevelDatas = new List<ItemControlLevelData>()
+                ItemControlLevelDatas = new List<ItemControlLevelData>(),
+                Waves = new List<Wave>()
             };
 
             levelConfig.levelDatas.Add(newLevel);
@@ -51,6 +55,8 @@ public class LevelTab : TabContent
         {
             if (i >= levelFoldouts.Count)
                 levelFoldouts.Add(false);
+            if (i >= wavesFoldouts.Count)
+                wavesFoldouts.Add(false);
 
             var level = levelConfig.levelDatas[i];
 
@@ -62,6 +68,7 @@ public class LevelTab : TabContent
             {
                 levelConfig.levelDatas.RemoveAt(i);
                 levelFoldouts.RemoveAt(i);
+                wavesFoldouts.RemoveAt(i);
                 Draw.EndHorizontal();
                 Draw.EndVertical();
                 break;
@@ -77,6 +84,91 @@ public class LevelTab : TabContent
                 level.SizeGrid = Draw.IntField("Size Grid:", level.SizeGrid, 200);
 
                 DrawItemControlGrid(level, i);
+
+                // Waves UI
+                Draw.Space(5);
+                Draw.BeginVertical("box");
+                wavesFoldouts[i] = EditorGUILayout.Foldout(wavesFoldouts[i], $"Waves ({(level.Waves != null ? level.Waves.Count : 0)})");
+                if (wavesFoldouts[i])
+                {
+                    EditorGUI.indentLevel++;
+
+                    if (level.Waves == null) level.Waves = new List<Wave>();
+
+                    Draw.BeginHorizontal();
+                    if (GUILayout.Button("Add Wave", GUILayout.Width(120)))
+                    {
+                        level.Waves.Add(new Wave());
+                        EditorUtility.SetDirty(levelConfig);
+                    }
+                    Draw.EndHorizontal();
+
+                    for (int w = 0; w < level.Waves.Count; w++)
+                    {
+                        var wave = level.Waves[w];
+                        Draw.BeginVertical("helpbox");
+
+                        EditorGUILayout.BeginHorizontal();
+                        wave.SpawnInterval = EditorGUILayout.FloatField("Wave Delay:", wave.SpawnInterval);
+                        if (GUILayout.Button("X", GUILayout.Width(30)))
+                        {
+                            level.Waves.RemoveAt(w);
+                            EditorUtility.SetDirty(levelConfig);
+                            EditorGUILayout.EndHorizontal();
+                            Draw.EndVertical();
+                            break;
+                        }
+                        EditorGUILayout.EndHorizontal();
+
+                        if (wave.Enemies == null) wave.Enemies = new List<EnemyLevelData>();
+
+                        for (int e = 0; e < wave.Enemies.Count; e++)
+                        {
+                            var entry = wave.Enemies[e];
+                            Draw.BeginVertical("box");
+                            EditorGUILayout.BeginHorizontal();
+                            entry.total = EditorGUILayout.IntField("Total:", entry.total);
+                            entry.SpawnInterval = EditorGUILayout.FloatField("Spawn Interval:", entry.SpawnInterval, GUILayout.MaxWidth(180));
+                            if (GUILayout.Button("X", GUILayout.Width(30)))
+                            {
+                                wave.Enemies.RemoveAt(e);
+                                EditorUtility.SetDirty(levelConfig);
+                                EditorGUILayout.EndHorizontal();
+                                Draw.EndVertical();
+                                break;
+                            }
+                            EditorGUILayout.EndHorizontal();
+
+                            // EnemyData inline editing
+                            if (entry.enemyData == null) entry.enemyData = new CharacterInfo();
+
+                            entry.enemyData.HeroId = Draw.IntPopupField<CharacterData>(
+                                "Enemy ID:",
+                                entry.enemyData.HeroId,
+                                GameConfig.Ins.EnemyDatas,
+                                "name",
+                                "id",
+                                200
+                            );
+                            entry.enemyData.Health = EditorGUILayout.FloatField("Health:", entry.enemyData.Health);
+                            entry.enemyData.Speed = EditorGUILayout.FloatField("Speed:", entry.enemyData.Speed);
+                            entry.enemyData.Damage = EditorGUILayout.IntField("Damage:", entry.enemyData.Damage);
+
+                            Draw.EndVertical();
+                        }
+
+                        if (GUILayout.Button("+ Add Enemy Type", GUILayout.Width(150)))
+                        {
+                            wave.Enemies.Add(new EnemyLevelData { total = 1, enemyData = new CharacterInfo() });
+                            EditorUtility.SetDirty(levelConfig);
+                        }
+
+                        Draw.EndVertical();
+                    }
+
+                    EditorGUI.indentLevel--;
+                }
+                Draw.EndVertical();
 
                 EditorGUI.indentLevel--;
             }

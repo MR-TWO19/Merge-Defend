@@ -13,13 +13,9 @@ public class UserSaveData : BaseUserData
     public bool MusicOn;
     public bool SfxOn;
 
-    public Tutorial Tutorial;
+    public int Coin;
 
-    public void SaveTutorial(Tutorial tutorial)
-    {
-        Tutorial = tutorial;
-        Save();
-    }
+    public List<CharacterInfo> CharacterInfos;
 
     protected internal override void OnInit()
     {
@@ -27,6 +23,7 @@ public class UserSaveData : BaseUserData
         Level = 1;
         SfxOn = true;
         MusicOn = true;
+        InitCharacterInfos();
     }
 
     public void NextLevel()
@@ -39,5 +36,33 @@ public class UserSaveData : BaseUserData
     {
         Level = level;
         Save();
+    }
+
+    public void AddCoin(int value)
+    {
+        Coin += value;
+        SaveAndNotify("coin");
+    }
+
+    private void InitCharacterInfos()
+    {
+        CharacterInfos ??= new List<CharacterInfo>();
+
+        foreach (var item in GameConfig.Ins.HeroDatas)
+        {
+            var info = new CharacterInfo()
+            {
+                HeroId = item.id,
+                Health = item.Health,
+                Damage = item.Damage,
+                Speed = item.Speed
+            };
+            CharacterInfos.Add(info);
+        }
+    }
+
+    public CharacterInfo GetCharacter(int id)
+    {
+        return CharacterInfos.Find(_ => _.HeroId == id);
     }
 }

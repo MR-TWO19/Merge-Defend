@@ -74,24 +74,33 @@ MonoBehaviour:
     MaterialItem: {fileID: 2100000, guid: 4986ffeccf19ecf4bae98c5a7c86fd3d, type: 2}
     MaterialTarget: {fileID: 2100000, guid: 032e6fa4ced276647907589060f18be8, type: 2}
     ColorBalloon: {r: 0.6313726, g: 0.16470589, b: 0.9490196, a: 1}
-  LockDatas:
-  - id: 0
-    name: Silver
-    materialLock: {fileID: 2100000, guid: 49ea1654458608343847c7f158b0590c, type: 2}
-    materialKey: {fileID: 2100000, guid: 49ea1654458608343847c7f158b0590c, type: 2}
+  EnemyDatas:
   - id: 1
-    name: Gold
-    materialLock: {fileID: 2100000, guid: ccaa23edf2ed6e148b90efec10acf549, type: 2}
-    materialKey: {fileID: 2100000, guid: ccaa23edf2ed6e148b90efec10acf549, type: 2}
+    name: New Enemy1
+    Type: 0
+    Health: 10
+    Speed: 2
+    Damage: 1
+    Prefab: {fileID: 5047116988465576088, guid: 28f03e5707bd24547b55e1104f765736, type: 3}
   - id: 2
-    name: Red
-    materialLock: {fileID: 2100000, guid: cf16bc459e4ea9b4ea1fbb7d80304d0a, type: 2}
-    materialKey: {fileID: 2100000, guid: cf16bc459e4ea9b4ea1fbb7d80304d0a, type: 2}
+    name: New Enemy2
+    Type: 0
+    Health: 10
+    Speed: 2
+    Damage: 1
+    Prefab: {fileID: 5047116988465576088, guid: 28f03e5707bd24547b55e1104f765736, type: 3}
   - id: 3
-    name: Pink
-    materialLock: {fileID: 0}
-    materialKey: {fileID: 0}
-  - id: 4
-    name: Purple
-    materialLock: {fileID: 0}
-    materialKey: {fileID: 0}
+    name: New Enemy3
+    Type: 0
+    Health: 10
+    Speed: 2
+    Damage: 1
+    Prefab: {fileID: 5047116988465576088, guid: 28f03e5707bd24547b55e1104f765736, type: 3}
+  HeroDatas:
+  - id: 1
+    name: New Hero1
+    Type: 0
+    Health: 10
+    Speed: 0.1
+    Damage: 1
+    Prefab: {fileID: 3426146483806157543, guid: 810eccd8d23152e4e873f7c1a46a53bc, type: 3}

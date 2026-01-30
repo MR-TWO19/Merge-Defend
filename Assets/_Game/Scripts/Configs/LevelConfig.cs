@@ -15,6 +15,7 @@ public class LevelConfig : ConfigBase<LevelConfig>
 public class LevelData
 {
     public int SizeGrid;
+    public List<Wave> Waves;
     public List<ItemControlLevelData> ItemControlLevelDatas;
 }
 
@@ -34,5 +35,20 @@ public class TargetLevelData
 public class ItemControlLevelData
 {
     public Vector2Int Cell;
+}
+
+[System.Serializable]
+public class Wave
+{
+    public List<EnemyLevelData> Enemies = new List<EnemyLevelData>();
+    public float SpawnInterval = 2f;
+}
+
+[System.Serializable]
+public class EnemyLevelData
+{
+    public int total = 1;
+    public CharacterInfo enemyData;
+    public float SpawnInterval = 0.5f;
 }
 

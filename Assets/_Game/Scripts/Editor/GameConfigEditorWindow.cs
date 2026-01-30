@@ -52,8 +52,9 @@ public class GameConfigEditorWindow : BaseEditorWindow
     {
         // create view here
         tabContainer.AddTab("Global", new GlobalTab());
+        tabContainer.AddTab("Hero", new HeroTab());
+        tabContainer.AddTab("Enemy", new EnemyTab());
         tabContainer.AddTab("Items", new ItemTab());
-        tabContainer.AddTab("Locks", new LockTab());
     }
 
     private void _OnDraw()

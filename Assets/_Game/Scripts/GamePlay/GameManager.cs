@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using ColorFight;
+using DG.Tweening;
+using Doozy.Engine;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using DG.Tweening;
-using ColorFight;
-using UnityEngine;
 using TwoCore;
+using UnityEngine;
 
 public class GameManager : SingletonMono<GameManager>
 {
@@ -14,7 +15,6 @@ public class GameManager : SingletonMono<GameManager>
     public InputHandler InputHandler;
     public ItemManager ItemManager;
     public GridManager GridManager;
-    public UIInGame UIInGame;
 
     private List<ItemControl> itemControlsWatingRemove = new();
     private List<ItemControl> itemControlsWaiting = new();
@@ -26,11 +26,10 @@ public class GameManager : SingletonMono<GameManager>
     public bool IsAnimRuning;
     public List<ItemControl> ItemControlsWaiting => itemControlsWaiting;
 
-    override protected void Awake()
+    override protected void Start()
     {
-        base.Awake();
-
-        StartGame();
+        base.Start();
+        gameObject.SetActive(false);
     }
 
     public bool IsFullSlot()
@@ -324,6 +323,7 @@ public class GameManager : SingletonMono<GameManager>
                                 }
                                 DOVirtual.DelayedCall(0.5f, () =>
                                 {
+                                    BattleManager.Ins.HeroManager.CreateHeroById(1);
                                     item.gameObject.SetActive(false);
                                 });
                             }
@@ -361,7 +361,6 @@ public class GameManager : SingletonMono<GameManager>
     public void LoadLevel(int level)
     {
         ReletAll();
-        UIInGame.UpdateTextLevel();
 
         int idxLevel = level - 1;
         if (idxLevel > LevelConfig.Ins.levelDatas.Count - 1)
@@ -371,7 +370,8 @@ public class GameManager : SingletonMono<GameManager>
         GridManager.GenerateGrid(levelData.SizeGrid);
         ItemManager.LoadItem(levelData.ItemControlLevelDatas);
 
-        UIInGame.UpdateTextLevel();
+        BattleManager.Ins.StartBattle(levelData.Waves);
+
     }
 
     public void ReletAll()
@@ -391,7 +391,9 @@ public class GameManager : SingletonMono<GameManager>
 
     public void StartGame()
     {
-        LoadLevel(2);
+        GameEventMessage.SendEvent("GoToInGame", null);
+        Ins.gameObject.SetActive(true);
+        LoadLevel(1);
     }
 
     public void NextLevel()
@@ -452,5 +454,33 @@ public class GameManager : SingletonMono<GameManager>
             });
 
         }
+    }
+
+    public void ClearAllSlot()
+    {
+        if (itemsOnSlot != null)
+        {
+            var items = itemsOnSlot.ToList();
+            foreach (var it in items)
+            {
+                if (it == null) continue;
+                try
+                {
+                    if (it.CurrSlot != null)
+                        it.CurrSlot.IsUsed = false;
+                }
+                catch { }
+
+                try
+                {
+                    GameObject.Destroy(it.gameObject);
+                }
+                catch { }
+            }
+            itemsOnSlot.Clear();
+        }
+
+        SlotManager.ResetAllSlot();
+        HandleItemControlWaiting();
     }
 }
