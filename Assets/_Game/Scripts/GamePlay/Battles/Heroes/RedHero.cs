@@ -17,6 +17,14 @@ public class RedHero : Character
         if (animator != null)
             animator.SetTrigger("ATK");
         bullet.enabled = true;
+        DOVirtual.DelayedCall(attackInterval, () =>
+        {
+           bool isDie = currentTarget.TakeDamage(characterData.Damage);
+           if (isDie)
+           {
+                currentTarget = null;
+           }
+        });
     }
 
     public override void StopATK()

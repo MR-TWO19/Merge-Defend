@@ -124,11 +124,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3405142026475056349}
+  meshRenderer: {fileID: 5842521073084492003}
   characterType: 1
-  moveSpeed: 2
-  stopDistance: 0.5
-  attackInterval: 0.5
-  attackRange: 1.5
+  moveSpeed: 1
+  stopDistance: 1
+  attackInterval: 1
+  attackRange: 1
+  avoidanceRadius: 1
+  avoidanceStrength: 1
+  HP: 0
   bullet: {fileID: 4913882791819325179}
 --- !u!1001 &1884577242091592106
 PrefabInstance:
@@ -206,6 +210,11 @@ PrefabInstance:
 --- !u!95 &3405142026475056349 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3847802125550302583, guid: e3471221a8111b84689484d3bad73afa, type: 3}
+  m_PrefabInstance: {fileID: 1884577242091592106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5842521073084492003 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5418834146976395593, guid: e3471221a8111b84689484d3bad73afa, type: 3}
   m_PrefabInstance: {fileID: 1884577242091592106}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8764377013456828071 stripped

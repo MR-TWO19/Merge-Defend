@@ -70,4 +70,12 @@ public class EnemyManager : MonoBehaviour
             activeEnemys.Add(enemy);
         }
     }
+
+
+    public void RemoveHero(Character enemy)
+    {
+        if (enemy == null) return;
+        if (activeEnemys.Contains(enemy)) activeEnemys.Remove(enemy);
+        GameObject.Destroy(enemy.gameObject, 2);
+    }
 }

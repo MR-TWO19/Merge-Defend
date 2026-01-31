@@ -15,4 +15,17 @@ public class BattleManager : SingletonMono<BattleManager>
     {
         EnemyManager.SetUp(waves);
     }
+
+    public void RemoveCharacter(Character character)
+    {
+        if (character.CharacterType == CharacterType.Hero)
+        {
+            HeroManager.RemoveHero(character);
+        }
+        else
+        {
+            EnemyManager.RemoveHero(character);
+        }
+
+    }
 }

@@ -53,5 +53,6 @@ public class HeroManager : MonoBehaviour
     {
         if (hero == null) return;
         if (activeHeroes.Contains(hero)) activeHeroes.Remove(hero);
+        GameObject.Destroy(hero.gameObject, 2);
     }
 }
