@@ -88,19 +88,26 @@ MonoBehaviour:
     Health: 10
     Speed: 2
     Damage: 1
-    Prefab: {fileID: 5047116988465576088, guid: 28f03e5707bd24547b55e1104f765736, type: 3}
+    Prefab: {fileID: 5047116988465576088, guid: 65444e4059c50534dafef7fe8b7be30e, type: 3}
   - id: 3
     name: New Enemy3
     Type: 0
     Health: 10
     Speed: 2
     Damage: 1
-    Prefab: {fileID: 5047116988465576088, guid: 28f03e5707bd24547b55e1104f765736, type: 3}
+    Prefab: {fileID: 5047116988465576088, guid: 952cf426d9f587946abb4c32a3da3713, type: 3}
   HeroDatas:
   - id: 1
     name: New Hero1
     Type: 0
     Health: 10
-    Speed: 0.1
+    Speed: 0.3
     Damage: 1
     Prefab: {fileID: 3426146483806157543, guid: 810eccd8d23152e4e873f7c1a46a53bc, type: 3}
+  - id: 2
+    name: New Hero2
+    Type: 1
+    Health: 10
+    Speed: 0.3
+    Damage: 1
+    Prefab: {fileID: 2584641278423287903, guid: 580cc6b7383632745add7a1ee6560042, type: 3}

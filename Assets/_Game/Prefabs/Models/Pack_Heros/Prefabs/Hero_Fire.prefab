@@ -2247,7 +2247,7 @@ MonoBehaviour:
   animator: {fileID: 1170558775594672911}
   meshRenderer: {fileID: 4023671229087986533}
   characterType: 0
-  moveSpeed: 2
+  moveSpeed: 1
   stopDistance: 2
   attackInterval: 0.5
   attackRange: 2

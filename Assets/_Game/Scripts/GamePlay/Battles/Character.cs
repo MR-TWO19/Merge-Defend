@@ -18,7 +18,7 @@ public abstract class Character : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] protected CharacterType characterType;
-    [SerializeField] protected float moveSpeed = 2f;
+    [SerializeField] protected float moveSpeed = 0f;
     [SerializeField] protected float stopDistance = 0.5f;
     [SerializeField] protected float attackInterval = 0.5f;
     [SerializeField] protected float attackRange = 1.5f;
@@ -133,7 +133,7 @@ public abstract class Character : MonoBehaviour
             else
             {
                 // no neighbors to avoid
-                transform.position += desiredDir * (characterData != null ? characterData.Speed : moveSpeed) * Time.deltaTime;
+                transform.position += desiredDir * (characterData.Speed * moveSpeed) * Time.deltaTime;
                 if (animator != null) animator.SetBool("Move", true);
                 if (dir.sqrMagnitude > 0.001f)
                 {
@@ -211,6 +211,7 @@ public abstract class Character : MonoBehaviour
     // Cho phép override ở class con
     public abstract void ATK();
     public abstract void StopATK();
+    public virtual void ApplyATKDamage() { }
 
     // Return true if died
     public virtual bool TakeDamage(float damage)
@@ -246,4 +247,5 @@ public abstract class Character : MonoBehaviour
 
         BattleManager.Ins.RemoveCharacter(this);
     }
+
 }

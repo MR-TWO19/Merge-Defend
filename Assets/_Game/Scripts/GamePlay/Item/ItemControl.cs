@@ -119,8 +119,12 @@ public class ItemControl : MonoBehaviour
                         if (HapticManager.Ins != null)
                             HapticManager.Ins.PlaySuccess();
                         SoundManager.Ins.PlayOneShot(SoundId.POP);
+                        
+                        DOVirtual.DelayedCall(5f, () =>
+                        {
+                            GameManager.Ins.ItemManager.CreateItem(currGridCell, CurrItemControlLevelData);
+                        });
 
-                        GameManager.Ins.ItemManager.CreateItem(currGridCell, CurrItemControlLevelData);
                     }
                 });
             }

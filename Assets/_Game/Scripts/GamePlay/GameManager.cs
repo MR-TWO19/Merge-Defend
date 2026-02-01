@@ -323,7 +323,7 @@ public class GameManager : SingletonMono<GameManager>
                                 }
                                 DOVirtual.DelayedCall(0.5f, () =>
                                 {
-                                    BattleManager.Ins.HeroManager.CreateHeroById(1);
+                                    BattleManager.Ins.HeroManager.CreateHeroById(2);
                                     item.gameObject.SetActive(false);
                                 });
                             }

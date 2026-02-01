@@ -151,8 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254992185293936314}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000026449555, y: -0.000000049397464, z: -0.00000017067659,
-    w: 1}
+  m_LocalRotation: {x: -0.00000026449555, y: -0.000000049397464, z: -0.00000017067659, w: 1}
   m_LocalPosition: {x: -0.000008153809, y: 1.8133641, z: 0.000028368098}
   m_LocalScale: {x: 1.0000002, y: 1.0000004, z: 1.0000006}
   m_ConstrainProportionsScale: 0
@@ -333,6 +332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906184281861490398}
   - component: {fileID: 6517629059815988388}
+  - component: {fileID: 7378490599207922950}
   m_Layer: 0
   m_Name: Hero_Ice_Body
   m_TagString: Untagged
@@ -350,8 +350,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 692153645015922116}
   - {fileID: 1830162093786291221}
@@ -359,7 +359,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6517629059815988388
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -373,11 +373,25 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7378490599207922950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565405579629419620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9844b003c082144da27b69b5512f7b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 8310294540581834458}
 --- !u!1 &1026139191966619795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2584641278423287896}
+  - component: {fileID: 8310294540581834458}
   m_Layer: 0
   m_Name: Hero_Ice
   m_TagString: Untagged
@@ -1255,6 +1270,30 @@ Transform:
   - {fileID: 906184281861490398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8310294540581834458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584641278423287903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e40478ff6a55b349869205eb6018a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6517629059815988388}
+  meshRenderer: {fileID: 7102871308665169195}
+  characterType: 0
+  moveSpeed: 1
+  stopDistance: 4
+  attackInterval: 1
+  attackRange: 4
+  avoidanceRadius: 1
+  avoidanceStrength: 1
+  HP: 0
+  bullet: {fileID: 4571854978366260300, guid: ae6db81575329e84bb6010610e41da53, type: 3}
+  posBullet: {fileID: 7583201839975641093}
 --- !u!1 &2592609068270393429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3871,8 +3910,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6448059173339313608}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000006520095, y: 0.0000022401005, z: 0.000000092273645,
-    w: 1}
+  m_LocalRotation: {x: -0.00000006520095, y: 0.0000022401005, z: 0.000000092273645, w: 1}
   m_LocalPosition: {x: -0.000019899624, y: 1.8133731, z: 0.000008895062}
   m_LocalScale: {x: 1.0000002, y: 1.0000002, z: 1.0000006}
   m_ConstrainProportionsScale: 0
