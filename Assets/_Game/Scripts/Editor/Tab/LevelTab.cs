@@ -142,9 +142,9 @@ public class LevelTab : TabContent
                             // EnemyData inline editing
                             if (entry.enemyData == null) entry.enemyData = new CharacterInfo();
 
-                            entry.enemyData.HeroId = Draw.IntPopupField<CharacterData>(
+                            entry.enemyData.CharId = Draw.IntPopupField<CharacterData>(
                                 "Enemy ID:",
-                                entry.enemyData.HeroId,
+                                entry.enemyData.CharId,
                                 GameConfig.Ins.EnemyDatas,
                                 "name",
                                 "id",

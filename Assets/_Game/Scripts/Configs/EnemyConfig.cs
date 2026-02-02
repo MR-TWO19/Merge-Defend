@@ -14,7 +14,7 @@ public class CharacterData : BaseData
 [System.Serializable]
 public class CharacterInfo
 {
-    public int HeroId;
+    public int CharId;
     public float Health = 10f;
     public float Speed = 2f;
     public int Damage = 1;

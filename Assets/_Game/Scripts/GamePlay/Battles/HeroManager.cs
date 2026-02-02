@@ -28,7 +28,7 @@ public class HeroManager : MonoBehaviour
         spawnPos += home.right * lateral;
         spawnPos.y = home.position.y;
 
-        GameObject prefab = GameConfig.Ins.GetHeroData(data.HeroId).Prefab;
+        GameObject prefab = GameConfig.Ins.GetHeroData(data.CharId).Prefab;
 
         var go = GameObject.Instantiate(prefab, spawnPos, home.rotation);
         var ch = go.GetComponent<Character>();

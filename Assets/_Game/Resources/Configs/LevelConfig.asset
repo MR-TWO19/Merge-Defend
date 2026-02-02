@@ -18,12 +18,28 @@ MonoBehaviour:
     - Enemies:
       - total: 5
         enemyData:
-          HeroId: 3
+          CharId: 1
           Health: 10
           Speed: 0.1
           Damage: 1
-        SpawnInterval: 1
+        SpawnInterval: 0.1
+      - total: 3
+        enemyData:
+          CharId: 3
+          Health: 10
+          Speed: 0.1
+          Damage: 1
+        SpawnInterval: 0.3
       SpawnInterval: 10
+    - Enemies:
+      - total: 1
+        enemyData:
+          CharId: 2
+          Health: 10
+          Speed: 0.1
+          Damage: 1
+        SpawnInterval: 0.5
+      SpawnInterval: 2
     ItemControlLevelDatas:
     - Cell: {x: 5, y: 8}
     - Cell: {x: 4, y: 8}

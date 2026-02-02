@@ -40,9 +40,9 @@ public class EnemyManager : MonoBehaviour
                     SpawnEnemy(enemyLevel.enemyData);
                     yield return new WaitForSeconds(enemyLevel.SpawnInterval);
                 }
-                yield return new WaitForSeconds(wave.SpawnInterval);
             }
             // Wait a few seconds between waves
+                yield return new WaitForSeconds(wave.SpawnInterval);
         }
         isSpawning = false;
     }
@@ -57,7 +57,7 @@ public class EnemyManager : MonoBehaviour
         spawnPos += SpawnPoint.right * lateral;
         spawnPos.y = SpawnPoint.position.y; // keep same height
 
-        GameObject prefab = GameConfig.Ins.GetEnemyData(data.HeroId).Prefab;
+        GameObject prefab = GameConfig.Ins.GetEnemyData(data.CharId).Prefab;
 
         var go = GameObject.Instantiate(prefab, spawnPos, SpawnPoint.rotation);
         var enemy = go.GetComponent<Character>();

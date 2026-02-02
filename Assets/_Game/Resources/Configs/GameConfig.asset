@@ -21,54 +21,18 @@ MonoBehaviour:
     MaterialTarget: {fileID: 2100000, guid: 7b00cc00bd5397445b7a05ed2a748c93, type: 2}
     ColorBalloon: {r: 1, g: 0.19215687, b: 0.23137255, a: 1}
   - id: 1
-    name: Blue
-    Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: 50e61f650c9147f4e90b858b12406cba, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: d97c50e154d20934ba3478624d66d098, type: 2}
-    ColorBalloon: {r: 0.19607843, g: 0.53333336, b: 0.8745098, a: 1}
-  - id: 2
-    name: Yellow
-    Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: e7f4351c6c5a1d14e9586bedcf8e2fc2, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: 5753faeb9e8cd0f4098ca3fcc2621294, type: 2}
-    ColorBalloon: {r: 0.99215686, g: 1, b: 0, a: 1}
-  - id: 3
     name: Green
     Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
     MaterialItem: {fileID: 2100000, guid: 458a3ffe6e54f9149bd0cc3894d64e2c, type: 2}
     MaterialTarget: {fileID: 2100000, guid: dc13eeffda83a2e49a41f08c02fca681, type: 2}
     ColorBalloon: {r: 0.19215687, g: 0.6431373, b: 0.17254902, a: 1}
-  - id: 4
-    name: Sky
+  - id: 2
+    name: Blue
     Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: b181814d53f75444a8ddc130ef1536c1, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: 03c3b935a16326143bae7b6a15f481e0, type: 2}
-    ColorBalloon: {r: 0.23137255, g: 0.9411765, b: 1, a: 1}
-  - id: 5
-    name: Orange
-    Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: f91e79e5c222b524a9ed1c7d1d3ae140, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: 857a7a27564168f48b6b4c47ffe5bece, type: 2}
-    ColorBalloon: {r: 1, g: 0.37254903, b: 0.20392157, a: 1}
-  - id: 6
-    name: Pink
-    Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: 35f2777f53a62904c875066f96e60c11, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: 0fe4f7436a91e7e41a0b02983a13bedf, type: 2}
-    ColorBalloon: {r: 1, g: 0.20392157, b: 0.8509804, a: 1}
-  - id: 7
-    name: White
-    Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: 1d0bdef0bf46b5b49a5dd3d423c269a2, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: ab3fc963c289eed42855fd6aecb13bc3, type: 2}
-    ColorBalloon: {r: 0.98039216, g: 0.98039216, b: 0.98039216, a: 1}
-  - id: 8
-    name: Brown
-    Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: bb7954f8e6ca66247819f05f8e0a460c, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: 9bd2d7f9dcf26a84da581b6c2e1caa4a, type: 2}
-    ColorBalloon: {r: 0.63529414, g: 0.42352942, b: 0.34117648, a: 1}
-  - id: 9
+    MaterialItem: {fileID: 2100000, guid: 50e61f650c9147f4e90b858b12406cba, type: 2}
+    MaterialTarget: {fileID: 2100000, guid: d97c50e154d20934ba3478624d66d098, type: 2}
+    ColorBalloon: {r: 0.19607843, g: 0.53333336, b: 0.8745098, a: 1}
+  - id: 3
     name: Purple
     Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
     MaterialItem: {fileID: 2100000, guid: 4986ffeccf19ecf4bae98c5a7c86fd3d, type: 2}

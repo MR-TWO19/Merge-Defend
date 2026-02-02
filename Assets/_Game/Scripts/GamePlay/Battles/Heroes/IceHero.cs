@@ -25,8 +25,21 @@ public class IceHero : Character
 
         bullet.gameObject.SetActive(true);
 
-        Transform tranTarget = !isAttackingHome ? currentTarget.transform :
-            characterType == CharacterType.Enemy ? BattleManager.Ins.HomeHero.transform : BattleManager.Ins.HomeEnemy.transform;
+        Transform tranTarget = null;
+        if (isAttackingHome)
+        {
+            tranTarget = characterType == CharacterType.Enemy ? BattleManager.Ins.HomeHero.transform : BattleManager.Ins.HomeEnemy.transform;
+        }
+        else if (currentTarget != null)
+        {
+            tranTarget = currentTarget.transform;
+        }
+        if (tranTarget == null)
+        {
+            bullet.HideBullet();
+            bullet.isUse = false;
+            return;
+        }
 
         bullet.Attack(tranTarget, () =>
         {
@@ -63,7 +76,8 @@ public class IceHero : Character
 
     public override void StopATK()
     {
-        //bullet.gameObject.SetActive(false);
+        bullet.DOKill();
+        bullet.gameObject.SetActive(false);
     }
 
     public Bullet GetBullet()

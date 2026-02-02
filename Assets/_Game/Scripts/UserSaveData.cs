@@ -52,7 +52,7 @@ public class UserSaveData : BaseUserData
         {
             var info = new CharacterInfo()
             {
-                HeroId = item.id,
+                CharId = item.id,
                 Health = item.Health,
                 Damage = item.Damage,
                 Speed = item.Speed
@@ -63,6 +63,6 @@ public class UserSaveData : BaseUserData
 
     public CharacterInfo GetCharacter(int id)
     {
-        return CharacterInfos.Find(_ => _.HeroId == id);
+        return CharacterInfos.Find(_ => _.CharId == id);
     }
 }
