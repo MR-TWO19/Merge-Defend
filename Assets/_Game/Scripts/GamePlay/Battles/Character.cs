@@ -18,7 +18,7 @@ public abstract class Character : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] protected CharacterType characterType;
-    [SerializeField] protected float moveSpeed = 0f;
+    [SerializeField] protected float moveSpeed = 1f;
     [SerializeField] protected float stopDistance = 0.5f;
     [SerializeField] protected float attackInterval = 0.5f;
     [SerializeField] protected float attackRange = 1.5f;
@@ -35,12 +35,15 @@ public abstract class Character : MonoBehaviour
     protected float atkTimer = 0f;
     protected bool isMoving = false;
     protected bool isDead = false;
+    protected bool isAttackingHome = false;
+    protected bool isAttacking = false;
 
     public void SetUp(CharacterInfo characterData)
     {
         this.characterData = characterData;
-
         HP = characterData.Health;
+        isDead = false;
+        isAttackingHome = false;
     }
 
     protected virtual void Update()
@@ -52,7 +55,6 @@ public abstract class Character : MonoBehaviour
 
     private void MoveToTarget()
     {
-        // Tìm target nếu chưa có hoặc target đã chết
         if (currentTarget == null || !currentTarget.gameObject.activeInHierarchy)
         {
             currentTarget = FindTarget();
@@ -66,7 +68,6 @@ public abstract class Character : MonoBehaviour
         }
         else
         {
-            // Nếu không có target đối phương thì di chuyển tới HomeEnemy/HomeHero
             if (characterType == CharacterType.Hero)
             {
                 targetTransform = BattleManager.Ins != null ? BattleManager.Ins.HomeEnemy?.transform : null;
@@ -85,14 +86,10 @@ public abstract class Character : MonoBehaviour
 
         if (dist > stopDistance)
         {
-            // Di chuyển tới target with avoidance
             Vector3 desiredDir = dir.normalized;
-
-            // accumulate avoidance from nearby characters
             Vector3 avoid = Vector3.zero;
             int count = 0;
 
-            // gather potential neighbors from managers
             List<Character> neighbors = new List<Character>();
             if (BattleManager.Ins != null)
             {
@@ -110,39 +107,35 @@ public abstract class Character : MonoBehaviour
                 if (d < avoidanceRadius)
                 {
                     Vector3 away = (transform.position - other.transform.position).normalized;
-                    float factor = (avoidanceRadius - d) / avoidanceRadius; // 0..1
+                    float factor = (avoidanceRadius - d) / avoidanceRadius;
                     avoid += away * factor;
                     count++;
                 }
             }
 
+            Vector3 finalDir = desiredDir;
             if (count > 0)
             {
                 avoid /= count;
-                // combine desired direction and avoidance
-                Vector3 finalDir = (desiredDir + avoid * avoidanceStrength).normalized;
-                transform.position += finalDir * (characterData != null ? characterData.Speed : moveSpeed) * Time.deltaTime;
-
-                if (animator != null) animator.SetBool("Move", true);
-                if (finalDir.sqrMagnitude > 0.001f)
-                {
-                    Quaternion targetRot = Quaternion.LookRotation(finalDir, Vector3.up);
-                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, 10f * Time.deltaTime);
-                }
+                finalDir = desiredDir + avoid * avoidanceStrength;
+                if (finalDir.sqrMagnitude < 0.001f)
+                    finalDir = desiredDir;
+                else
+                    finalDir.Normalize();
             }
-            else
+
+            float speed = characterData.Speed * moveSpeed;
+            transform.position += finalDir * speed * Time.deltaTime;
+
+            if (animator != null) animator.SetBool("Move", true);
+            if (finalDir.sqrMagnitude > 0.001f)
             {
-                // no neighbors to avoid
-                transform.position += desiredDir * (characterData.Speed * moveSpeed) * Time.deltaTime;
-                if (animator != null) animator.SetBool("Move", true);
-                if (dir.sqrMagnitude > 0.001f)
-                {
-                    Quaternion targetRot = Quaternion.LookRotation(dir.normalized, Vector3.up);
-                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, 10f * Time.deltaTime);
-                }
+                Quaternion targetRot = Quaternion.LookRotation(finalDir, Vector3.up);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, 10f * Time.deltaTime);
             }
 
             isMoving = true;
+            isAttacking = false;
             StopATK();
         }
         else
@@ -150,10 +143,11 @@ public abstract class Character : MonoBehaviour
             isMoving = false;
             if (animator != null) animator.SetBool("Move", false);
 
-            // If we've reached the home transform (no target) then die
             if (isMovingToHome && !isDead)
             {
-                Die();
+                isAttackingHome = true;
+                isAttacking = true;
+                ATK();
             }
         }
     }
@@ -167,6 +161,7 @@ public abstract class Character : MonoBehaviour
             atkTimer -= Time.deltaTime;
             if (atkTimer <= 0f)
             {
+                isAttackingHome = false;
                 ATK();
                 atkTimer = attackInterval;
             }
@@ -192,7 +187,6 @@ public abstract class Character : MonoBehaviour
         }
         if (list == null || list.Count == 0) return null;
 
-        // Tìm target gần nhất
         Character closest = null;
         float minDist = float.MaxValue;
         foreach (var c in list)
@@ -208,12 +202,19 @@ public abstract class Character : MonoBehaviour
         return closest;
     }
 
-    // Cho phép override ở class con
     public abstract void ATK();
     public abstract void StopATK();
-    public virtual void ApplyATKDamage() { }
 
-    // Return true if died
+    public void ApplyATKDamage()
+    {
+        isAttacking = false;
+        OnApplyATKDamage();
+    }
+
+    protected virtual void OnApplyATKDamage()
+    {
+    }
+
     public virtual bool TakeDamage(float damage)
     {
         bool isDie = false;
@@ -247,5 +248,4 @@ public abstract class Character : MonoBehaviour
 
         BattleManager.Ins.RemoveCharacter(this);
     }
-
 }

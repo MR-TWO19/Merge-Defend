@@ -22,13 +22,6 @@ MonoBehaviour:
           Health: 10
           Speed: 0.1
           Damage: 1
-        SpawnInterval: 2
-      - total: 6
-        enemyData:
-          HeroId: 2
-          Health: 10
-          Speed: 0.1
-          Damage: 1
         SpawnInterval: 1
       SpawnInterval: 10
     ItemControlLevelDatas:

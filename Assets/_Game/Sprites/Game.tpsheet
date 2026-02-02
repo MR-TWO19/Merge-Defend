@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:53b31e3e0970656dd0f3fb81176210b2:e324fbc7ea25cb93534c43b3346bb0ed:4339c2ece1cf12b0ae4396f8a1c649c0$
+#
+:format=40300
+:texture=Game.png
+:size=256x64
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+FillHpEnemy01;1;27;184;13; 0;0.5; 0;0;0;0; 4;184;0;0;0;0;13;184;13; 2;1;2;3;0;1;3
+Hp elite;1;42;192;21; 0.5;0.5; 0;0;0;0; 4;192;0;0;0;0;21;192;21; 2;1;2;3;0;1;3

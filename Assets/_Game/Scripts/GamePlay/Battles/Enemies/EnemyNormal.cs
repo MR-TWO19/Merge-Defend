@@ -18,8 +18,15 @@ public class EnemyNormal : Character
         bullet.enabled = true;
     }
 
-    public override void ApplyATKDamage()
+    protected override void OnApplyATKDamage()
     {
+        if (isAttackingHome)
+        {
+            BattleManager.Ins.ATKHome(characterType);
+            Die();
+            return;
+        }
+
         if (currentTarget == null)
             return;
 

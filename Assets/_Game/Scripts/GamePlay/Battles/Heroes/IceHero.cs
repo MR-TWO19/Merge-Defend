@@ -17,19 +17,26 @@ public class IceHero : Character
             animator.SetTrigger("ATK");
     }
 
-    public override void ApplyATKDamage()
+    protected override void OnApplyATKDamage()
     {
-        if (currentTarget == null)
-            return;
-
         Bullet bullet = GetBullet();
 
         bullet.transform.position = posBullet.transform.position;
 
         bullet.gameObject.SetActive(true);
-        bullet.Attack(currentTarget.transform, () =>
+
+        Transform tranTarget = !isAttackingHome ? currentTarget.transform :
+            characterType == CharacterType.Enemy ? BattleManager.Ins.HomeHero.transform : BattleManager.Ins.HomeEnemy.transform;
+
+        bullet.Attack(tranTarget, () =>
         {
-            if(currentTarget == null)
+            if (isAttackingHome)
+            {
+                BattleManager.Ins.ATKHome(characterType);
+                return;
+            }
+
+            if (currentTarget == null)
             {
                 bullet.HideBullet();
                 bullet.isUse = false;
@@ -47,22 +54,26 @@ public class IceHero : Character
                 bullet.isUse = false;
             });
         }, 0, attackInterval);
+
+        if (isAttackingHome)
+        {
+            Die();
+        }
     }
 
     public override void StopATK()
     {
-        bullet.gameObject.SetActive(false);
+        //bullet.gameObject.SetActive(false);
     }
 
     public Bullet GetBullet()
     {
         foreach (var item in bullets)
-            if(item.isUse == false)
+            if (item.isUse == false)
             {
                 item.isUse = true;
                 return item;
             }
-   
 
         Bullet bullet = Instantiate(this.bullet, posBullet.transform.position, Quaternion.identity, transform);
         bullet.HideBullet();

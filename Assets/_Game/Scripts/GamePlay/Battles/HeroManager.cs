@@ -21,14 +21,12 @@ public class HeroManager : MonoBehaviour
     // Spawn a hero using CharacterData instance
     public Character CreateHero(CharacterInfo data)
     {
-        Transform home = BattleManager.Ins.HomeHero.transform;
+        Transform home = BattleManager.Ins.HomeHero.PosSpawnCharater.transform;
         Vector3 spawnPos = home.position;
 
         float lateral = Random.Range(-spawnOffset, spawnOffset);
         spawnPos += home.right * lateral;
-
-        float forwardJitter = Random.Range(-spawnForwardRandom, spawnForwardRandom);
-        spawnPos += home.forward * forwardJitter;
+        spawnPos.y = home.position.y;
 
         GameObject prefab = GameConfig.Ins.GetHeroData(data.HeroId).Prefab;
 

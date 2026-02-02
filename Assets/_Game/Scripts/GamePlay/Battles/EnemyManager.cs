@@ -49,16 +49,13 @@ public class EnemyManager : MonoBehaviour
 
     private void SpawnEnemy(CharacterInfo data)
     {
-        Transform SpawnPoint = BattleManager.Ins.HomeEnemy.transform;
+        Transform SpawnPoint = BattleManager.Ins.HomeEnemy.PosSpawnCharater.transform;
         Vector3 spawnPos = SpawnPoint.position;
 
-        // random offset along right vector between -spawnOffset and +spawnOffset
+        // random offset along right vector between -spawnOffset and +spawnOffset (same row)
         float lateral = Random.Range(-spawnOffset, spawnOffset);
         spawnPos += SpawnPoint.right * lateral;
-
-        // add small forward/backward jitter
-        float forwardJitter = Random.Range(-spawnForwardRandom, spawnForwardRandom);
-        spawnPos += SpawnPoint.forward * forwardJitter;
+        spawnPos.y = SpawnPoint.position.y; // keep same height
 
         GameObject prefab = GameConfig.Ins.GetEnemyData(data.HeroId).Prefab;
 
