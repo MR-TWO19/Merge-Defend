@@ -14,6 +14,9 @@ public class LevelConfig : ConfigBase<LevelConfig>
 [Serializable]
 public class LevelData
 {
+    public int CoinWin;
+    public int CoinLose;
+
     public int SizeGrid;
     public List<Wave> Waves;
     public List<ItemControlLevelData> ItemControlLevelDatas;

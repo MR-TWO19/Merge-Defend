@@ -81,6 +81,8 @@ public class LevelTab : TabContent
             {
                 EditorGUI.indentLevel++;
 
+                level.CoinWin = Draw.IntField("CoinWin:", level.CoinWin, 200);
+                level.CoinLose = Draw.IntField("CoinLose:", level.CoinLose, 200);
                 level.SizeGrid = Draw.IntField("Size Grid:", level.SizeGrid, 200);
 
                 DrawItemControlGrid(level, i);

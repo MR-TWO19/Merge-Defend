@@ -26,6 +26,8 @@ public class GameManager : SingletonMono<GameManager>
     public bool IsAnimRuning;
     public List<ItemControl> ItemControlsWaiting => itemControlsWaiting;
 
+    public LevelData LevelData;
+
     override protected void Start()
     {
         base.Start();
@@ -365,12 +367,12 @@ public class GameManager : SingletonMono<GameManager>
         int idxLevel = level - 1;
         if (idxLevel > LevelConfig.Ins.levelDatas.Count - 1)
             idxLevel = UnityEngine.Random.Range(0, LevelConfig.Ins.levelDatas.Count - 1);
-        LevelData levelData = LevelConfig.Ins.levelDatas[idxLevel];
+        LevelData = LevelConfig.Ins.levelDatas[idxLevel];
 
-        GridManager.GenerateGrid(levelData.SizeGrid);
-        ItemManager.LoadItem(levelData.ItemControlLevelDatas);
+        GridManager.GenerateGrid(LevelData.SizeGrid);
+        ItemManager.LoadItem(LevelData.ItemControlLevelDatas);
 
-        BattleManager.Ins.StartBattle(levelData.Waves);
+        BattleManager.Ins.StartBattle(LevelData.Waves);
 
     }
 
@@ -387,6 +389,8 @@ public class GameManager : SingletonMono<GameManager>
         ItemManager.ResetData();
         SlotManager.ResetAllSlot();
         GridManager.ClearGrid();
+
+        BattleManager.Ins.ResetData();
     }
 
     public void StartGame()
@@ -396,7 +400,7 @@ public class GameManager : SingletonMono<GameManager>
         LoadLevel(1);
     }
 
-    public void NextLevel()
+    public void  NextLevel()
     {
         UserSaveData.Ins.NextLevel();
         LoadLevel(UserSaveData.Ins.Level);
@@ -421,15 +425,13 @@ public class GameManager : SingletonMono<GameManager>
             isEndGame = true;
             InputHandler.LockInput();
 
-            //CoroutineManager.Ins.Start(OpenPausePopup());
+            DOVirtual.DelayedCall(1f, () =>
+            {
+                //SoundManager.Ins.StopMusic();
+                //SoundManager.Ins.PlayOneShot(SoundID.WIN);
+                ResultPopup.Show(true);
+            });
 
-            //IEnumerator OpenPausePopup()
-            //{
-            //    RDM.Ins.WinPopupModel = new WinPopupModel();
-            //    SceneManager.Instance.OpenPopup(SceneId.WIN_POPUP);
-            //    yield return new WaitUntil(() => RDM.Ins.WinPopupModel.ReturnData.Returned != ReturnId.WAIT);
-            //    SceneManager.Instance.ClosePopup(SceneId.WIN_POPUP);
-            //}
         }
     }
 
@@ -439,18 +441,11 @@ public class GameManager : SingletonMono<GameManager>
         {
             isEndGame = true;
             InputHandler.LockInput();
-
-            DOVirtual.DelayedCall(3, () =>
+            DOVirtual.DelayedCall(1f, () =>
             {
-                //CoroutineManager.Ins.Start(OpenPausePopup());
-
-                //IEnumerator OpenPausePopup()
-                //{
-                //    RDM.Ins.LosePopupModel = new LosePopupModel();
-                //    SceneManager.Instance.OpenPopup(SceneId.LOSE_POPUP);
-                //    yield return new WaitUntil(() => RDM.Ins.LosePopupModel.ReturnData.Returned != ReturnId.WAIT);
-                //    SceneManager.Instance.ClosePopup(SceneId.LOSE_POPUP);
-                //}
+                //SoundManager.Ins.StopMusic();
+                //SoundManager.Ins.PlayOneShot(SoundID.LOSE);
+                ResultPopup.Show(false);
             });
 
         }

@@ -38,64 +38,64 @@ MonoBehaviour:
   - id: 1
     name: Normal
     Type: 0
-    Health: 10
-    Speed: 2
-    Damage: 1
+    Health: 5
+    Speed: 0.3
+    Damage: 2
     Prefab: {fileID: 5047116988465576088, guid: 28f03e5707bd24547b55e1104f765736, type: 3}
   - id: 2
     name: Tank
-    Type: 0
-    Health: 10
-    Speed: 2
+    Type: 1
+    Health: 15
+    Speed: 0.2
     Damage: 1
     Prefab: {fileID: 5047116988465576088, guid: 65444e4059c50534dafef7fe8b7be30e, type: 3}
   - id: 3
     name: Fast
-    Type: 0
-    Health: 10
-    Speed: 2
-    Damage: 1
+    Type: 1
+    Health: 5
+    Speed: 1
+    Damage: 2
     Prefab: {fileID: 5047116988465576088, guid: 952cf426d9f587946abb4c32a3da3713, type: 3}
   - id: 4
     name: Elite
-    Type: 0
-    Health: 10
-    Speed: 2
-    Damage: 1
+    Type: 3
+    Health: 15
+    Speed: 0.3
+    Damage: 3
     Prefab: {fileID: 5047116988465576088, guid: 4803ac40ad9aba34ca020962db3a52da, type: 3}
   - id: 5
     name: Boos
     Type: 0
-    Health: 10
-    Speed: 2
-    Damage: 1
+    Health: 100
+    Speed: 0.05
+    Damage: 15
     Prefab: {fileID: 5047116988465576088, guid: 144d3ec298e506c439c8f6dce692cc5c, type: 3}
   HeroDatas:
   - id: 1
     name: Fire
     Type: 0
-    Health: 10
+    Health: 5
     Speed: 0.3
-    Damage: 1
+    Damage: 3
     Prefab: {fileID: 3426146483806157543, guid: 810eccd8d23152e4e873f7c1a46a53bc, type: 3}
   - id: 2
     name: Ice
     Type: 1
-    Health: 10
+    Health: 2
     Speed: 0.3
-    Damage: 1
+    Damage: 2
     Prefab: {fileID: 2584641278423287903, guid: 580cc6b7383632745add7a1ee6560042, type: 3}
   - id: 3
     name: Nature
     Type: 1
-    Health: 10
+    Health: 2
     Speed: 0.3
-    Damage: 1
+    Damage: 2
     Prefab: {fileID: 1517480223028523657, guid: 3cea2669bc779f241917351acb11c350, type: 3}
   - id: 4
     name: Rock
     Type: 2
-    Health: 50
+    Health: 10
     Speed: 0.3
     Damage: 1
     Prefab: {fileID: 751762560753533063, guid: 94666c70f395f7a4fb367b07c0557373, type: 3}

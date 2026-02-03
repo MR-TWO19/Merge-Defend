@@ -19,7 +19,6 @@ public abstract class Character : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] protected CharacterType characterType;
-    [SerializeField] protected float moveSpeed = 1f;
     [SerializeField] protected float stopDistance = 0.5f;
     [SerializeField] protected float attackInterval = 0.5f;
     [SerializeField] protected float attackRange = 1.5f;
@@ -39,9 +38,9 @@ public abstract class Character : MonoBehaviour
     protected bool isAttackingHome = false;
     protected bool isAttacking = false;
 
-    public void SetUp(CharacterInfo characterData)
+    public void SetUp(CharacterInfo characterInfo)
     {
-        this.characterData = characterData;
+        this.characterData = characterInfo;
         HP = characterData.Health;
         isDead = false;
         isAttackingHome = false;
@@ -130,7 +129,7 @@ public abstract class Character : MonoBehaviour
                     finalDir.Normalize();
             }
 
-            float speed = characterData.Speed * moveSpeed;
+            float speed = characterData.Speed;
             Vector3 targetPosition = transform.position + finalDir * speed * Time.deltaTime;
             targetPosition.y = 0f;
             transform.position = targetPosition;

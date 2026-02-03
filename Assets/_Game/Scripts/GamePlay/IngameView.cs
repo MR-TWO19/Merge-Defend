@@ -1,6 +1,3 @@
-using System.Collections;
-using Hawky.Scene;
-using ColorFight;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

@@ -5,9 +5,9 @@ using UnityEngine;
 public class CharacterData : BaseData
 {
     public EnemyType Type;
-    public float Health = 10f;
-    public float Speed = 2f;
-    public int Damage = 1;
+    public float Health = 0;
+    public float Speed = 0;
+    public int Damage = 0;
     public GameObject Prefab;
 }
 
@@ -15,7 +15,7 @@ public class CharacterData : BaseData
 public class CharacterInfo
 {
     public int CharId;
-    public float Health = 10f;
-    public float Speed = 2f;
-    public int Damage = 1;
+    public float Health = 0;
+    public float Speed = 0;
+    public int Damage = 0;
 }

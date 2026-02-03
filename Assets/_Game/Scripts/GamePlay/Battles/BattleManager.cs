@@ -36,11 +36,23 @@ public class BattleManager : SingletonMono<BattleManager>
     {
         if (characterType == CharacterType.Hero)
         {
-            HomeEnemy.TakeDamage(1);
+            bool isWin = HomeEnemy.TakeDamage(1);
+            if (isWin)
+                GameManager.Ins.WinGame();
         }
         else
         {
-            HomeHero.TakeDamage(1);
+            bool isLose = HomeHero.TakeDamage(1);
+            if (isLose)
+                GameManager.Ins.LoseGame();
         }
+    }
+
+    public void ResetData()
+    {
+        HomeEnemy.SetData(10);
+        HomeHero.SetData(10);
+        HeroManager.ResetChar();
+        EnemyManager.ResetChar();
     }
 }

@@ -13,6 +13,7 @@ public class EnemyManager : MonoBehaviour
     private List<Wave> Waves;
     private bool isSpawning = false;
     private int currentWave = 0;
+    private Coroutine runWavesCoroutine;
 
     public void SetUp(List<Wave> waves)
     {
@@ -25,7 +26,7 @@ public class EnemyManager : MonoBehaviour
         if (isSpawning) return;
         // If we've finished all waves, restart from beginning
         if (currentWave >= Waves.Count) currentWave = 0;
-        StartCoroutine(RunWaves());
+        runWavesCoroutine = StartCoroutine(RunWaves());
     }
 
     private IEnumerator RunWaves()
@@ -45,6 +46,7 @@ public class EnemyManager : MonoBehaviour
                 yield return new WaitForSeconds(wave.SpawnInterval);
         }
         isSpawning = false;
+        runWavesCoroutine = null;
     }
 
     private void SpawnEnemy(CharacterInfo data)
@@ -63,7 +65,17 @@ public class EnemyManager : MonoBehaviour
         var enemy = go.GetComponent<Character>();
         if (enemy != null)
         {
-            enemy.SetUp(data);
+            CharacterData characterData = GameConfig.Ins.GetEnemyData(data.CharId);
+
+            CharacterInfo characterInfo = new()
+            {
+                CharId = data.CharId,
+                Health = data.Health + characterData.Health,
+                Damage = data.Damage + characterData.Damage,
+                Speed = data.Speed + characterData.Speed
+            };
+
+            enemy.SetUp(characterInfo);
             activeEnemys.Add(enemy);
         }
     }
@@ -74,5 +86,22 @@ public class EnemyManager : MonoBehaviour
         if (enemy == null) return;
         if (activeEnemys.Contains(enemy)) activeEnemys.Remove(enemy);
         GameObject.Destroy(enemy.gameObject, 2);
+    }
+
+    public void ResetChar()
+    {
+        if (runWavesCoroutine != null)
+        {
+            StopCoroutine(runWavesCoroutine);
+            runWavesCoroutine = null;
+        }
+        isSpawning = false;
+
+        foreach (var item in activeEnemys)
+        {
+            GameObject.Destroy(item.gameObject);
+        }
+
+        activeEnemys.Clear();
     }
 }
