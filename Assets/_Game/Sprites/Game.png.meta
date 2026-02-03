@@ -122,8 +122,8 @@ TextureImporter:
       name: FillHpEnemy01
       rect:
         serializedVersion: 2
-        x: 1
-        y: 27
+        x: 6
+        y: 878
         width: 184
         height: 13
       alignment: 4
@@ -143,8 +143,8 @@ TextureImporter:
       name: Hp elite
       rect:
         serializedVersion: 2
-        x: 1
-        y: 42
+        x: 1812
+        y: 903
         width: 192
         height: 21
       alignment: 0
@@ -160,6 +160,678 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: 85e57ea0-b0e2-45ae-a94c-4ffdc09098f0 2
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 933
+        width: 197
+        height: 173
+      alignment: 9
+      pivot: {x: 0.61675125, y: 0.517341}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a3880ef9d44e54082e831d5043b618
+      internalID: 1643856639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 624
+        width: 132
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bf5621188733a45a0d9cd5e3640b40
+      internalID: 25068752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 40721
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 942
+        width: 377
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085528250129cac4fb688cada4eed26b
+      internalID: 644058857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 40722
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1051
+        width: 377
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778cf18e55ea54441b6beafa1ef3c682
+      internalID: 1840654570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 40808
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1161
+        width: 380
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8026bfaf899666409cced5a16832db3
+      internalID: 1445318333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 40809
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1270
+        width: 380
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62237eca5298814cb0ae515940e4dd1
+      internalID: -233430688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 41732
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 913
+        width: 568
+        height: 186
+      alignment: 9
+      pivot: {x: 0.52200705, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78fd02f7e074e24f88316ff635b44fa
+      internalID: -2000225680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 41733
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1303
+        width: 896
+        height: 739
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2850d0feb376eb54daaea3415486faee
+      internalID: 1228480581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Home
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 849
+        width: 160
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512eb73d6faa99e4a9c52440a8565366
+      internalID: -1330868313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image (18) 1
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 735
+        width: 189
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfdf5e6eb86f55448e06319935288d9
+      internalID: 414686606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image (20) 1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 675
+        width: 146
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c84e02292a5b5246a236b0f258671cd
+      internalID: -1772096003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image (21) 1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 735
+        width: 164
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c547d3aee00d3c4888c67fd0257d20c
+      internalID: -1299206907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image (21) 2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 713
+        width: 164
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abdd8ca6fc59ba47a6b1e0d9f5375f0
+      internalID: 1526678108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image (24) 1
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1380
+        width: 331
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a52306f31cf60346a210de2c8c48d5b
+      internalID: -2090885514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image (25) 1
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 660
+        width: 331
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d91acdc48c1ff469a14b51972489c9
+      internalID: -930010675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Next Level
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1250
+        width: 279
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b891565a3d45f4fba6f001346abd4c
+      internalID: 1549879644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panelPopup 1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1083
+        width: 629
+        height: 185
+      alignment: 9
+      pivot: {x: 0.49920508, y: 0.5027027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2fbe446eef2b54aa7858b7e7faeba8
+      internalID: -107530972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: panelPopup 2
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 1108
+        width: 627
+        height: 186
+      alignment: 9
+      pivot: {x: 0.49920255, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00ff8e3879a5524c8113617e72ff1bb
+      internalID: 920758953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rectangle 2775
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1115
+        width: 200
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65672a710899eee4d8d989f212416d0b
+      internalID: -646147602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rectangle 2821
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1754
+        width: 1130
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5022124, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a63fe6cab61e54e8ebe61f2c557e9c
+      internalID: 1895678931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rectangle 2823
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1553
+        width: 751
+        height: 192
+      alignment: 9
+      pivot: {x: 0.5006658, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6447e40607567824e9e0e8372accbf0d
+      internalID: -1854270790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Retry
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 787
+        width: 150
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37a7fa9d64d1da4fbad441d80027293
+      internalID: 1564925240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Settings
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1663
+        width: 361
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9684b031bb26c9a4bbf82147fc5f7532
+      internalID: 1579035398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tag
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 900
+        width: 617
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f372cac6712b84cbb950ab177a434f
+      internalID: -1351272112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI - Coin
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 1069
+        width: 97
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5051546, y: 0.5045872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b578e6887f704f4097632d44f5c1bbf
+      internalID: -697605015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui-inventory
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 768
+        width: 196
+        height: 156
+      alignment: 9
+      pivot: {x: 0.502551, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3343d15a6b51f9419491823a7d72bd8
+      internalID: 570048634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Upgrade
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1187
+        width: 234
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a63f5b5fe9280346a9f3569b53b2f89
+      internalID: -1481385331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vector 748
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1491
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d5b7c1ddef20041b226f24ef23e856
+      internalID: -1593307384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Arrow
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1277
+        width: 678
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1bada1eb7d26d4aa538bdca56c3ae6
+      internalID: 1007324859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Arrowhead
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 536
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f6ab3122f3ce7498483e77c503cea9
+      internalID: 1954811791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame_Tray
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 570
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a22988fefcb25429f943fa61e1ba6e
+      internalID: -294681760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 580
+        width: 142
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656f9cb53f3a3a049a94a3a2f890795a
+      internalID: -1721502225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -171,8 +843,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      85e57ea0-b0e2-45ae-a94c-4ffdc09098f0 2: 1643856639
+      Boss: 25068752
       FillHpEnemy01: -409720350
+      Frame_Arrow: 1007324859
+      Frame_Arrowhead: 1954811791
+      Frame_Tray: -294681760
+      Group 40721: 644058857
+      Group 40722: 1840654570
+      Group 40808: 1445318333
+      Group 40809: -233430688
+      Group 41732: -2000225680
+      Group 41733: 1228480581
+      Home: -1330868313
       Hp elite: 1652082901
+      Next Level: 1549879644
+      Rectangle 2775: -646147602
+      Rectangle 2821: 1895678931
+      Rectangle 2823: -1854270790
+      Retry: 1564925240
+      Settings: 1579035398
+      UI - Coin: -697605015
+      Ui-inventory: 570048634
+      Upgrade: -1481385331
+      Vector 748: -1593307384
+      Wall: -1721502225
+      image (18) 1: 414686606
+      image (20) 1: -1772096003
+      image (21) 1: -1299206907
+      image (21) 2: 1526678108
+      image (24) 1: -2090885514
+      image (25) 1: -930010675
+      panelPopup 1: -107530972
+      panelPopup 2: 920758953
+      tag: -1351272112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

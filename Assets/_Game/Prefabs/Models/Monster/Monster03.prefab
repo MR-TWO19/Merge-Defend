@@ -103,9 +103,9 @@ MonoBehaviour:
   meshRenderer: {fileID: 2482585886697010485}
   characterType: 1
   moveSpeed: 10
-  stopDistance: 1
+  stopDistance: 0.5
   attackInterval: 0.5
-  attackRange: 1
+  attackRange: 0.5
   avoidanceRadius: 1
   avoidanceStrength: 1
   HP: 0
@@ -184,15 +184,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalPosition.x

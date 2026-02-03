@@ -350,7 +350,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 692153645015922116}
@@ -1286,9 +1286,9 @@ MonoBehaviour:
   meshRenderer: {fileID: 7102871308665169195}
   characterType: 0
   moveSpeed: 1
-  stopDistance: 4
+  stopDistance: 2.5
   attackInterval: 1
-  attackRange: 4
+  attackRange: 2.5
   avoidanceRadius: 1
   avoidanceStrength: 1
   HP: 0

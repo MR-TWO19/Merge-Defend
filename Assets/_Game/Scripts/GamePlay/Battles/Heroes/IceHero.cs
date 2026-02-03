@@ -21,8 +21,6 @@ public class IceHero : Character
     {
         Bullet bullet = GetBullet();
 
-        bullet.transform.position = posBullet.transform.position;
-
         bullet.gameObject.SetActive(true);
 
         Transform tranTarget = null;
@@ -86,6 +84,7 @@ public class IceHero : Character
             if (item.isUse == false)
             {
                 item.isUse = true;
+                item.SetStartPosition(posBullet.transform.position);
                 return item;
             }
 

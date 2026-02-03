@@ -21,7 +21,7 @@ public class HomeCharater : MonoBehaviour
     public bool TakeDamage(int damage)
     {
         HPBar.AddHP(-damage);
-        meshRenderer.material.color = Color.red;
+        meshRenderer.material.color = Color.black;
         DOVirtual.DelayedCall(0.1f, () =>
         {
             meshRenderer.material.color = Color.white;

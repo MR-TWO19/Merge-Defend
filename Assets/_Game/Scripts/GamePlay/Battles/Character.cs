@@ -87,7 +87,7 @@ public abstract class Character : MonoBehaviour
         }
         if (targetTransform == null) return;
 
-        Vector3 dir = targetTransform.position - transform.position;
+        Vector3 dir = new Vector3(targetTransform.position.x - transform.position.x, 0f, targetTransform.position.z - transform.position.z);
         float dist = dir.magnitude;
 
         if (dist > stopDistance)
@@ -131,7 +131,9 @@ public abstract class Character : MonoBehaviour
             }
 
             float speed = characterData.Speed * moveSpeed;
-            transform.position += finalDir * speed * Time.deltaTime;
+            Vector3 targetPosition = transform.position + finalDir * speed * Time.deltaTime;
+            targetPosition.y = 0f;
+            transform.position = targetPosition;
 
             if (animator != null) animator.SetBool("Move", true);
             if (finalDir.sqrMagnitude > 0.001f)
