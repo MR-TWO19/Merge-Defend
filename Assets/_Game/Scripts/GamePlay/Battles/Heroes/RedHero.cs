@@ -5,18 +5,11 @@ using UnityEngine;
 
 public class RedHero : Character
 {
-    [SerializeField] private Collider bullet;
-
-    private void OnEnable()
-    {
-        bullet.enabled = false;
-    }
 
     public override void ATK()
     {
         if (animator != null)
             animator.SetTrigger("ATK");
-        bullet.enabled = true;
     }
 
     protected override void OnApplyATKDamage()
@@ -40,6 +33,5 @@ public class RedHero : Character
 
     public override void StopATK()
     {
-        bullet.enabled = false;
     }
 }

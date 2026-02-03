@@ -16,30 +16,21 @@ MonoBehaviour:
   - SizeGrid: 9
     Waves:
     - Enemies:
-      - total: 5
+      - total: 2
         enemyData:
-          CharId: 1
+          CharId: 4
           Health: 10
-          Speed: 0.1
+          Speed: 0.2
           Damage: 1
         SpawnInterval: 0.1
-      - total: 3
+      - total: 1
         enemyData:
-          CharId: 3
+          CharId: 5
           Health: 10
           Speed: 0.1
           Damage: 1
         SpawnInterval: 0.3
       SpawnInterval: 10
-    - Enemies:
-      - total: 1
-        enemyData:
-          CharId: 2
-          Health: 10
-          Speed: 0.1
-          Damage: 1
-        SpawnInterval: 0.5
-      SpawnInterval: 2
     ItemControlLevelDatas:
     - Cell: {x: 5, y: 8}
     - Cell: {x: 4, y: 8}

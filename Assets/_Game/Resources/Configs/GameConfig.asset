@@ -17,61 +17,85 @@ MonoBehaviour:
   - id: 0
     name: Red
     Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: c41af99366ba1d542b26723215278228, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: 7b00cc00bd5397445b7a05ed2a748c93, type: 2}
-    ColorBalloon: {r: 1, g: 0.19215687, b: 0.23137255, a: 1}
+    material: {fileID: 2100000, guid: fec23f01db1b917488b0b7dc8e216d79, type: 2}
+    HeroID: 1
   - id: 1
     name: Green
     Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: 458a3ffe6e54f9149bd0cc3894d64e2c, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: dc13eeffda83a2e49a41f08c02fca681, type: 2}
-    ColorBalloon: {r: 0.19215687, g: 0.6431373, b: 0.17254902, a: 1}
+    material: {fileID: 2100000, guid: 0b4782c883ab06049a27eb9aa677ea18, type: 2}
+    HeroID: 3
   - id: 2
     name: Blue
     Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: 50e61f650c9147f4e90b858b12406cba, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: d97c50e154d20934ba3478624d66d098, type: 2}
-    ColorBalloon: {r: 0.19607843, g: 0.53333336, b: 0.8745098, a: 1}
+    material: {fileID: 2100000, guid: 125715b7378f48a4293d6a3a874cb4e5, type: 2}
+    HeroID: 2
   - id: 3
     name: Purple
     Prefab: {fileID: 2711723241158310261, guid: 32cec8dc6f401144ab2a82abb739be65, type: 3}
-    MaterialItem: {fileID: 2100000, guid: 4986ffeccf19ecf4bae98c5a7c86fd3d, type: 2}
-    MaterialTarget: {fileID: 2100000, guid: 032e6fa4ced276647907589060f18be8, type: 2}
-    ColorBalloon: {r: 0.6313726, g: 0.16470589, b: 0.9490196, a: 1}
+    material: {fileID: 2100000, guid: e37a2798db206ec4bbc177b38e3ee202, type: 2}
+    HeroID: 4
   EnemyDatas:
   - id: 1
-    name: New Enemy1
+    name: Normal
     Type: 0
     Health: 10
     Speed: 2
     Damage: 1
     Prefab: {fileID: 5047116988465576088, guid: 28f03e5707bd24547b55e1104f765736, type: 3}
   - id: 2
-    name: New Enemy2
+    name: Tank
     Type: 0
     Health: 10
     Speed: 2
     Damage: 1
     Prefab: {fileID: 5047116988465576088, guid: 65444e4059c50534dafef7fe8b7be30e, type: 3}
   - id: 3
-    name: New Enemy3
+    name: Fast
     Type: 0
     Health: 10
     Speed: 2
     Damage: 1
     Prefab: {fileID: 5047116988465576088, guid: 952cf426d9f587946abb4c32a3da3713, type: 3}
+  - id: 4
+    name: Elite
+    Type: 0
+    Health: 10
+    Speed: 2
+    Damage: 1
+    Prefab: {fileID: 5047116988465576088, guid: 4803ac40ad9aba34ca020962db3a52da, type: 3}
+  - id: 5
+    name: Boos
+    Type: 0
+    Health: 10
+    Speed: 2
+    Damage: 1
+    Prefab: {fileID: 5047116988465576088, guid: 144d3ec298e506c439c8f6dce692cc5c, type: 3}
   HeroDatas:
   - id: 1
-    name: New Hero1
+    name: Fire
     Type: 0
     Health: 10
     Speed: 0.3
     Damage: 1
     Prefab: {fileID: 3426146483806157543, guid: 810eccd8d23152e4e873f7c1a46a53bc, type: 3}
   - id: 2
-    name: New Hero2
+    name: Ice
     Type: 1
     Health: 10
     Speed: 0.3
     Damage: 1
     Prefab: {fileID: 2584641278423287903, guid: 580cc6b7383632745add7a1ee6560042, type: 3}
+  - id: 3
+    name: Nature
+    Type: 1
+    Health: 10
+    Speed: 0.3
+    Damage: 1
+    Prefab: {fileID: 1517480223028523657, guid: 3cea2669bc779f241917351acb11c350, type: 3}
+  - id: 4
+    name: Rock
+    Type: 2
+    Health: 50
+    Speed: 0.3
+    Damage: 1
+    Prefab: {fileID: 751762560753533063, guid: 94666c70f395f7a4fb367b07c0557373, type: 3}

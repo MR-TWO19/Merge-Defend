@@ -9,9 +9,9 @@ namespace ColorFight
     public class ItemData : BaseData
     {
         public GameObject Prefab;
-        public Material MaterialItem;
-        public Material MaterialTarget;
-        public Color ColorBalloon;
+        public Material material;
+        public int HeroID;
+
     }
 
     [Serializable]

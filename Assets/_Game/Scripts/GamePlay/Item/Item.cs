@@ -22,6 +22,7 @@ public class Item : MonoBehaviour
     [HideInInspector] public bool isMove;
     public Slot CurrSlot => currSlot;
     public int ID => currItemData.id;
+    public int HeroID => currItemData.HeroID;
     public int Level => level;
     public bool IsMove => isMove;
 
@@ -34,7 +35,10 @@ public class Item : MonoBehaviour
         objLevel1.SetActive(true);
         objLevel2.SetActive(false);
 
-        meshRenderers.ForEach(_ => _.material = currItemData.MaterialItem);
+        for (int i = 0; i < meshRenderers.Count; i++)
+        {
+            meshRenderers[i].material = itemData.material;
+        }
     }
 
     public void SetItemWaiting()
@@ -114,56 +118,6 @@ public class Item : MonoBehaviour
                 //isMove = false;
                 currSlot.RunAnim();
             });
-    }
-
-    public void ShootTarget(Balloon target, Action onComplete = null)
-    {
-        if (target == null) return;
-
-        //isMove = true;
-
-        isShoting = true;
-
-        currSlot.IsUsed = false;
-
-        Vector3 dir = target.transform.position - transform.position;
-        dir.y = 0;
-        Quaternion lookRot = Quaternion.LookRotation(dir, Vector3.up);
-
-        Vector3 euler = transform.rotation.eulerAngles;
-        euler.y = lookRot.eulerAngles.y;
-
-        float landPauseDuration = 0.05f;
-
-        Vector3 backPos = transform.position - dir * 0.5f;
-
-        Sequence seq = DOTween.Sequence();
-
-        seq.Append(transform.DORotateQuaternion(Quaternion.Euler(euler), landPauseDuration)
-            .SetEase(Ease.OutQuad));
-
-        seq.Append(transform.DOMove(backPos, 0.15f)
-            .SetEase(Ease.OutQuad));
-
-        seq.AppendInterval(0.05f);
-
-        seq.Append(transform.DOMove(target.transform.position, 0.3f)
-            .SetEase(Ease.InQuad).OnStart(() =>
-            {
-                SoundManager.Ins.PlayOneShot(SoundId.SWOOSH);
-            }));
-
-        seq.OnComplete(() =>
-        {
-            target.Explode(() =>
-            {
-                onComplete?.Invoke();
-            });
-            gameObject.SetActive(false);
-            GameBroker.Ins.Emit(GameEvents.CheckLock);
-            isShoting = false;
-            //isMove = false;
-        });
     }
 
 }

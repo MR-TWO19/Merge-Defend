@@ -7,7 +7,8 @@ using UnityEngine;
 public enum CharacterType
 {
     Hero,
-    Enemy
+    Enemy,
+    Boss
 }
 
 public abstract class Character : MonoBehaviour
@@ -58,6 +59,11 @@ public abstract class Character : MonoBehaviour
         if (currentTarget == null || !currentTarget.gameObject.activeInHierarchy)
         {
             currentTarget = FindTarget();
+        }
+
+        if (characterType == CharacterType.Boss)
+        {
+            return;
         }
 
         Transform targetTransform = null;

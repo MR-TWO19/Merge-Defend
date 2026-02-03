@@ -34,8 +34,7 @@ public class ItemTab : TabContent
         itemTable.AddCol("ID", 50, e => { e.id = Draw.Int(e.id, 30); Draw.Space(20); });
         itemTable.AddCol("Name", 150, e => { e.name = Draw.Text(e.name, 130); Draw.Space(20); });
         itemTable.AddCol("Prefab", 150, e => { e.Prefab = Draw.Object(e.Prefab, 130); Draw.Space(20); });
-        itemTable.AddCol("Material Item", 150, e => { e.MaterialItem = Draw.Material(e.MaterialItem, false, 130); Draw.Space(20); });
-        itemTable.AddCol("Material Target", 150, e => { e.MaterialTarget = Draw.Material(e.MaterialTarget, false, 130); Draw.Space(20); });
-        itemTable.AddCol("Color Balloon", 150, e => { e.ColorBalloon = Draw.Color(e.ColorBalloon, 130); Draw.Space(20); });
+        itemTable.AddCol("HeroID", 150, e => { e.HeroID = Draw.Int(e.HeroID, 130); Draw.Space(20); });
+        itemTable.AddCol("Material", 150, e => { e.material = Draw.Material(e.material, false, 130); Draw.Space(20); });
     }
 }
