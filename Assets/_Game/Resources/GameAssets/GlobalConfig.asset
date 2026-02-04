@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0362e7bbe15f3c047998e74b54bf2ded, type: 3}
+  m_Name: GlobalConfig
+  m_EditorClassIdentifier: 
+  selectedProfileId: 0
+  resolutionScaling: 1
+  targetDPI: 360
+  screenSleepMode: -1
+  defaultLanguage: en
+  gameId: 
+  simulateAutoUpdate: 0
+  removefbSDKtag: 1
+  mainMixer: {fileID: 24300002, guid: 07ccc150dca1e454c80a8ac8aaf25c62, type: 2}
+  musicParam: music
+  sfxParam: sfx
+  ingameSfxParam: ingame-sfx

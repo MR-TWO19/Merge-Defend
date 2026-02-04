@@ -397,7 +397,7 @@ public class GameManager : SingletonMono<GameManager>
     {
         GameEventMessage.SendEvent("GoToInGame", null);
         Ins.gameObject.SetActive(true);
-        LoadLevel(1);
+        LoadLevel(UserSaveData.Ins.Level);
     }
 
     public void  NextLevel()

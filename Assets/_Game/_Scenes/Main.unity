@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1733874, g: 0.2167395, b: 0.29880914, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -432,13 +432,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110516755}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6330222, y: -0.111618884, z: 0.13302222, w: 0.7544066}
-  m_LocalPosition: {x: 0, y: 4.78, z: -0.31}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.7, z: -6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 80, y: 0, z: 20}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &110516758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2365,6 +2365,12 @@ MonoBehaviour:
   GridManager: {fileID: 7056268076148486714}
   isEndGame: 0
   IsAnimRuning: 0
+  LevelData:
+    CoinWin: 0
+    CoinLose: 0
+    SizeGrid: 0
+    Waves: []
+    ItemControlLevelDatas: []
 --- !u!1 &2940165835866841736
 GameObject:
   m_ObjectHideFlags: 0

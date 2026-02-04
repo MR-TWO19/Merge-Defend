@@ -7,8 +7,9 @@ public class MainView : BaseView
     [SerializeField] private UIButton btnSetting;
     [SerializeField] private UIButton btnHowToPlay;
     [SerializeField] private UIButton btnPlay;
-    [SerializeField] private UIButton btnChallenge;
+    [SerializeField] private UIButton btnBoss;
     [SerializeField] private UIButton btnUpgrade;
+    [SerializeField] private GameObject objHero;
 
 
     protected override void Awake()
@@ -16,7 +17,7 @@ public class MainView : BaseView
         base.Awake();
         btnSetting.OnClick.OnTrigger.Event.AddListener(() =>
         {
-            SettingPopup.Show(true);
+            //SettingPopup.Show(true);
         });
 
         btnHowToPlay.OnClick.OnTrigger.Event.AddListener(() =>
@@ -25,12 +26,15 @@ public class MainView : BaseView
         });
         btnPlay.OnClick.OnTrigger.Event.AddListener(() =>
         {
+            GameManager.Ins.StartGame();
         });
 
-        btnChallenge.OnClick.OnTrigger.Event.AddListener(() =>
-        {
-        });
         btnUpgrade.OnClick.OnTrigger.Event.AddListener(() =>
+        {
+            objHero.gameObject.SetActive(false);
+            UpgradePopup.Show(() => { objHero.gameObject.SetActive(true); });
+        });
+        btnBoss.OnClick.OnTrigger.Event.AddListener(() =>
         {
         });
     }
@@ -47,4 +51,5 @@ public class MainView : BaseView
 
         SoundManager.Ins.PlayBGMusic();
     }
+
 }

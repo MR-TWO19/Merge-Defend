@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: UIPopupLink_UpgradePopup
   m_EditorClassIdentifier: 
   PopupName: UpgradePopup
-  Prefab: {fileID: 4318168806598400397, guid: a13c884a32afbe1468a9bd24cc5edf76, type: 3}
+  Prefab: {fileID: 1102403734263412064, guid: 1944dd836c18e7041b33d555b8e91ede, type: 3}

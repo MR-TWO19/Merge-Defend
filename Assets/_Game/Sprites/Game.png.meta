@@ -122,8 +122,8 @@ TextureImporter:
       name: FillHpEnemy01
       rect:
         serializedVersion: 2
-        x: 6
-        y: 878
+        x: 1796
+        y: 687
         width: 184
         height: 13
       alignment: 4
@@ -143,8 +143,8 @@ TextureImporter:
       name: Hp elite
       rect:
         serializedVersion: 2
-        x: 1812
-        y: 903
+        x: 1224
+        y: 719
         width: 192
         height: 21
       alignment: 0
@@ -164,8 +164,8 @@ TextureImporter:
       name: 85e57ea0-b0e2-45ae-a94c-4ffdc09098f0 2
       rect:
         serializedVersion: 2
-        x: 1718
-        y: 933
+        x: 1018
+        y: 732
         width: 197
         height: 173
       alignment: 9
@@ -185,8 +185,8 @@ TextureImporter:
       name: Boss
       rect:
         serializedVersion: 2
-        x: 330
-        y: 624
+        x: 145
+        y: 490
         width: 132
         height: 42
       alignment: 0
@@ -207,7 +207,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 632
-        y: 942
+        y: 857
         width: 377
         height: 100
       alignment: 0
@@ -227,8 +227,8 @@ TextureImporter:
       name: Group 40722
       rect:
         serializedVersion: 2
-        x: 644
-        y: 1051
+        x: 632
+        y: 966
         width: 377
         height: 101
       alignment: 0
@@ -248,8 +248,8 @@ TextureImporter:
       name: Group 40808
       rect:
         serializedVersion: 2
-        x: 644
-        y: 1161
+        x: 642
+        y: 1076
         width: 380
         height: 100
       alignment: 0
@@ -270,7 +270,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 693
-        y: 1270
+        y: 1185
         width: 380
         height: 101
       alignment: 0
@@ -290,8 +290,8 @@ TextureImporter:
       name: Group 41732
       rect:
         serializedVersion: 2
-        x: 1030
-        y: 913
+        x: 1031
+        y: 914
         width: 568
         height: 186
       alignment: 9
@@ -332,8 +332,8 @@ TextureImporter:
       name: Home
       rect:
         serializedVersion: 2
-        x: 372
-        y: 849
+        x: 1873
+        y: 1022
         width: 160
         height: 42
       alignment: 0
@@ -353,8 +353,8 @@ TextureImporter:
       name: image (18) 1
       rect:
         serializedVersion: 2
-        x: 1812
-        y: 735
+        x: 1598
+        y: 541
         width: 189
         height: 159
       alignment: 0
@@ -374,8 +374,8 @@ TextureImporter:
       name: image (20) 1
       rect:
         serializedVersion: 2
-        x: 372
-        y: 675
+        x: 1796
+        y: 575
         width: 146
         height: 103
       alignment: 0
@@ -395,8 +395,8 @@ TextureImporter:
       name: image (21) 1
       rect:
         serializedVersion: 2
-        x: 199
-        y: 735
+        x: 1429
+        y: 749
         width: 164
         height: 156
       alignment: 0
@@ -416,8 +416,8 @@ TextureImporter:
       name: image (21) 2
       rect:
         serializedVersion: 2
-        x: 6
-        y: 713
+        x: 1425
+        y: 584
         width: 164
         height: 156
       alignment: 0
@@ -438,7 +438,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 766
-        y: 1380
+        y: 1295
         width: 331
         height: 274
       alignment: 0
@@ -458,8 +458,8 @@ TextureImporter:
       name: image (25) 1
       rect:
         serializedVersion: 2
-        x: 632
-        y: 660
+        x: 1608
+        y: 709
         width: 331
         height: 273
       alignment: 0
@@ -479,8 +479,8 @@ TextureImporter:
       name: Next Level
       rect:
         serializedVersion: 2
-        x: 1718
-        y: 1250
+        x: 1744
+        y: 1145
         width: 279
         height: 44
       alignment: 0
@@ -500,8 +500,8 @@ TextureImporter:
       name: panelPopup 1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1083
+        x: 1106
+        y: 1109
         width: 629
         height: 185
       alignment: 9
@@ -521,8 +521,8 @@ TextureImporter:
       name: panelPopup 2
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 1108
+        x: 6
+        y: 1082
         width: 627
         height: 186
       alignment: 9
@@ -542,8 +542,8 @@ TextureImporter:
       name: Rectangle 2775
       rect:
         serializedVersion: 2
-        x: 1718
-        y: 1115
+        x: 1744
+        y: 1073
         width: 200
         height: 63
       alignment: 0
@@ -605,8 +605,8 @@ TextureImporter:
       name: Retry
       rect:
         serializedVersion: 2
-        x: 372
-        y: 787
+        x: 1714
+        y: 1011
         width: 150
         height: 53
       alignment: 0
@@ -627,7 +627,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 766
-        y: 1663
+        y: 1578
         width: 361
         height: 82
       alignment: 0
@@ -648,7 +648,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 900
+        y: 899
         width: 617
         height: 174
       alignment: 0
@@ -668,8 +668,8 @@ TextureImporter:
       name: UI - Coin
       rect:
         serializedVersion: 2
-        x: 1927
-        y: 1069
+        x: 1608
+        y: 991
         width: 97
         height: 109
       alignment: 9
@@ -689,8 +689,8 @@ TextureImporter:
       name: Ui-inventory
       rect:
         serializedVersion: 2
-        x: 1607
-        y: 768
+        x: 1224
+        y: 749
         width: 196
         height: 156
       alignment: 9
@@ -710,10 +710,10 @@ TextureImporter:
       name: Upgrade
       rect:
         serializedVersion: 2
-        x: 1718
-        y: 1187
-        width: 234
-        height: 54
+        x: 766
+        y: 1669
+        width: 365
+        height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -773,8 +773,8 @@ TextureImporter:
       name: Frame_Arrowhead
       rect:
         serializedVersion: 2
-        x: 471
-        y: 536
+        x: 6
+        y: 445
         width: 130
         height: 130
       alignment: 0
@@ -795,7 +795,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 570
+        y: 277
         width: 134
         height: 134
       alignment: 0
@@ -815,8 +815,8 @@ TextureImporter:
       name: Wall
       rect:
         serializedVersion: 2
-        x: 179
-        y: 580
+        x: 1796
+        y: 420
         width: 142
         height: 146
       alignment: 0
@@ -828,6 +828,174 @@ TextureImporter:
       bones: []
       spriteID: 656f9cb53f3a3a049a94a3a2f890795a
       internalID: -1721502225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 41531
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1463
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f698188283337b4ea84d532dbd7b6fe
+      internalID: -382257549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 41726
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1496
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0ed93787544ac47891ab01faf4743c
+      internalID: -1695202178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Group 41727
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1463
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d290fda4113e3dd45b91787add30fad4
+      internalID: -750077260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui-Button1.a
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 1198
+        width: 287
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441efbc81c50ed54b895d9bc6ec453ae
+      internalID: -1610630380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Union
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1438
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e07f0f913b81b4bb156e7593b35049
+      internalID: -374395550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vector 701
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1393
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bd7298e73a4684396c197830a1b35a
+      internalID: 1912510029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vector 702
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1537
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fc68375c52e994d8c49f258bafcc2d
+      internalID: -1207549061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vector 705
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1491
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78619889262665c43983ba4979e77b4f
+      internalID: 389520617
       vertices: []
       indices: 
       edges: []
@@ -853,6 +1021,9 @@ TextureImporter:
       Group 40722: 1840654570
       Group 40808: 1445318333
       Group 40809: -233430688
+      Group 41531: -382257549
+      Group 41726: -1695202178
+      Group 41727: -750077260
       Group 41732: -2000225680
       Group 41733: 1228480581
       Home: -1330868313
@@ -864,8 +1035,13 @@ TextureImporter:
       Retry: 1564925240
       Settings: 1579035398
       UI - Coin: -697605015
+      Ui-Button1.a: -1610630380
       Ui-inventory: 570048634
+      Union: -374395550
       Upgrade: -1481385331
+      Vector 701: 1912510029
+      Vector 702: -1207549061
+      Vector 705: 389520617
       Vector 748: -1593307384
       Wall: -1721502225
       image (18) 1: 414686606

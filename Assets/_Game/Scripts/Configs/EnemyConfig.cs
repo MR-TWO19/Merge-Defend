@@ -15,6 +15,7 @@ public class CharacterData : BaseData
 public class CharacterInfo
 {
     public int CharId;
+    public int Level;
     public float Health = 0;
     public float Speed = 0;
     public int Damage = 0;
