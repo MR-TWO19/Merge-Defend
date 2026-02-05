@@ -1,5 +1,6 @@
 using Doozy.Engine;
 using Doozy.Engine.UI;
+using System;
 using TwoCore;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,16 +13,18 @@ public class SettingPopup : BasePopup
 
     private static SettingPopup _instance;
 
-    public static SettingPopup Show(bool isHome)
+    private Action onHide2 = null;
+
+    public static SettingPopup Show(bool isHome, Action action = null)
     {
         if (_instance == null)
         {
-            _instance = ShowWithParamsAndMethod<SettingPopup>("SettingPopup", PopupShowMethod.QUEUE, isHome);
+            _instance = ShowWithParamsAndMethod<SettingPopup>("SettingPopup", PopupShowMethod.QUEUE, isHome, action);
         }
         else
         {
             UIPopupManager.ShowPopup(_instance.UIPopup, true, false);
-            _instance.SetParams(isHome);
+            _instance.SetParams(isHome, action);
         }
 
         return _instance;
@@ -32,8 +35,18 @@ public class SettingPopup : BasePopup
         base.SetParams(@params);
 
         bool isHome = (bool)@params[0];
+        if(!isHome)
+        {
+            onHide2 = (Action)@params[1];
+        }
 
         homeBtn.gameObject.SetActive(!isHome);
+    }
+
+    protected override void OnHide()
+    {
+        base.OnHide();
+        onHide2?.Invoke();
     }
 
     public static void HidePopup()
@@ -82,6 +95,4 @@ public class SettingPopup : BasePopup
         GameManager.Ins.ReletAll();
         Hide();
     }
-
-
 }

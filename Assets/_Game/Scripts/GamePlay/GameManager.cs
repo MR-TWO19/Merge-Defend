@@ -391,6 +391,8 @@ public class GameManager : SingletonMono<GameManager>
             IngameView.Ins.UpdateTextLevel(level);
 
         });
+
+        SoundManager.Ins.PlayBGBattleMusic();
     }
 
     public void ReletAll()
@@ -453,8 +455,8 @@ public class GameManager : SingletonMono<GameManager>
 
             DOVirtual.DelayedCall(1f, () =>
             {
-                //SoundManager.Ins.StopMusic();
-                //SoundManager.Ins.PlayOneShot(SoundID.WIN);
+                SoundManager.Ins.StopMusic();
+                SoundManager.Ins.PlayOneShot(SoundId.WIN);
                 ResultPopup.Show(true);
             });
 
@@ -469,8 +471,8 @@ public class GameManager : SingletonMono<GameManager>
             InputHandler.LockInput();
             DOVirtual.DelayedCall(1f, () =>
             {
-                //SoundManager.Ins.StopMusic();
-                //SoundManager.Ins.PlayOneShot(SoundID.LOSE);
+                SoundManager.Ins.StopMusic();
+                SoundManager.Ins.PlayOneShot(SoundId.LOSE);
                 ResultPopup.Show(false);
             });
 

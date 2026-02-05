@@ -17,12 +17,13 @@ public class MainView : BaseView
         base.Awake();
         btnSetting.OnClick.OnTrigger.Event.AddListener(() =>
         {
-            //SettingPopup.Show(true);
+            objHero.gameObject.SetActive(false);
+            SettingPopup.Show(true, () => { objHero.gameObject.SetActive(true); });
         });
 
         btnHowToPlay.OnClick.OnTrigger.Event.AddListener(() =>
         {
-            //HowToPlayPopup.Show();
+            HowToPlayPopup.Show();
         });
         btnPlay.OnClick.OnTrigger.Event.AddListener(() =>
         {

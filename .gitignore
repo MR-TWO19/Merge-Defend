@@ -8,3 +8,4 @@ UserSettings
 Assembly-CSharp.csproj
 *.csproj
 *.sln
+.utmp

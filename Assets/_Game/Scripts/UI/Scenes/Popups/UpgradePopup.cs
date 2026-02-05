@@ -134,6 +134,8 @@ public class UpgradePopup : BasePopup
         var heroes = GameConfig.Ins?.HeroDatas;
         if (heroes == null || heroes.Count == 0) return;
 
+        SoundManager.Ins.PlayOneShot(SoundId.UPGRADE);
+
         var heroData = heroes[currentIndex];
         if (UserSaveData.Ins.UpgradeCharacter(heroData.id))
         {

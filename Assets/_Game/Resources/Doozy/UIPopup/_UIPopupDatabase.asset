@@ -14,15 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PopupNames:
   - ResultPopup
-  - ConfirmPopup
   - SettingPopup
   - HowToPlayPopup
-  - PlayPopup
   - UpgradePopup
   Popups:
   - {fileID: 11400000, guid: e67e65c025e28d74290375331d86d10b, type: 2}
-  - {fileID: 11400000, guid: d4f6c41d0c5f60d4f8e2d6afadd67d2a, type: 2}
   - {fileID: 11400000, guid: 26427a3c4b0c8404fb60ec7d040627c7, type: 2}
   - {fileID: 11400000, guid: 5c4f53e19790da24dbd23ded79431b55, type: 2}
-  - {fileID: 11400000, guid: a5494215d1af88f4dac6f644bb1a8460, type: 2}
   - {fileID: 11400000, guid: 8de0466340b23764b9db4b7e3f74d8ad, type: 2}

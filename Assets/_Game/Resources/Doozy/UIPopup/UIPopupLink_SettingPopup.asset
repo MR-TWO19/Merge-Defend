@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: UIPopupLink_SettingPopup
   m_EditorClassIdentifier: 
   PopupName: SettingPopup
-  Prefab: {fileID: 3325017593117631894, guid: b1ee05dba5cbd8041a2fe49ebd309e6b, type: 3}
+  Prefab: {fileID: 3325017593117631894, guid: 0a174cdf0464710448627927c15f6833, type: 3}

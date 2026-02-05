@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17215f689fb19554ab6b81c2308113df, type: 3}
   m_Name: UIPopupLink_PlayPopup
   m_EditorClassIdentifier: 
-  PopupName: PlayPopup
-  Prefab: {fileID: 8088413223589264674, guid: a98162bc4e8d6c949a501a1b9fe70ca1, type: 3}
+  PopupName: UpgradePopup
+  Prefab: {fileID: 1102403734263412064, guid: 1944dd836c18e7041b33d555b8e91ede, type: 3}

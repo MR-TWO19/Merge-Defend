@@ -77,9 +77,6 @@ public class ItemControl : MonoBehaviour
 
         isClick = true;
 
-        if (HapticManager.Ins != null)
-            HapticManager.Ins.PlaySuccess();
-
         objFrame.transform.DOScale(Vector3.zero, 0.5f);
 
         if (GameManager.Ins.IsLock || GameManager.Ins.ItemControlsWaiting.Count > 0)
@@ -116,8 +113,6 @@ public class ItemControl : MonoBehaviour
                 {
                     if (isLast)
                     {
-                        if (HapticManager.Ins != null)
-                            HapticManager.Ins.PlaySuccess();
                         SoundManager.Ins.PlayOneShot(SoundId.POP);
                         
                         DOVirtual.DelayedCall(10f, () =>

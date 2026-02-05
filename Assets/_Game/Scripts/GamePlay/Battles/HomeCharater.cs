@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using TwoCore;
 using UnityEngine;
 
 public class HomeCharater : MonoBehaviour
@@ -25,6 +26,7 @@ public class HomeCharater : MonoBehaviour
 
     public bool TakeDamage(int damage)
     {
+        SoundManager.Ins.PlayOneShot(SoundId.SWOOSH);
         HPBar.AddHP(-damage);
         meshRenderer.material.color = Color.black;
         DOVirtual.DelayedCall(0.1f, () =>
