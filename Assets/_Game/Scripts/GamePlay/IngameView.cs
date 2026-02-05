@@ -42,6 +42,7 @@ public class IngameView : BaseView
     {
         base.OnShow();
         bossCountdownPanel.SetActive(GameManager.Ins.isBossLevel);
+
     }
 
     protected override void OnHide()

@@ -1,4 +1,5 @@
-﻿using Doozy.Engine;
+﻿using DG.Tweening;
+using Doozy.Engine;
 using Doozy.Engine.UI;
 using TMPro;
 using TwoCore;
@@ -51,6 +52,11 @@ public class ResultPopup : BasePopup
             txtCoin.text = $"+ {GameManager.Ins.CoinLose}";
             UserSaveData.Ins.AddCoin(GameManager.Ins.CoinLose);
         }
+
+        DOVirtual.DelayedCall(3, () =>
+        {
+            SoundManager.Ins.PlayBGMusic();
+        });
     }
 
     protected override void OnHide()

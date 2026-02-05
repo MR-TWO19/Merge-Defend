@@ -151,10 +151,10 @@ MonoBehaviour:
   - {fileID: -603040811380673311}
   - {fileID: 332392566675481529}
   - {fileID: 9128826884652547495}
+  - {fileID: 7714928427890500101}
   - {fileID: 7238193960223669927}
   - {fileID: -5812857222573467315}
   - {fileID: -1106482375762432950}
-  - {fileID: 7714928427890500101}
 --- !u!114 &332392566675481529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,8 +374,8 @@ MonoBehaviour:
   SoundName: Punch
   IgnoreListenerPause: 1
   Volume:
-    MinValue: 0
-    MaxValue: 0
+    MinValue: -17.6
+    MaxValue: -17.6
   Pitch:
     MinValue: 0
     MaxValue: 0
