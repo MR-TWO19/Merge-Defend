@@ -1,6 +1,7 @@
 ﻿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using TwoCore;
 using UnityEngine;
 
 public class RedHero : Character
@@ -14,6 +15,8 @@ public class RedHero : Character
 
     protected override void OnApplyATKDamage()
     {
+        SoundManager.Ins.PlayOneShot(SoundId.PUNCH);
+
         if (isAttackingHome)
         {
             BattleManager.Ins.ATKHome(characterType);

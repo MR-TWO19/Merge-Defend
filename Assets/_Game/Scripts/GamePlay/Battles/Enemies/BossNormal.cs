@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TwoCore;
 using UnityEngine;
 
 public class BossNormal : Character
@@ -16,6 +17,7 @@ public class BossNormal : Character
     {
         if (animator != null)
             animator.SetTrigger("ATK");
+
     }
 
     public override bool TakeDamage(int damage)
@@ -30,6 +32,8 @@ public class BossNormal : Character
 
     protected override void OnApplyATKDamage()
     {
+        SoundManager.Ins.PlayOneShot(SoundId.PUNCH);
+
         if (isAttackingHome)
         {
             BattleManager.Ins.ATKHome(characterType);

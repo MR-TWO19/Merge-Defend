@@ -1,25 +1,21 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
+using System;
+using TwoCore;
 using UnityEngine;
 
 public class EnemyNormal : Character
 {
-    [SerializeField] private Collider bullet;
-
-    private void OnEnable()
-    {
-        bullet.enabled = false;
-    }
 
     public override void ATK()
     {
         if (animator != null)
             animator.SetTrigger("ATK");
-        bullet.enabled = true;
     }
 
     protected override void OnApplyATKDamage()
     {
+        SoundManager.Ins.PlayOneShot(SoundId.PUNCH);
+
         if (isAttackingHome)
         {
             BattleManager.Ins.ATKHome(characterType);
@@ -39,6 +35,5 @@ public class EnemyNormal : Character
 
     public override void StopATK()
     {
-        bullet.enabled = false;
     }
 }

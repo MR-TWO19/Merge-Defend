@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: SoundDatabase_Music
   m_EditorClassIdentifier: 
   DatabaseName: Music
-  OutputAudioMixerGroup: {fileID: 4904387973358714719, guid: eb08b11551ef1be4888adb1b1657c3cd, type: 2}
+  OutputAudioMixerGroup: {fileID: 4904387973358714719, guid: 07ccc150dca1e454c80a8ac8aaf25c62, type: 2}
   SoundNames:
   - No Sound
   - BGMusic
@@ -77,7 +77,7 @@ MonoBehaviour:
   ResetSequenceAfterInactiveTime: 0
   SequenceResetTime: 5
   Sounds:
-  - AudioClip: {fileID: 8300000, guid: 3d514e02d0e34d648b23c8af5e49d4b1, type: 3}
+  - AudioClip: {fileID: 8300000, guid: e0c0c4ebcd89f944392f36969f3c1404, type: 3}
     Weight: 1
 --- !u!114 &2768053405891507400
 MonoBehaviour:
