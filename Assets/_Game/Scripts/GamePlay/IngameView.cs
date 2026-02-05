@@ -35,7 +35,7 @@ public class IngameView : BaseView
 
     private void OnPauseSettingClick()
     {
-
+        SettingPopup.Show(false);
     }
 
     protected override void OnShow()

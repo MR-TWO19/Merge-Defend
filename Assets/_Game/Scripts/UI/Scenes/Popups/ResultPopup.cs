@@ -53,7 +53,7 @@ public class ResultPopup : BasePopup
             UserSaveData.Ins.AddCoin(GameManager.Ins.CoinLose);
         }
 
-        DOVirtual.DelayedCall(3, () =>
+        DOVirtual.DelayedCall(1, () =>
         {
             SoundManager.Ins.PlayBGMusic();
         });
