@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: LevelConfig
   m_EditorClassIdentifier: 
   levelDatas:
-  - CoinWin: 0
-    CoinLose: 0
+  - CoinWin: 100
+    CoinLose: 20
     SizeGrid: 9
     Waves:
     - Enemies:
       - total: 10
         enemyData:
           CharId: 1
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -28,6 +29,7 @@ MonoBehaviour:
       - total: 5
         enemyData:
           CharId: 2
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -35,6 +37,7 @@ MonoBehaviour:
       - total: 3
         enemyData:
           CharId: 3
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -42,6 +45,7 @@ MonoBehaviour:
       - total: 1
         enemyData:
           CharId: 4
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -49,6 +53,7 @@ MonoBehaviour:
       - total: 1
         enemyData:
           CharId: 5
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -58,6 +63,7 @@ MonoBehaviour:
       - total: 5
         enemyData:
           CharId: 2
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -65,6 +71,7 @@ MonoBehaviour:
       - total: 15
         enemyData:
           CharId: 3
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -72,6 +79,7 @@ MonoBehaviour:
       - total: 2
         enemyData:
           CharId: 5
+          Level: 0
           Health: 0
           Speed: 0
           Damage: 0
@@ -87,4 +95,1150 @@ MonoBehaviour:
     - Cell: {x: 2, y: 8}
     - Cell: {x: 2, y: 7}
     - Cell: {x: 6, y: 8}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 200
+    CoinLose: 40
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 20
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 15
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 2
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 2
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 300
+    CoinLose: 60
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 20
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 2
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 20
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 25
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 4
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 400
+    CoinLose: 80
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 2
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 25
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      - total: 4
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 0
+          Speed: 0
+          Damage: 0
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 500
+    CoinLose: 100
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      - total: 15
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      - total: 4
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      - total: 4
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 70
+          Speed: 0
+          Damage: 7
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 600
+    CoinLose: 110
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      - total: 4
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 80
+          Speed: 0
+          Damage: 8
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 700
+    CoinLose: 120
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 90
+          Speed: 0
+          Damage: 9
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 800
+    CoinLose: 130
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      - total: 15
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      - total: 2
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 100
+          Speed: 0
+          Damage: 10
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 900
+    CoinLose: 140
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 150
+          Speed: 0
+          Damage: 20
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 1000
+    CoinLose: 150
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 200
+          Speed: 0
+          Damage: 30
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 1100
+    CoinLose: 160
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 40
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 50
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 40
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 40
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 40
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 40
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 40
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 250
+          Speed: 0
+          Damage: 40
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 1200
+    CoinLose: 170
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 500
+          Speed: 0
+          Damage: 100
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 1300
+    CoinLose: 180
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 1000
+          Speed: 0
+          Damage: 200
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 1400
+    CoinLose: 190
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 1500
+          Speed: 0
+          Damage: 300
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
+    - Cell: {x: 6, y: 7}
+  - CoinWin: 1500
+    CoinLose: 190
+    SizeGrid: 9
+    Waves:
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 1
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      - total: 20
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      - total: 10
+        enemyData:
+          CharId: 4
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      - total: 3
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      SpawnInterval: 30
+    - Enemies:
+      - total: 30
+        enemyData:
+          CharId: 2
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      - total: 30
+        enemyData:
+          CharId: 3
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      - total: 5
+        enemyData:
+          CharId: 5
+          Level: 0
+          Health: 5000
+          Speed: 0
+          Damage: 500
+        SpawnInterval: 0.5
+      SpawnInterval: 2
+    ItemControlLevelDatas:
+    - Cell: {x: 2, y: 8}
+    - Cell: {x: 3, y: 8}
+    - Cell: {x: 4, y: 8}
+    - Cell: {x: 5, y: 8}
+    - Cell: {x: 6, y: 8}
+    - Cell: {x: 2, y: 7}
+    - Cell: {x: 3, y: 7}
+    - Cell: {x: 4, y: 7}
+    - Cell: {x: 5, y: 7}
     - Cell: {x: 6, y: 7}
