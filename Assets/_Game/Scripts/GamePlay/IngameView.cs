@@ -6,30 +6,47 @@ using TwoCore;
 
 public class IngameView : BaseView
 {
+    public static IngameView Ins;
+
     [SerializeField] private Button btnSetting;
     [SerializeField] private Button btnClearSlot;
     [SerializeField] private TextMeshProUGUI txtClear;
     [SerializeField] private TextMeshProUGUI txtCoundown;
+    [SerializeField] private GameObject bossCountdownPanel;
+    [SerializeField] private TextMeshProUGUI txtCoundownBoss;
 
     public TextMeshProUGUI txtLevel;
     private Coroutine clearCooldownRoutine;
+    private Coroutine bossCountdownRoutine;
 
     protected override void Awake()
     {
+        Ins = this; 
         base.Awake();
         btnSetting.onClick.AddListener(OnPauseSettingClick);
         btnClearSlot.onClick.AddListener(OnCLickBtnClearSlot);
     }
 
-    public void UpdateTextLevel()
+    public void UpdateTextLevel(int level)
     {
-        txtLevel.text = $"Lv.{UserSaveData.Ins.Level}";
+        txtLevel.text = $"Lv.{level}";
     }
 
 
     private void OnPauseSettingClick()
     {
 
+    }
+
+    protected override void OnShow()
+    {
+        base.OnShow();
+        bossCountdownPanel.SetActive(GameManager.Ins.isBossLevel);
+    }
+
+    protected override void OnHide()
+    {
+        base.OnHide();
     }
 
     private void OnCLickBtnClearSlot()
@@ -62,5 +79,40 @@ public class IngameView : BaseView
         if (txtCoundown != null) txtCoundown.gameObject.SetActive(false);
 
         clearCooldownRoutine = null;
+    }
+
+    public void StartBossCountdown()
+    {
+        if (bossCountdownRoutine != null)
+        {
+            StopCoroutine(bossCountdownRoutine);
+            bossCountdownRoutine = null;
+        }
+
+        bossCountdownRoutine = StartCoroutine(BossCountdown());
+    }
+
+    private IEnumerator BossCountdown()
+    {
+        if (txtCoundownBoss != null) txtCoundownBoss.gameObject.SetActive(true);
+
+        int totalSeconds = 90;
+        for (int i = totalSeconds; i > 0; i--)
+        {
+            if (txtCoundownBoss != null)
+            {
+                int minutes = i / 60;
+                int seconds = i % 60;
+                txtCoundownBoss.text = $"{minutes:0}:{seconds:00}";
+            }
+            yield return new WaitForSeconds(1f);
+        }
+
+        if (txtCoundownBoss != null) txtCoundownBoss.gameObject.SetActive(false);
+        Debug.Log("Boss countdown finished");
+
+        GameManager.Ins.LoseGame();
+
+        bossCountdownRoutine = null;
     }
 }

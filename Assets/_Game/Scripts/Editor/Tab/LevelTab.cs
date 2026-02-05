@@ -152,7 +152,7 @@ public class LevelTab : TabContent
                                 "id",
                                 200
                             );
-                            entry.enemyData.Health = EditorGUILayout.FloatField("Health:", entry.enemyData.Health);
+                            entry.enemyData.Health = EditorGUILayout.IntField("Health:", entry.enemyData.Health);
                             entry.enemyData.Speed = EditorGUILayout.FloatField("Speed:", entry.enemyData.Speed);
                             entry.enemyData.Damage = EditorGUILayout.IntField("Damage:", entry.enemyData.Damage);
 

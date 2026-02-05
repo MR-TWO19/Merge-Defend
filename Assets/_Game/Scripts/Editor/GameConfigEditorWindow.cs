@@ -54,6 +54,7 @@ public class GameConfigEditorWindow : BaseEditorWindow
         tabContainer.AddTab("Global", new GlobalTab());
         tabContainer.AddTab("Hero", new HeroTab());
         tabContainer.AddTab("Enemy", new EnemyTab());
+        tabContainer.AddTab("Boss", new BossTab());
         tabContainer.AddTab("Items", new ItemTab());
     }
 

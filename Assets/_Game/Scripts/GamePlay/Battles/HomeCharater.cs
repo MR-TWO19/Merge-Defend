@@ -7,13 +7,18 @@ public class HomeCharater : MonoBehaviour
 {
     [SerializeField] private HPBar HPBar;
     [SerializeField] private MeshRenderer meshRenderer;
+    [SerializeField] private GameObject posSpawnCharater;
+    [SerializeField] private GameObject posBoss;
 
-    public GameObject PosSpawnCharater;
+    public GameObject PosSpawnCharater => BattleManager.Ins.IsBossBattle ? posBoss : posSpawnCharater;
 
     public void SetData(int totalHp)
     {
         if (HPBar != null)
         {
+            HPBar.gameObject.SetActive(true);
+            meshRenderer.gameObject.SetActive(true);
+
             HPBar.SetData(totalHp);
         }
     }
@@ -28,5 +33,11 @@ public class HomeCharater : MonoBehaviour
         });
 
         return HPBar.IsOutOfHP;
+    }
+
+    public void SetUpBoss()
+    {
+        HPBar.gameObject.SetActive(false);
+        meshRenderer.gameObject.SetActive(false);
     }
 }

@@ -11,6 +11,7 @@ public class UserSaveData : BaseUserData
     public static UserSaveData Ins => LocalData.Get<UserSaveData>();
 
     public int Level;
+    public int LevelBoss;
     public bool MusicOn;
     public bool SfxOn;
 
@@ -58,15 +59,19 @@ public class UserSaveData : BaseUserData
     {
         base.OnInit();
         Level = 1;
+        LevelBoss = 1;
         SfxOn = true;
         MusicOn = true;
-        Coin = 1000;
+        Coin = 0;
         InitCharacterInfos();
     }
 
-    public void NextLevel()
+    public void NextLevel(bool isBoss)
     {
-        Level++;
+        if (isBoss)
+            LevelBoss++;
+        else
+            Level++;
         Save();
     }
     

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using TwoCore;
 using UnityEngine;
@@ -10,9 +11,16 @@ public class BattleManager : SingletonMono<BattleManager>
     public HeroManager HeroManager;
     public EnemyManager EnemyManager;
 
+    [SerializeField] private int coinBoss = 300;
+
+    public bool IsBossBattle = false;
+
+    [HideInInspector] public int CoinBoss;
 
     public void StartBattle(List<Wave> waves)
     {
+        IsBossBattle = false;
+
         HomeEnemy.SetData(10);
         HomeHero.SetData(10);
 
@@ -54,5 +62,21 @@ public class BattleManager : SingletonMono<BattleManager>
         HomeHero.SetData(10);
         HeroManager.ResetChar();
         EnemyManager.ResetChar();
+    }
+
+    public void StartBoss(int level)
+    {
+        CoinBoss = coinBoss * level;
+        IsBossBattle = true;
+
+        HomeEnemy.SetUpBoss();
+        HomeHero.SetUpBoss();
+        EnemyManager.StartBoss(level);
+
+        DOVirtual.DelayedCall(1f, () =>
+        {
+            IngameView.Ins.StartBossCountdown();
+
+        });
     }
 }

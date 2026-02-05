@@ -27,7 +27,7 @@ public abstract class Character : MonoBehaviour
     [SerializeField] protected float avoidanceRadius = 1f;
     [SerializeField] protected float avoidanceStrength = 1f;
 
-    public float HP = 0;
+    public int HP = 0;
     public CharacterType CharacterType => characterType;
 
     protected CharacterInfo characterData;
@@ -38,7 +38,7 @@ public abstract class Character : MonoBehaviour
     protected bool isAttackingHome = false;
     protected bool isAttacking = false;
 
-    public void SetUp(CharacterInfo characterInfo)
+    public virtual void SetUp(CharacterInfo characterInfo)
     {
         this.characterData = characterInfo;
         HP = characterData.Health;
@@ -60,11 +60,6 @@ public abstract class Character : MonoBehaviour
             currentTarget = FindTarget();
         }
 
-        if (characterType == CharacterType.Boss)
-        {
-            return;
-        }
-
         Transform targetTransform = null;
         bool isMovingToHome = false;
         if (currentTarget != null)
@@ -73,15 +68,18 @@ public abstract class Character : MonoBehaviour
         }
         else
         {
-            if (characterType == CharacterType.Hero)
+            if (!BattleManager.Ins.IsBossBattle)
             {
-                targetTransform = BattleManager.Ins != null ? BattleManager.Ins.HomeEnemy?.transform : null;
-                isMovingToHome = true;
-            }
-            else
-            {
-                targetTransform = BattleManager.Ins != null ? BattleManager.Ins.HomeHero?.transform : null;
-                isMovingToHome = true;
+                if (characterType == CharacterType.Hero)
+                {
+                    targetTransform = BattleManager.Ins != null ? BattleManager.Ins.HomeEnemy?.transform : null;
+                    isMovingToHome = true;
+                }
+                else
+                {
+                    targetTransform = BattleManager.Ins != null ? BattleManager.Ins.HomeHero?.transform : null;
+                    isMovingToHome = true;
+                }
             }
         }
         if (targetTransform == null) return;
@@ -192,6 +190,11 @@ public abstract class Character : MonoBehaviour
             if (BattleManager.Ins != null && BattleManager.Ins.HeroManager != null)
                 list = BattleManager.Ins.HeroManager.activeHeroes;
         }
+        else if (characterType == CharacterType.Boss)
+        {
+            if (BattleManager.Ins != null && BattleManager.Ins.HeroManager != null)
+                list = BattleManager.Ins.HeroManager.activeHeroes;
+        }
         if (list == null || list.Count == 0) return null;
 
         Character closest = null;
@@ -222,7 +225,7 @@ public abstract class Character : MonoBehaviour
     {
     }
 
-    public virtual bool TakeDamage(float damage)
+    public virtual bool TakeDamage(int damage)
     {
         bool isDie = false;
 
@@ -254,5 +257,13 @@ public abstract class Character : MonoBehaviour
         if (animator != null) animator.SetTrigger("Die");
 
         BattleManager.Ins.RemoveCharacter(this);
+
+        if(characterType == CharacterType.Boss)
+        {
+            DOVirtual.DelayedCall(2f, () =>
+            {
+                GameManager.Ins.WinGame();
+            });
+        }    
     }
 }

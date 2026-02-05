@@ -26,7 +26,7 @@ public class MainView : BaseView
         });
         btnPlay.OnClick.OnTrigger.Event.AddListener(() =>
         {
-            GameManager.Ins.StartGame();
+            GameManager.Ins.StartGame(false);
         });
 
         btnUpgrade.OnClick.OnTrigger.Event.AddListener(() =>
@@ -36,6 +36,7 @@ public class MainView : BaseView
         });
         btnBoss.OnClick.OnTrigger.Event.AddListener(() =>
         {
+            GameManager.Ins.StartGame(true);
         });
     }
 

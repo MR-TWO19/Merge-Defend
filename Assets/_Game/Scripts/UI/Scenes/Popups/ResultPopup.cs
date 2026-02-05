@@ -40,15 +40,16 @@ public class ResultPopup : BasePopup
 
         if(_isWin)
         {
+            UserSaveData.Ins.NextLevel(GameManager.Ins.isBossLevel);
 
-            txtCoin.text = $"+ {GameManager.Ins.LevelData.CoinWin}";
-            UserSaveData.Ins.AddCoin(GameManager.Ins.LevelData.CoinWin);
+            txtCoin.text = $"+ {GameManager.Ins.CoinWin}";
+            UserSaveData.Ins.AddCoin(GameManager.Ins.CoinWin);
         }
         else
         {
 
-            txtCoin.text = $"+ {GameManager.Ins.LevelData.CoinLose}";
-            UserSaveData.Ins.AddCoin(GameManager.Ins.LevelData.CoinLose);
+            txtCoin.text = $"+ {GameManager.Ins.CoinLose}";
+            UserSaveData.Ins.AddCoin(GameManager.Ins.CoinLose);
         }
     }
 

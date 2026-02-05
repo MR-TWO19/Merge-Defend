@@ -9,7 +9,8 @@ public class GameConfig : ConfigBase<GameConfig>
 
     public List<ItemData> ItemDatas;
     public List<CharacterData> EnemyDatas;
-    public List<CharacterData> HeroDatas;
+    public List<CharacterData> HeroDatas; 
+    public List<CharacterData> BossDatas; 
 
     public ItemData GetItemData(int id)
     {
@@ -33,6 +34,14 @@ public class GameConfig : ConfigBase<GameConfig>
     public CharacterData GetHeroData(int id)
     {
         return HeroDatas.Find(_ => _.id == id);
+    }
+
+    public CharacterData GetRondomBossData()
+    {
+        if (ItemDatas == null || ItemDatas.Count == 0)
+            return null;
+        int index = UnityEngine.Random.Range(0, BossDatas.Count);
+        return BossDatas[index];
     }
 
 }

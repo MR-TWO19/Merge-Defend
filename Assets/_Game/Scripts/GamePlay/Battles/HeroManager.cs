@@ -10,14 +10,6 @@ public class HeroManager : MonoBehaviour
     public float spawnOffset = 2f;
     public float spawnForwardRandom = 0.5f;
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            CreateHeroById(0);
-        }    
-    }
-
     // Spawn a hero using CharacterData instance
     public Character CreateHero(CharacterInfo data)
     {

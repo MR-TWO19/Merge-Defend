@@ -80,7 +80,6 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-
     public void RemoveHero(Character enemy)
     {
         if (enemy == null) return;
@@ -103,5 +102,28 @@ public class EnemyManager : MonoBehaviour
         }
 
         activeEnemys.Clear();
+    }
+
+    public void StartBoss(int level)
+    {
+       CharacterData characterData = GameConfig.Ins.GetRondomBossData();
+
+         CharacterInfo characterInfo = new()
+         {
+              CharId = characterData.id,
+              Health = characterData.Health * level,
+              Damage = characterData.Damage * level,
+              Speed = characterData.Speed
+         };
+
+        Transform SpawnPoint = BattleManager.Ins.HomeEnemy.PosSpawnCharater.transform;
+        Vector3 spawnPos = SpawnPoint.position;
+
+        var go = GameObject.Instantiate(characterData.Prefab, spawnPos, SpawnPoint.rotation);
+        Vector3 euler = go.transform.localEulerAngles;
+        go.transform.localEulerAngles = new Vector3(euler.x, -180f, euler.z);
+        var enemy = go.GetComponent<Character>();
+        enemy.SetUp(characterInfo);
+        activeEnemys.Add(enemy);
     }
 }

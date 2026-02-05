@@ -99,3 +99,25 @@ MonoBehaviour:
     Speed: 0.3
     Damage: 1
     Prefab: {fileID: 751762560753533063, guid: 94666c70f395f7a4fb367b07c0557373, type: 3}
+  BossDatas:
+  - id: 1
+    name: New Boss1
+    Type: 0
+    Health: 500
+    Speed: 0.1
+    Damage: 10
+    Prefab: {fileID: 5047116988465576088, guid: 686c241ee3adba94fbbac52abd0043fd, type: 3}
+  - id: 2
+    name: New Boss2
+    Type: 0
+    Health: 500
+    Speed: 0.1
+    Damage: 10
+    Prefab: {fileID: 5047116988465576088, guid: 1933b853d128430419e584b0bb6e1090, type: 3}
+  - id: 3
+    name: New Boss3
+    Type: 0
+    Health: 500
+    Speed: 0.1
+    Damage: 10
+    Prefab: {fileID: 5047116988465576088, guid: 6e62cb59b8c497f4cabb877677e4b33d, type: 3}

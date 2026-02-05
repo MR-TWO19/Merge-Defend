@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -4.046}
+  m_AnchoredPosition: {x: 0, y: -4.0460205}
   m_SizeDelta: {x: -52.8391, y: -20.9998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2603822189828562161
@@ -3349,10 +3349,10 @@ RectTransform:
   - {fileID: 6160388248741311261}
   m_Father: {fileID: 2623088375831921385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 45, y: -137}
-  m_SizeDelta: {x: 504.42, y: 75}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -143.802, y: -193}
+  m_SizeDelta: {x: 245.6, y: 91.618}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3347268883836707765
 CanvasRenderer:
@@ -3951,4 +3951,6 @@ MonoBehaviour:
   btnClearSlot: {fileID: 3417084592968332898}
   txtClear: {fileID: 6043046511208435899}
   txtCoundown: {fileID: 736250314898918900}
+  bossCountdownPanel: {fileID: 8236998824530389705}
+  txtCoundownBoss: {fileID: 5664046433986281837}
   txtLevel: {fileID: 7597317955938973125}

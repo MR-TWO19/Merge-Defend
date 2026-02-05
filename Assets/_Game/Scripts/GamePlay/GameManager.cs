@@ -28,6 +28,11 @@ public class GameManager : SingletonMono<GameManager>
 
     public LevelData LevelData;
 
+    public bool isBossLevel;
+
+    public int CoinWin => isBossLevel ? BattleManager.Ins.CoinBoss : LevelData.CoinWin;
+    public int CoinLose => isBossLevel ? 0 : LevelData.CoinLose;
+
     override protected void Start()
     {
         base.Start();
@@ -372,8 +377,20 @@ public class GameManager : SingletonMono<GameManager>
         GridManager.GenerateGrid(LevelData.SizeGrid);
         ItemManager.LoadItem(LevelData.ItemControlLevelDatas);
 
-        BattleManager.Ins.StartBattle(LevelData.Waves);
+        if (isBossLevel)
+        {
+            BattleManager.Ins.StartBoss(level);
+        }
+        else
+        {
+            BattleManager.Ins.StartBattle(LevelData.Waves);
+        }
 
+        DOVirtual.DelayedCall(1, () =>
+        {
+            IngameView.Ins.UpdateTextLevel(level);
+
+        });
     }
 
     public void ReletAll()
@@ -393,17 +410,20 @@ public class GameManager : SingletonMono<GameManager>
         BattleManager.Ins.ResetData();
     }
 
-    public void StartGame()
+    public void StartGame(bool isBoss)
     {
+        isBossLevel = isBoss;
         GameEventMessage.SendEvent("GoToInGame", null);
         Ins.gameObject.SetActive(true);
-        LoadLevel(UserSaveData.Ins.Level);
+
+        int level = isBossLevel ? UserSaveData.Ins.LevelBoss : UserSaveData.Ins.Level;
+        LoadLevel(level);
     }
 
     public void  NextLevel()
     {
-        UserSaveData.Ins.NextLevel();
-        LoadLevel(UserSaveData.Ins.Level);
+        int level = isBossLevel ? UserSaveData.Ins.LevelBoss : UserSaveData.Ins.Level;
+        LoadLevel(level);
     }
 
     public void GoLevel(int level)
@@ -415,7 +435,8 @@ public class GameManager : SingletonMono<GameManager>
 
     public void RestartLevel()
     {
-        LoadLevel(UserSaveData.Ins.Level);
+        int level = isBossLevel ? UserSaveData.Ins.LevelBoss : UserSaveData.Ins.Level;
+        LoadLevel(level);
     }
 
     public void WinGame()
@@ -424,6 +445,11 @@ public class GameManager : SingletonMono<GameManager>
         {
             isEndGame = true;
             InputHandler.LockInput();
+
+            if(isBossLevel)
+            {
+                IngameView.Ins.StopAllCoroutines();
+            }
 
             DOVirtual.DelayedCall(1f, () =>
             {

@@ -515,6 +515,40 @@ MonoBehaviour:
   HomeHero: {fileID: 990551926}
   HeroManager: {fileID: 990551925}
   EnemyManager: {fileID: 1681942434}
+  coinBoss: 300
+  IsBossBattle: 0
+  CoinBoss: 0
+--- !u!1 &640168049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640168050}
+  m_Layer: 0
+  m_Name: Posboss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &640168050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640168049}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1681942430}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671141611
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +820,7 @@ Transform:
   m_Children:
   - {fileID: 241419}
   - {fileID: 900367054}
+  - {fileID: 1725269321}
   m_Father: {fileID: 183201635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &990551922
@@ -838,7 +873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HPBar: {fileID: 730890420}
   meshRenderer: {fileID: 900907018}
-  PosSpawnCharater: {fileID: 900367053}
+  posSpawnCharater: {fileID: 900367053}
+  posBoss: {fileID: 1725269320}
 --- !u!1 &1058691381
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,9 +901,9 @@ Transform:
   m_GameObject: {fileID: 1058691381}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: 2.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: -1.6, z: 3.09}
+  m_LocalScale: {x: 1, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4930421245182077686}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -1600,6 +1636,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 715031581}
+  - {fileID: 640168050}
   - {fileID: 2101380161}
   m_Father: {fileID: 183201635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1632,7 +1669,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HPBar: {fileID: 1287318591}
   meshRenderer: {fileID: 2101380162}
-  PosSpawnCharater: {fileID: 715031580}
+  posSpawnCharater: {fileID: 715031580}
+  posBoss: {fileID: 640168049}
+--- !u!1 &1725269320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725269321}
+  m_Layer: 0
+  m_Name: PosBoss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1725269321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725269320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 990551921}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2101380160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2379,6 +2448,7 @@ MonoBehaviour:
     SizeGrid: 0
     Waves: []
     ItemControlLevelDatas: []
+  isBossLevel: 0
 --- !u!1 &2940165835866841736
 GameObject:
   m_ObjectHideFlags: 0
