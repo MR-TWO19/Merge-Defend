@@ -102,14 +102,12 @@ MonoBehaviour:
   animator: {fileID: 8854539489688398128}
   meshRenderer: {fileID: 8854539489692506096}
   characterType: 1
-  moveSpeed: 2
   stopDistance: 0.5
   attackInterval: 0.5
   attackRange: 0.5
-  avoidanceRadius: 1
-  avoidanceStrength: 1
+  avoidanceRadius: 2.5
+  avoidanceStrength: 2.5
   HP: 0
-  bullet: {fileID: 4913882791819325179}
 --- !u!1001 &7425853710231616049
 PrefabInstance:
   m_ObjectHideFlags: 0

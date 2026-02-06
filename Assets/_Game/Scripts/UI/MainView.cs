@@ -23,7 +23,8 @@ public class MainView : BaseView
 
         btnHowToPlay.OnClick.OnTrigger.Event.AddListener(() =>
         {
-            HowToPlayPopup.Show();
+            objHero.gameObject.SetActive(false);
+            HowToPlayPopup.Show(() => { objHero.gameObject.SetActive(true); });
         });
         btnPlay.OnClick.OnTrigger.Event.AddListener(() =>
         {

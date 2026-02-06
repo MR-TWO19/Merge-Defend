@@ -365,12 +365,11 @@ MonoBehaviour:
   animator: {fileID: 8444679385469494192}
   meshRenderer: {fileID: 4327424316927811632}
   characterType: 0
-  moveSpeed: 1
   stopDistance: 0.8
   attackInterval: 0.5
   attackRange: 0.8
-  avoidanceRadius: 1
-  avoidanceStrength: 1
+  avoidanceRadius: 2.5
+  avoidanceStrength: 2.5
   HP: 0
 --- !u!1 &793293888240667872
 GameObject:

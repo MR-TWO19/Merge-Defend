@@ -26,6 +26,8 @@ public abstract class Character : MonoBehaviour
     [Header("Avoidance")]
     [SerializeField] protected float avoidanceRadius = 1f;
     [SerializeField] protected float avoidanceStrength = 1f;
+    [SerializeField] protected float minSeparation = 0.6f;
+    [SerializeField] protected float separationStrength = 1f;
 
     public int HP = 0;
     public CharacterType CharacterType => characterType;
@@ -128,9 +130,32 @@ public abstract class Character : MonoBehaviour
             }
 
             float speed = characterData.Speed;
-            Vector3 targetPosition = transform.position + finalDir * speed * Time.deltaTime;
-            targetPosition.y = 0f;
-            transform.position = targetPosition;
+            Vector3 separation = Vector3.zero;
+            int sepCount = 0;
+            foreach (var other in neighbors)
+            {
+                if (other == null || other == this) continue;
+                if (!other.gameObject.activeInHierarchy) continue;
+
+                float d = Vector3.Distance(transform.position, other.transform.position);
+                if (d < Mathf.Epsilon) continue;
+                if (d < minSeparation)
+                {
+                    Vector3 away = (transform.position - other.transform.position).normalized;
+                    float factor = (minSeparation - d) / minSeparation;
+                    separation += away * factor;
+                    sepCount++;
+                }
+            }
+            if (sepCount > 0)
+            {
+                separation /= sepCount;
+                separation *= separationStrength;
+            }
+
+            Vector3 targetPosition = transform.position + (finalDir + separation).normalized * speed * Time.deltaTime;
+             targetPosition.y = 0f;
+             transform.position = targetPosition;
 
             if (animator != null) animator.SetBool("Move", true);
             if (finalDir.sqrMagnitude > 0.001f)

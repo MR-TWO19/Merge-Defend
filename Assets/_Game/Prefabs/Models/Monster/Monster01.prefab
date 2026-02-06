@@ -954,14 +954,12 @@ MonoBehaviour:
   animator: {fileID: 3405142026475056349}
   meshRenderer: {fileID: 5842521073084492003}
   characterType: 1
-  moveSpeed: 1
   stopDistance: 0.5
   attackInterval: 1
   attackRange: 0.5
-  avoidanceRadius: 1
-  avoidanceStrength: 1
+  avoidanceRadius: 2.5
+  avoidanceStrength: 2.5
   HP: 0
-  bullet: {fileID: 4913882791819325179}
 --- !u!1 &5142224959857310439
 GameObject:
   m_ObjectHideFlags: 0

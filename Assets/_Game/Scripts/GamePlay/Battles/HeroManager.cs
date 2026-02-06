@@ -8,7 +8,7 @@ public class HeroManager : MonoBehaviour
 
     [Header("Spawn Settings")]
     public float spawnOffset = 2f;
-    public float spawnForwardRandom = 0.5f;
+    public float spawnForwardRandom = 2f;
 
     // Spawn a hero using CharacterData instance
     public Character CreateHero(CharacterInfo data)

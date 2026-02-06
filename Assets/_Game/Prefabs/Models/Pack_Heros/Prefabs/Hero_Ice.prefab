@@ -1285,12 +1285,11 @@ MonoBehaviour:
   animator: {fileID: 6517629059815988388}
   meshRenderer: {fileID: 7102871308665169195}
   characterType: 0
-  moveSpeed: 1
   stopDistance: 2.5
   attackInterval: 1
   attackRange: 2.5
-  avoidanceRadius: 1
-  avoidanceStrength: 1
+  avoidanceRadius: 2.5
+  avoidanceStrength: 2.5
   HP: 0
   bullet: {fileID: 4571854978366260300, guid: ae6db81575329e84bb6010610e41da53, type: 3}
   posBullet: {fileID: 7583201839975641093}
