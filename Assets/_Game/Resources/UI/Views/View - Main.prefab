@@ -574,7 +574,7 @@ MonoBehaviour:
         Duration: 0.4
       Scale:
         AnimationType: 2
-        Enabled: 1
+        Enabled: 0
         From: {x: 0, y: 0, z: 0}
         To: {x: 0, y: 0, z: 1}
         By: {x: 0, y: 0, z: 0}

@@ -153,6 +153,11 @@ public abstract class Character : MonoBehaviour
                 separation *= separationStrength;
             }
 
+            if (dist <= attackRange)
+            {
+                separation = Vector3.zero;
+            }
+
             Vector3 targetPosition = transform.position + (finalDir + separation).normalized * speed * Time.deltaTime;
              targetPosition.y = 0f;
              transform.position = targetPosition;
