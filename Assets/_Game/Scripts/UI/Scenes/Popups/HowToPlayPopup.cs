@@ -27,7 +27,7 @@ public class HowToPlayPopup : BasePopup
     {
         base.SetParams(@params);
 
-        onHide2 = (Action)@params[1];
+        onHide2 = (Action)@params[0];
     }
 
     override protected void OnHide()

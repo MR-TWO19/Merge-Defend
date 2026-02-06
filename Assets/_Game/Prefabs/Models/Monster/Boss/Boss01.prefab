@@ -1,58 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4299379987283031641
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 651154761770777382}
-  - component: {fileID: 4913882791819325179}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &651154761770777382
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4299379987283031641}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.625, z: 0.493}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1838021066315266416}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &4913882791819325179
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4299379987283031641}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.07
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5047116988465576088
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838021066315266416}
   - component: {fileID: 8848976831529604850}
-  - component: {fileID: 2585168310241722766}
+  - component: {fileID: 7690432254921444928}
   m_Layer: 0
   m_Name: Boss01
   m_TagString: Untagged
@@ -85,7 +32,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7218767313288028224}
-  - {fileID: 651154761770777382}
   - {fileID: 2057034811025606384}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -112,7 +58,7 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.51, z: 0}
---- !u!114 &2585168310241722766
+--- !u!114 &7690432254921444928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +67,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5047116988465576088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb5c416158f29cf4aade457ff8d9047f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ec4940f98a1c0a4eae172244a219e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3660892458499586618}
@@ -132,8 +78,11 @@ MonoBehaviour:
   attackRange: 2
   avoidanceRadius: 1
   avoidanceStrength: 1
+  minSeparation: 0.3
+  separationStrength: 1
   HP: 0
   hPBar: {fileID: 1909329058519024313}
+  tran: {fileID: 7218767313288028224}
 --- !u!1001 &2363240910168372018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,15 +93,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4964617748114723698, guid: 851ae8cf851c0a04d8b98ca435dc730a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4964617748114723698, guid: 851ae8cf851c0a04d8b98ca435dc730a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4964617748114723698, guid: 851ae8cf851c0a04d8b98ca435dc730a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 1.1428572
       objectReference: {fileID: 0}
     - target: {fileID: 4964617748114723698, guid: 851ae8cf851c0a04d8b98ca435dc730a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4964617748114723698, guid: 851ae8cf851c0a04d8b98ca435dc730a, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5741541028906273224, guid: 851ae8cf851c0a04d8b98ca435dc730a, type: 3}
       propertyPath: m_Name
@@ -242,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9844b003c082144da27b69b5512f7b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 2585168310241722766}
+  character: {fileID: 7690432254921444928}
 --- !u!1001 &6504172251169053439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5102429328439319567, guid: 02e19d153a9fcdd43b7a2214d988544a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.587
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5102429328439319567, guid: 02e19d153a9fcdd43b7a2214d988544a, type: 3}
       propertyPath: m_LocalPosition.z

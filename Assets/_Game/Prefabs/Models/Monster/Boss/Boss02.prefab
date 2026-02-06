@@ -54,6 +54,8 @@ MonoBehaviour:
   attackRange: 2
   avoidanceRadius: 1
   avoidanceStrength: 1
+  minSeparation: 0.1
+  separationStrength: 1
   HP: 0
   hPBar: {fileID: 6241510040022125375}
 --- !u!1001 &1418752515197148436
@@ -130,15 +132,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1088912556077254122, guid: 437268558dd720540923d2b0ce27e844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -615,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5102429328439319567, guid: 02e19d153a9fcdd43b7a2214d988544a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.587
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5102429328439319567, guid: 02e19d153a9fcdd43b7a2214d988544a, type: 3}
       propertyPath: m_LocalPosition.z

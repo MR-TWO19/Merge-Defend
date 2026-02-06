@@ -892,6 +892,7 @@ GameObject:
   - component: {fileID: 1838021066315266416}
   - component: {fileID: 8848976831529604850}
   - component: {fileID: 6374702334545074245}
+  - component: {fileID: 4288440686688045051}
   m_Layer: 0
   m_Name: Monster01
   m_TagString: Untagged
@@ -935,10 +936,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
-  m_Height: 1
+  m_Radius: 0.12
+  m_Height: 0.3
   m_Direction: 1
-  m_Center: {x: 0, y: 0.51, z: 0}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!114 &6374702334545074245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,12 +955,41 @@ MonoBehaviour:
   animator: {fileID: 3405142026475056349}
   meshRenderer: {fileID: 5842521073084492003}
   characterType: 1
-  stopDistance: 0.5
+  stopDistance: 1
   attackInterval: 1
-  attackRange: 0.5
-  avoidanceRadius: 2.5
-  avoidanceStrength: 2.5
+  attackRange: 1
+  avoidanceRadius: 0.5
+  avoidanceStrength: 0.5
+  minSeparation: 0.5
+  separationStrength: 1
   HP: 0
+--- !u!54 &4288440686688045051
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5047116988465576088}
+  serializedVersion: 4
+  m_Mass: 0.1
+  m_Drag: 20
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &5142224959857310439
 GameObject:
   m_ObjectHideFlags: 0

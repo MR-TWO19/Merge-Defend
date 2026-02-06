@@ -1247,6 +1247,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2584641278423287896}
   - component: {fileID: 8310294540581834458}
+  - component: {fileID: 885338216028477667}
+  - component: {fileID: 3295846726408257979}
   m_Layer: 0
   m_Name: Hero_Ice
   m_TagString: Untagged
@@ -1288,11 +1290,63 @@ MonoBehaviour:
   stopDistance: 2.5
   attackInterval: 1
   attackRange: 2.5
-  avoidanceRadius: 2.5
-  avoidanceStrength: 2.5
+  avoidanceRadius: 1.5
+  avoidanceStrength: 1.5
+  minSeparation: 0.3
+  separationStrength: 1
   HP: 0
   bullet: {fileID: 4571854978366260300, guid: ae6db81575329e84bb6010610e41da53, type: 3}
   posBullet: {fileID: 7583201839975641093}
+--- !u!136 &885338216028477667
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584641278423287903}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12
+  m_Height: 0.3
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!54 &3295846726408257979
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584641278423287903}
+  serializedVersion: 4
+  m_Mass: 0.1
+  m_Drag: 20
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2592609068270393429
 GameObject:
   m_ObjectHideFlags: 0

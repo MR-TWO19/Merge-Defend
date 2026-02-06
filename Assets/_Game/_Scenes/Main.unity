@@ -857,8 +857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeHeroes: []
-  spawnOffset: 2
-  spawnForwardRandom: 2
+  spawnOffset: 3
+  spawnForwardRandom: 3
 --- !u!114 &990551926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,8 +1609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeEnemys: []
-  spawnOffset: 2
-  spawnForwardRandom: 2
+  spawnOffset: 3
+  spawnForwardRandom: 3
 --- !u!114 &1681942435
 MonoBehaviour:
   m_ObjectHideFlags: 0

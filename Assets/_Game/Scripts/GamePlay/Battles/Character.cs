@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using Doozy.Engine.UI.Animation;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,6 +40,7 @@ public abstract class Character : MonoBehaviour
     protected bool isDead = false;
     protected bool isAttackingHome = false;
     protected bool isAttacking = false;
+    protected float targetRefreshTimer = 0f;
 
     public virtual void SetUp(CharacterInfo characterInfo)
     {
@@ -51,8 +53,16 @@ public abstract class Character : MonoBehaviour
     protected virtual void Update()
     {
         if (isDead) return;
+
         MoveToTarget();
         AttackLoop();
+
+        targetRefreshTimer -= Time.deltaTime;
+        if (targetRefreshTimer <= 0f)
+        {
+            currentTarget = null;
+            targetRefreshTimer = 3f;
+        }
     }
 
     private void MoveToTarget()
@@ -186,7 +196,7 @@ public abstract class Character : MonoBehaviour
     {
         if (isMoving || currentTarget == null) { atkTimer = 0f; return; }
         float dist = Vector3.Distance(transform.position, currentTarget.transform.position);
-        if (dist <= attackRange)
+        if (dist <= (attackRange + 0.1))
         {
             atkTimer -= Time.deltaTime;
             if (atkTimer <= 0f)

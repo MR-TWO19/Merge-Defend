@@ -18,7 +18,7 @@ MonoBehaviour:
     SizeGrid: 9
     Waves:
     - Enemies:
-      - total: 10
+      - total: 5
         enemyData:
           CharId: 1
           Level: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 5
+      - total: 2
         enemyData:
           CharId: 2
           Level: 0
@@ -50,17 +50,9 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 1
-        enemyData:
-          CharId: 5
-          Level: 0
-          Health: 0
-          Speed: 0
-          Damage: 0
-        SpawnInterval: 0.5
       SpawnInterval: 30
     - Enemies:
-      - total: 5
+      - total: 2
         enemyData:
           CharId: 2
           Level: 0
@@ -68,7 +60,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 15
+      - total: 7
         enemyData:
           CharId: 3
           Level: 0
@@ -101,7 +93,7 @@ MonoBehaviour:
     SizeGrid: 9
     Waves:
     - Enemies:
-      - total: 20
+      - total: 10
         enemyData:
           CharId: 2
           Level: 0
@@ -109,7 +101,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 15
+      - total: 6
         enemyData:
           CharId: 3
           Level: 0
@@ -117,7 +109,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 10
+      - total: 5
         enemyData:
           CharId: 4
           Level: 0
@@ -127,7 +119,7 @@ MonoBehaviour:
         SpawnInterval: 0.5
       SpawnInterval: 30
     - Enemies:
-      - total: 5
+      - total: 2
         enemyData:
           CharId: 5
           Level: 0
@@ -135,7 +127,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 2
         SpawnInterval: 0.5
-      - total: 5
+      - total: 3
         enemyData:
           CharId: 2
           Level: 0
@@ -143,7 +135,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 2
         SpawnInterval: 0.5
-      - total: 20
+      - total: 10
         enemyData:
           CharId: 3
           Level: 0
@@ -168,7 +160,7 @@ MonoBehaviour:
     SizeGrid: 9
     Waves:
     - Enemies:
-      - total: 20
+      - total: 10
         enemyData:
           CharId: 1
           Level: 0
@@ -176,7 +168,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 10
+      - total: 5
         enemyData:
           CharId: 2
           Level: 0
@@ -184,7 +176,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 10
+      - total: 7
         enemyData:
           CharId: 3
           Level: 0
@@ -192,7 +184,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 5
+      - total: 3
         enemyData:
           CharId: 4
           Level: 0
@@ -200,7 +192,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 2
+      - total: 1
         enemyData:
           CharId: 5
           Level: 0
@@ -210,7 +202,7 @@ MonoBehaviour:
         SpawnInterval: 0.5
       SpawnInterval: 30
     - Enemies:
-      - total: 20
+      - total: 15
         enemyData:
           CharId: 2
           Level: 0
@@ -218,7 +210,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 25
+      - total: 20
         enemyData:
           CharId: 3
           Level: 0
@@ -226,7 +218,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 4
+      - total: 2
         enemyData:
           CharId: 5
           Level: 0
@@ -251,7 +243,7 @@ MonoBehaviour:
     SizeGrid: 9
     Waves:
     - Enemies:
-      - total: 30
+      - total: 20
         enemyData:
           CharId: 1
           Level: 0
@@ -259,7 +251,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 20
+      - total: 15
         enemyData:
           CharId: 2
           Level: 0
@@ -293,7 +285,7 @@ MonoBehaviour:
         SpawnInterval: 0.5
       SpawnInterval: 30
     - Enemies:
-      - total: 30
+      - total: 25
         enemyData:
           CharId: 2
           Level: 0
@@ -301,7 +293,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 0
         SpawnInterval: 0.5
-      - total: 25
+      - total: 20
         enemyData:
           CharId: 3
           Level: 0
@@ -334,7 +326,7 @@ MonoBehaviour:
     SizeGrid: 9
     Waves:
     - Enemies:
-      - total: 30
+      - total: 25
         enemyData:
           CharId: 1
           Level: 0
@@ -342,7 +334,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 7
         SpawnInterval: 0.5
-      - total: 20
+      - total: 15
         enemyData:
           CharId: 2
           Level: 0
@@ -350,7 +342,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 7
         SpawnInterval: 0.5
-      - total: 15
+      - total: 10
         enemyData:
           CharId: 3
           Level: 0
@@ -358,7 +350,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 7
         SpawnInterval: 0.5
-      - total: 5
+      - total: 3
         enemyData:
           CharId: 4
           Level: 0
@@ -366,7 +358,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 7
         SpawnInterval: 0.5
-      - total: 4
+      - total: 2
         enemyData:
           CharId: 5
           Level: 0
@@ -376,7 +368,7 @@ MonoBehaviour:
         SpawnInterval: 0.5
       SpawnInterval: 30
     - Enemies:
-      - total: 30
+      - total: 25
         enemyData:
           CharId: 2
           Level: 0
@@ -384,7 +376,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 7
         SpawnInterval: 0.5
-      - total: 30
+      - total: 25
         enemyData:
           CharId: 3
           Level: 0
@@ -392,7 +384,7 @@ MonoBehaviour:
           Speed: 0
           Damage: 7
         SpawnInterval: 0.5
-      - total: 4
+      - total: 3
         enemyData:
           CharId: 5
           Level: 0
