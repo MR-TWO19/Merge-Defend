@@ -165,10 +165,6 @@ public class GridManager : MonoBehaviour
         gridArray = new GridCell[0, 0];
     }
 
-    // ================================
-    // ==== CÁC HÀM TIỆN ÍCH KHÁC ====
-    // ================================
-
     public GridCell GetGridCell(int x, int y)
     {
         if (x >= 0 && x < width && y >= 0 && y < height)

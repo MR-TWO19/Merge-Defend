@@ -35,7 +35,7 @@ public class SettingPopup : BasePopup
         base.SetParams(@params);
 
         bool isHome = (bool)@params[0];
-        if(!isHome)
+        if(isHome)
         {
             onHide2 = (Action)@params[1];
         }
